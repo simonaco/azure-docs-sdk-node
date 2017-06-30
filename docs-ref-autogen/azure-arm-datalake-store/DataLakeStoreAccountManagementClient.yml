@@ -16,12 +16,12 @@ items:
         branch: master
         path: >-
           lib\services\dataLake.Store\lib\account\dataLakeStoreAccountManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
+        repo: 'https://github.com/Azure/azure-sdk-for-node'
     type: Class
     children:
       - 'azure-arm-datalake-store.DataLakeStoreAccountManagementClient.#ctor'
+    langs:
+      - js
   - id: 'azure-arm-datalake-store.DataLakeStoreAccountManagementClient.#ctor'
     uid: 'azure-arm-datalake-store.DataLakeStoreAccountManagementClient.#ctor'
     parent: azure-arm-datalake-store.DataLakeStoreAccountManagementClient

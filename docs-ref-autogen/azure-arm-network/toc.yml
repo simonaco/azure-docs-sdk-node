@@ -667,6 +667,24 @@
     - uid: 'azure-arm-network.PublicIPAddresses#list'
       name: list
     - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
+      name: listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetPublicIPAddresses
+      name: listVirtualMachineScaleSetPublicIPAddresses
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
+      name: listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetVMPublicIPAddresses
+      name: listVirtualMachineScaleSetVMPublicIPAddresses
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#getVirtualMachineScaleSetPublicIPAddressWithHttpOperationResponse
+      name: getVirtualMachineScaleSetPublicIPAddressWithHttpOperationResponse
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#getVirtualMachineScaleSetPublicIPAddress
+      name: getVirtualMachineScaleSetPublicIPAddress
+    - uid: >-
         azure-arm-network.PublicIPAddresses#beginDeleteMethodWithHttpOperationResponse
       name: beginDeleteMethodWithHttpOperationResponse
     - uid: 'azure-arm-network.PublicIPAddresses#beginDeleteMethod'
@@ -684,6 +702,19 @@
       name: listNextWithHttpOperationResponse
     - uid: 'azure-arm-network.PublicIPAddresses#listNext'
       name: listNext
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetPublicIPAddressesNextWithHttpOperationResponse
+      name: listVirtualMachineScaleSetPublicIPAddressesNextWithHttpOperationResponse
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetPublicIPAddressesNext
+      name: listVirtualMachineScaleSetPublicIPAddressesNext
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetVMPublicIPAddressesNextWithHttpOperationResponse
+      name: >-
+        listVirtualMachineScaleSetVMPublicIPAddressesNextWithHttpOperationResponse
+    - uid: >-
+        azure-arm-network.PublicIPAddresses#listVirtualMachineScaleSetVMPublicIPAddressesNext
+      name: listVirtualMachineScaleSetVMPublicIPAddressesNext
 - uid: azure-arm-network.RouteFilterRules
   name: RouteFilterRules
   items:
