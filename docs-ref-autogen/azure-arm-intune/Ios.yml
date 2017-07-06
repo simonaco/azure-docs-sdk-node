@@ -113,9 +113,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -137,34 +135,8 @@ items:
         value: '{IOSMAMPolicyCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicyCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicyCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicyCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicyCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -195,9 +167,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -208,11 +178,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function getMAMPolicies(hostName, options, optionalCallback)'
     langs:
       - js
@@ -261,9 +227,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -289,32 +253,8 @@ items:
         value: '{IOSMAMPolicy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -339,9 +279,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -352,11 +290,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getMAMPolicyByName(hostName, policyName, options,
         optionalCallback)
@@ -399,9 +333,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create or update an
-            android policy operation.
+          description: "Parameters supplied to the Create or update an\randroid policy operation."
         - id: parameters.friendlyName
           type:
             - string
@@ -414,53 +346,37 @@ items:
         - id: parameters.appSharingFromLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.appSharingToLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.authentication
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.clipboardSharingLevel
           type:
             - string
-          description: >-
-            Possible values include:
-
-            'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn',
-            'allApps'
+          description: "Possible values include:\r'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn', 'allApps'"
           optional: true
         - id: parameters.dataBackup
           type:
             - string
-          description: |-
-            Possible values include: 'allow',
-            'block'
+          description: "Possible values include: 'allow',\r'block'"
           optional: true
         - id: parameters.fileSharingSaveAs
           type:
             - string
-          description: |-
-            Possible values include:
-            'allow', 'block'
+          description: "Possible values include:\r'allow', 'block'"
           optional: true
         - id: parameters.pin
           type:
             - string
-          description: |-
-            Possible values include: 'required',
-            'notRequired'
+          description: "Possible values include: 'required',\r'notRequired'"
           optional: true
         - id: parameters.pinNumRetry
           type:
@@ -470,16 +386,12 @@ items:
         - id: parameters.deviceCompliance
           type:
             - string
-          description: |-
-            Possible values include:
-            'enable', 'disable'
+          description: "Possible values include:\r'enable', 'disable'"
           optional: true
         - id: parameters.managedBrowser
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.accessRecheckOfflineTimeout
           type:
@@ -499,17 +411,12 @@ items:
         - id: parameters.fileEncryptionLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',
-            'useDeviceSettings'
+          description: "Possible values include:\r'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',\r'useDeviceSettings'"
           optional: true
         - id: parameters.touchId
           type:
             - string
-          description: |-
-            Possible values include: 'enable',
-            'disable'
+          description: "Possible values include: 'enable',\r'disable'"
           optional: true
         - id: parameters.tags
           type:
@@ -529,9 +436,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -559,32 +464,8 @@ items:
         value: '{IOSMAMPolicy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -599,9 +480,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create or update an
-            android policy operation.
+          description: "Parameters supplied to the Create or update an\randroid policy operation."
         - id: parameters.friendlyName
           type:
             - string
@@ -614,53 +493,37 @@ items:
         - id: parameters.appSharingFromLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.appSharingToLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.authentication
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.clipboardSharingLevel
           type:
             - string
-          description: >-
-            Possible values include:
-
-            'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn',
-            'allApps'
+          description: "Possible values include:\r'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn', 'allApps'"
           optional: true
         - id: parameters.dataBackup
           type:
             - string
-          description: |-
-            Possible values include: 'allow',
-            'block'
+          description: "Possible values include: 'allow',\r'block'"
           optional: true
         - id: parameters.fileSharingSaveAs
           type:
             - string
-          description: |-
-            Possible values include:
-            'allow', 'block'
+          description: "Possible values include:\r'allow', 'block'"
           optional: true
         - id: parameters.pin
           type:
             - string
-          description: |-
-            Possible values include: 'required',
-            'notRequired'
+          description: "Possible values include: 'required',\r'notRequired'"
           optional: true
         - id: parameters.pinNumRetry
           type:
@@ -670,16 +533,12 @@ items:
         - id: parameters.deviceCompliance
           type:
             - string
-          description: |-
-            Possible values include:
-            'enable', 'disable'
+          description: "Possible values include:\r'enable', 'disable'"
           optional: true
         - id: parameters.managedBrowser
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.accessRecheckOfflineTimeout
           type:
@@ -699,17 +558,12 @@ items:
         - id: parameters.fileEncryptionLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',
-            'useDeviceSettings'
+          description: "Possible values include:\r'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',\r'useDeviceSettings'"
           optional: true
         - id: parameters.touchId
           type:
             - string
-          description: |-
-            Possible values include: 'enable',
-            'disable'
+          description: "Possible values include: 'enable',\r'disable'"
           optional: true
         - id: parameters.tags
           type:
@@ -729,9 +583,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -742,11 +594,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdateMAMPolicy(hostName, policyName, parameters,
         options, optionalCallback)
@@ -789,9 +637,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create or update an
-            android policy operation.
+          description: "Parameters supplied to the Create or update an\randroid policy operation."
         - id: parameters.friendlyName
           type:
             - string
@@ -804,53 +650,37 @@ items:
         - id: parameters.appSharingFromLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.appSharingToLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.authentication
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.clipboardSharingLevel
           type:
             - string
-          description: >-
-            Possible values include:
-
-            'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn',
-            'allApps'
+          description: "Possible values include:\r'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn', 'allApps'"
           optional: true
         - id: parameters.dataBackup
           type:
             - string
-          description: |-
-            Possible values include: 'allow',
-            'block'
+          description: "Possible values include: 'allow',\r'block'"
           optional: true
         - id: parameters.fileSharingSaveAs
           type:
             - string
-          description: |-
-            Possible values include:
-            'allow', 'block'
+          description: "Possible values include:\r'allow', 'block'"
           optional: true
         - id: parameters.pin
           type:
             - string
-          description: |-
-            Possible values include: 'required',
-            'notRequired'
+          description: "Possible values include: 'required',\r'notRequired'"
           optional: true
         - id: parameters.pinNumRetry
           type:
@@ -860,16 +690,12 @@ items:
         - id: parameters.deviceCompliance
           type:
             - string
-          description: |-
-            Possible values include:
-            'enable', 'disable'
+          description: "Possible values include:\r'enable', 'disable'"
           optional: true
         - id: parameters.managedBrowser
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.accessRecheckOfflineTimeout
           type:
@@ -889,17 +715,12 @@ items:
         - id: parameters.fileEncryptionLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',
-            'useDeviceSettings'
+          description: "Possible values include:\r'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',\r'useDeviceSettings'"
           optional: true
         - id: parameters.touchId
           type:
             - string
-          description: |-
-            Possible values include: 'enable',
-            'disable'
+          description: "Possible values include: 'enable',\r'disable'"
           optional: true
         - id: parameters.tags
           type:
@@ -919,9 +740,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -949,32 +768,8 @@ items:
         value: '{IOSMAMPolicy} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicy} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicy} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -989,9 +784,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create or update an
-            android policy operation.
+          description: "Parameters supplied to the Create or update an\randroid policy operation."
         - id: parameters.friendlyName
           type:
             - string
@@ -1004,53 +797,37 @@ items:
         - id: parameters.appSharingFromLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.appSharingToLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'none', 'policyManagedApps', 'allApps'
+          description: "Possible values include:\r'none', 'policyManagedApps', 'allApps'"
           optional: true
         - id: parameters.authentication
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.clipboardSharingLevel
           type:
             - string
-          description: >-
-            Possible values include:
-
-            'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn',
-            'allApps'
+          description: "Possible values include:\r'blocked', 'policyManagedApps', 'policyManagedAppsWithPasteIn', 'allApps'"
           optional: true
         - id: parameters.dataBackup
           type:
             - string
-          description: |-
-            Possible values include: 'allow',
-            'block'
+          description: "Possible values include: 'allow',\r'block'"
           optional: true
         - id: parameters.fileSharingSaveAs
           type:
             - string
-          description: |-
-            Possible values include:
-            'allow', 'block'
+          description: "Possible values include:\r'allow', 'block'"
           optional: true
         - id: parameters.pin
           type:
             - string
-          description: |-
-            Possible values include: 'required',
-            'notRequired'
+          description: "Possible values include: 'required',\r'notRequired'"
           optional: true
         - id: parameters.pinNumRetry
           type:
@@ -1060,16 +837,12 @@ items:
         - id: parameters.deviceCompliance
           type:
             - string
-          description: |-
-            Possible values include:
-            'enable', 'disable'
+          description: "Possible values include:\r'enable', 'disable'"
           optional: true
         - id: parameters.managedBrowser
           type:
             - string
-          description: |-
-            Possible values include:
-            'required', 'notRequired'
+          description: "Possible values include:\r'required', 'notRequired'"
           optional: true
         - id: parameters.accessRecheckOfflineTimeout
           type:
@@ -1089,17 +862,12 @@ items:
         - id: parameters.fileEncryptionLevel
           type:
             - string
-          description: |-
-            Possible values include:
-            'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',
-            'useDeviceSettings'
+          description: "Possible values include:\r'deviceLocked', 'deviceLockedExceptFilesOpen', 'afterDeviceRestart',\r'useDeviceSettings'"
           optional: true
         - id: parameters.touchId
           type:
             - string
-          description: |-
-            Possible values include: 'enable',
-            'disable'
+          description: "Possible values include: 'enable',\r'disable'"
           optional: true
         - id: parameters.tags
           type:
@@ -1119,9 +887,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1132,11 +898,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function patchMAMPolicy(hostName, policyName, parameters, options,
         optionalCallback)
@@ -1178,9 +940,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1206,30 +966,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1249,9 +987,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1262,11 +998,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMAMPolicy(hostName, policyName, options,
         optionalCallback)
@@ -1327,9 +1059,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1355,32 +1085,8 @@ items:
         value: '{ApplicationCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApplicationCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApplicationCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1415,9 +1121,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1428,11 +1132,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getAppForMAMPolicy(hostName, policyName, options,
         optionalCallback)
@@ -1475,9 +1175,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to add an app to an ios
-            policy.
+          description: "Parameters supplied to add an app to an ios\rpolicy."
         - id: parameters.properties
           type:
             - object
@@ -1495,9 +1193,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1525,30 +1221,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1567,9 +1241,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to add an app to an ios
-            policy.
+          description: "Parameters supplied to add an app to an ios\rpolicy."
         - id: parameters.properties
           type:
             - object
@@ -1587,9 +1259,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1600,11 +1270,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function addAppForMAMPolicy(hostName, policyName, appName, parameters,
         options, optionalCallback)
@@ -1652,9 +1318,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1682,30 +1346,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1729,9 +1371,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1742,11 +1382,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteAppForMAMPolicy(hostName, policyName, appName, options,
         optionalCallback)
@@ -1794,9 +1430,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1822,32 +1456,8 @@ items:
         value: '{GroupsCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link GroupsCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link GroupsCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link GroupsCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link GroupsCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1867,9 +1477,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1880,11 +1488,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getGroupsForMAMPolicy(hostName, policyName, options,
         optionalCallback)
@@ -1927,9 +1531,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create or update app
-            to an android policy operation.
+          description: "Parameters supplied to the Create or update app\rto an android policy operation."
         - id: parameters.properties
           type:
             - object
@@ -1947,9 +1549,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1977,30 +1577,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2019,9 +1597,7 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the Create or update app
-            to an android policy operation.
+          description: "Parameters supplied to the Create or update app\rto an android policy operation."
         - id: parameters.properties
           type:
             - object
@@ -2039,9 +1615,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2052,11 +1626,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function addGroupForMAMPolicy(hostName, policyName, groupId, parameters,
         options, optionalCallback)
@@ -2104,9 +1674,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2134,30 +1702,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -2181,9 +1727,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2194,11 +1738,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteGroupForMAMPolicy(hostName, policyName, groupId, options,
         optionalCallback)
@@ -2231,9 +1771,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2242,9 +1780,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2270,43 +1806,15 @@ items:
         value: '{IOSMAMPolicyCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicyCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IOSMAMPolicyCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicyCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link IOSMAMPolicyCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2315,9 +1823,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2328,11 +1834,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function getMAMPoliciesNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -2363,9 +1865,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2374,9 +1874,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2402,41 +1900,15 @@ items:
         value: '{ApplicationCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApplicationCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ApplicationCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2445,9 +1917,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2458,11 +1928,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function getAppForMAMPolicyNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -2493,9 +1959,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2504,9 +1968,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2533,41 +1995,15 @@ items:
         value: '{GroupsCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link GroupsCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link GroupsCollection} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link GroupsCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link GroupsCollection} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2576,9 +2012,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2589,11 +2023,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getGroupsForMAMPolicyNext(nextPageLink, options,
         optionalCallback)

@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-rediscache.OperationListResult
     id: azure-arm-rediscache.OperationListResult
     name: OperationListResult
-    summary: |-
-      Result of the request to list REST API operations. It contains a list of
-      operations and a URL nextLink to get the next set of results.
+    summary: "Result of the request to list REST API operations. It contains a list of\roperations and a URL nextLink to get the next set of results."
     fullName: azure-arm-rediscache.OperationListResult
     source:
       id: azure-arm-rediscache.OperationListResult

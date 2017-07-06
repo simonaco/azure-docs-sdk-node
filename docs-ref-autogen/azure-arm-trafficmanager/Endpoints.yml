@@ -68,9 +68,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint to be updated.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint to be updated."
         - id: profileName
           type:
             - string
@@ -78,150 +76,74 @@ items:
         - id: endpointType
           type:
             - string
-          description: |-
-            The type of the Traffic Manager endpoint to be
-            updated.
+          description: "The type of the Traffic Manager endpoint to be\rupdated."
         - id: endpointName
           type:
             - string
-          description: |-
-            The name of the Traffic Manager endpoint to be
-            updated.
+          description: "The name of the Traffic Manager endpoint to be\rupdated."
         - id: parameters
           type:
             - object
-          description: |-
-            The Traffic Manager endpoint parameters supplied
-            to the Update operation.
+          description: "The Traffic Manager endpoint parameters supplied\rto the Update operation."
         - id: parameters.id
           type:
             - string
-          description: |-
-            Gets or sets the ID of the Traffic Manager
-            endpoint.
+          description: "Gets or sets the ID of the Traffic Manager\rendpoint."
           optional: true
         - id: parameters.name
           type:
             - string
-          description: |-
-            Gets or sets the name of the Traffic
-            Manager endpoint.
+          description: "Gets or sets the name of the Traffic\rManager endpoint."
           optional: true
         - id: parameters.type
           type:
             - string
-          description: |-
-            Gets or sets the endpoint type of the
-            Traffic Manager endpoint.
+          description: "Gets or sets the endpoint type of the\rTraffic Manager endpoint."
           optional: true
         - id: parameters.targetResourceId
           type:
             - string
-          description: >-
-            Gets or sets the Azure
-
-            Resource URI of the of the endpoint.  Not applicable to endpoints of
-            type
-
-            'ExternalEndpoints'.
+          description: "Gets or sets the Azure\rResource URI of the of the endpoint.  Not applicable to endpoints of type\r'ExternalEndpoints'."
           optional: true
         - id: parameters.target
           type:
             - string
-          description: >-
-            Gets or sets the fully-qualified DNS
-
-            name of the endpoint.  Traffic Manager returns this value in DNS
-            responses
-
-            to direct traffic to this endpoint.
+          description: "Gets or sets the fully-qualified DNS\rname of the endpoint.  Traffic Manager returns this value in DNS responses\rto direct traffic to this endpoint."
           optional: true
         - id: parameters.endpointStatus
           type:
             - string
-          description: >-
-            Gets or sets the status of the
-
-            endpoint..  If the endpoint is Enabled, it is probed for endpoint
-            health and
-
-            is included in the traffic routing method.  Possible values are
-            'Enabled'
-
-            and 'Disabled'.
+          description: "Gets or sets the status of the\rendpoint..  If the endpoint is Enabled, it is probed for endpoint health and\ris included in the traffic routing method.  Possible values are 'Enabled'\rand 'Disabled'."
           optional: true
         - id: parameters.weight
           type:
             - number
-          description: >-
-            Gets or sets the weight of this endpoint
-
-            when using the 'Weighted' traffic routing method. Possible values
-            are from 1
-
-            to 1000.
+          description: "Gets or sets the weight of this endpoint\rwhen using the 'Weighted' traffic routing method. Possible values are from 1\rto 1000."
           optional: true
         - id: parameters.priority
           type:
             - number
-          description: >-
-            Gets or sets the priority of this
-
-            endpoint when using the ‘Priority’ traffic routing method. Possible
-            values
-
-            are from 1 to 1000, lower values represent higher priority. This is
-            an
-
-            optional parameter.  If specified, it must be specified on all
-            endpoints,
-
-            and no two endpoints can share the same priority value.
+          description: "Gets or sets the priority of this\rendpoint when using the ‘Priority’ traffic routing method. Possible values\rare from 1 to 1000, lower values represent higher priority. This is an\roptional parameter.  If specified, it must be specified on all endpoints,\rand no two endpoints can share the same priority value."
           optional: true
         - id: parameters.endpointLocation
           type:
             - string
-          description: >-
-            Specifies the location of the
-
-            external or nested endpoints when using the ‘Performance’ traffic
-            routing
-
-            method.
+          description: "Specifies the location of the\rexternal or nested endpoints when using the ‘Performance’ traffic routing\rmethod."
           optional: true
         - id: parameters.endpointMonitorStatus
           type:
             - string
-          description: |-
-            Gets or sets the
-            monitoring status of the endpoint.
+          description: "Gets or sets the\rmonitoring status of the endpoint."
           optional: true
         - id: parameters.minChildEndpoints
           type:
             - number
-          description: >-
-            Gets or sets the minimum
-
-            number of endpoints that must be available in the child profile in
-            order for
-
-            the parent profile to be considered available. Only applicable to
-            endpoint
-
-            of type 'NestedEndpoints'.
+          description: "Gets or sets the minimum\rnumber of endpoints that must be available in the child profile in order for\rthe parent profile to be considered available. Only applicable to endpoint\rof type 'NestedEndpoints'."
           optional: true
         - id: parameters.geoMapping
           type:
             - array
-          description: >-
-            Gets or sets the list of
-
-            countries/regions mapped to this endpoint when using the
-            ‘Geographic’
-
-            traffic routing method. Please consult Traffic Manager Geographic
-
-            documentation for a full list of accepted values.
+          description: "Gets or sets the list of\rcountries/regions mapped to this endpoint when using the ‘Geographic’\rtraffic routing method. Please consult Traffic Manager Geographic\rdocumentation for a full list of accepted values."
           optional: true
         - id: options
           type:
@@ -231,9 +153,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -261,41 +181,15 @@ items:
         value: '{Endpoint} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Endpoint} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Endpoint} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Endpoint} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Endpoint} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint to be updated.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint to be updated."
         - id: profileName
           type:
             - string
@@ -303,150 +197,74 @@ items:
         - id: endpointType
           type:
             - string
-          description: |-
-            The type of the Traffic Manager endpoint to be
-            updated.
+          description: "The type of the Traffic Manager endpoint to be\rupdated."
         - id: endpointName
           type:
             - string
-          description: |-
-            The name of the Traffic Manager endpoint to be
-            updated.
+          description: "The name of the Traffic Manager endpoint to be\rupdated."
         - id: parameters
           type:
             - object
-          description: |-
-            The Traffic Manager endpoint parameters supplied
-            to the Update operation.
+          description: "The Traffic Manager endpoint parameters supplied\rto the Update operation."
         - id: parameters.id
           type:
             - string
-          description: |-
-            Gets or sets the ID of the Traffic Manager
-            endpoint.
+          description: "Gets or sets the ID of the Traffic Manager\rendpoint."
           optional: true
         - id: parameters.name
           type:
             - string
-          description: |-
-            Gets or sets the name of the Traffic
-            Manager endpoint.
+          description: "Gets or sets the name of the Traffic\rManager endpoint."
           optional: true
         - id: parameters.type
           type:
             - string
-          description: |-
-            Gets or sets the endpoint type of the
-            Traffic Manager endpoint.
+          description: "Gets or sets the endpoint type of the\rTraffic Manager endpoint."
           optional: true
         - id: parameters.targetResourceId
           type:
             - string
-          description: >-
-            Gets or sets the Azure
-
-            Resource URI of the of the endpoint.  Not applicable to endpoints of
-            type
-
-            'ExternalEndpoints'.
+          description: "Gets or sets the Azure\rResource URI of the of the endpoint.  Not applicable to endpoints of type\r'ExternalEndpoints'."
           optional: true
         - id: parameters.target
           type:
             - string
-          description: >-
-            Gets or sets the fully-qualified DNS
-
-            name of the endpoint.  Traffic Manager returns this value in DNS
-            responses
-
-            to direct traffic to this endpoint.
+          description: "Gets or sets the fully-qualified DNS\rname of the endpoint.  Traffic Manager returns this value in DNS responses\rto direct traffic to this endpoint."
           optional: true
         - id: parameters.endpointStatus
           type:
             - string
-          description: >-
-            Gets or sets the status of the
-
-            endpoint..  If the endpoint is Enabled, it is probed for endpoint
-            health and
-
-            is included in the traffic routing method.  Possible values are
-            'Enabled'
-
-            and 'Disabled'.
+          description: "Gets or sets the status of the\rendpoint..  If the endpoint is Enabled, it is probed for endpoint health and\ris included in the traffic routing method.  Possible values are 'Enabled'\rand 'Disabled'."
           optional: true
         - id: parameters.weight
           type:
             - number
-          description: >-
-            Gets or sets the weight of this endpoint
-
-            when using the 'Weighted' traffic routing method. Possible values
-            are from 1
-
-            to 1000.
+          description: "Gets or sets the weight of this endpoint\rwhen using the 'Weighted' traffic routing method. Possible values are from 1\rto 1000."
           optional: true
         - id: parameters.priority
           type:
             - number
-          description: >-
-            Gets or sets the priority of this
-
-            endpoint when using the ‘Priority’ traffic routing method. Possible
-            values
-
-            are from 1 to 1000, lower values represent higher priority. This is
-            an
-
-            optional parameter.  If specified, it must be specified on all
-            endpoints,
-
-            and no two endpoints can share the same priority value.
+          description: "Gets or sets the priority of this\rendpoint when using the ‘Priority’ traffic routing method. Possible values\rare from 1 to 1000, lower values represent higher priority. This is an\roptional parameter.  If specified, it must be specified on all endpoints,\rand no two endpoints can share the same priority value."
           optional: true
         - id: parameters.endpointLocation
           type:
             - string
-          description: >-
-            Specifies the location of the
-
-            external or nested endpoints when using the ‘Performance’ traffic
-            routing
-
-            method.
+          description: "Specifies the location of the\rexternal or nested endpoints when using the ‘Performance’ traffic routing\rmethod."
           optional: true
         - id: parameters.endpointMonitorStatus
           type:
             - string
-          description: |-
-            Gets or sets the
-            monitoring status of the endpoint.
+          description: "Gets or sets the\rmonitoring status of the endpoint."
           optional: true
         - id: parameters.minChildEndpoints
           type:
             - number
-          description: >-
-            Gets or sets the minimum
-
-            number of endpoints that must be available in the child profile in
-            order for
-
-            the parent profile to be considered available. Only applicable to
-            endpoint
-
-            of type 'NestedEndpoints'.
+          description: "Gets or sets the minimum\rnumber of endpoints that must be available in the child profile in order for\rthe parent profile to be considered available. Only applicable to endpoint\rof type 'NestedEndpoints'."
           optional: true
         - id: parameters.geoMapping
           type:
             - array
-          description: >-
-            Gets or sets the list of
-
-            countries/regions mapped to this endpoint when using the
-            ‘Geographic’
-
-            traffic routing method. Please consult Traffic Manager Geographic
-
-            documentation for a full list of accepted values.
+          description: "Gets or sets the list of\rcountries/regions mapped to this endpoint when using the ‘Geographic’\rtraffic routing method. Please consult Traffic Manager Geographic\rdocumentation for a full list of accepted values."
           optional: true
         - id: options
           type:
@@ -456,9 +274,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -469,11 +285,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, profileName, endpointType,
         endpointName, parameters, options, optionalCallback)
@@ -504,9 +316,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint."
         - id: profileName
           type:
             - string
@@ -527,9 +337,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -557,41 +365,15 @@ items:
         value: '{Endpoint} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Endpoint} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Endpoint} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Endpoint} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Endpoint} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint."
         - id: profileName
           type:
             - string
@@ -612,9 +394,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -625,11 +405,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, profileName, endpointType, endpointName,
         options, optionalCallback)
@@ -660,9 +436,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint to be created or updated.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint to be created or updated."
         - id: profileName
           type:
             - string
@@ -670,150 +444,74 @@ items:
         - id: endpointType
           type:
             - string
-          description: |-
-            The type of the Traffic Manager endpoint to be
-            created or updated.
+          description: "The type of the Traffic Manager endpoint to be\rcreated or updated."
         - id: endpointName
           type:
             - string
-          description: |-
-            The name of the Traffic Manager endpoint to be
-            created or updated.
+          description: "The name of the Traffic Manager endpoint to be\rcreated or updated."
         - id: parameters
           type:
             - object
-          description: |-
-            The Traffic Manager endpoint parameters supplied
-            to the CreateOrUpdate operation.
+          description: "The Traffic Manager endpoint parameters supplied\rto the CreateOrUpdate operation."
         - id: parameters.id
           type:
             - string
-          description: |-
-            Gets or sets the ID of the Traffic Manager
-            endpoint.
+          description: "Gets or sets the ID of the Traffic Manager\rendpoint."
           optional: true
         - id: parameters.name
           type:
             - string
-          description: |-
-            Gets or sets the name of the Traffic
-            Manager endpoint.
+          description: "Gets or sets the name of the Traffic\rManager endpoint."
           optional: true
         - id: parameters.type
           type:
             - string
-          description: |-
-            Gets or sets the endpoint type of the
-            Traffic Manager endpoint.
+          description: "Gets or sets the endpoint type of the\rTraffic Manager endpoint."
           optional: true
         - id: parameters.targetResourceId
           type:
             - string
-          description: >-
-            Gets or sets the Azure
-
-            Resource URI of the of the endpoint.  Not applicable to endpoints of
-            type
-
-            'ExternalEndpoints'.
+          description: "Gets or sets the Azure\rResource URI of the of the endpoint.  Not applicable to endpoints of type\r'ExternalEndpoints'."
           optional: true
         - id: parameters.target
           type:
             - string
-          description: >-
-            Gets or sets the fully-qualified DNS
-
-            name of the endpoint.  Traffic Manager returns this value in DNS
-            responses
-
-            to direct traffic to this endpoint.
+          description: "Gets or sets the fully-qualified DNS\rname of the endpoint.  Traffic Manager returns this value in DNS responses\rto direct traffic to this endpoint."
           optional: true
         - id: parameters.endpointStatus
           type:
             - string
-          description: >-
-            Gets or sets the status of the
-
-            endpoint..  If the endpoint is Enabled, it is probed for endpoint
-            health and
-
-            is included in the traffic routing method.  Possible values are
-            'Enabled'
-
-            and 'Disabled'.
+          description: "Gets or sets the status of the\rendpoint..  If the endpoint is Enabled, it is probed for endpoint health and\ris included in the traffic routing method.  Possible values are 'Enabled'\rand 'Disabled'."
           optional: true
         - id: parameters.weight
           type:
             - number
-          description: >-
-            Gets or sets the weight of this endpoint
-
-            when using the 'Weighted' traffic routing method. Possible values
-            are from 1
-
-            to 1000.
+          description: "Gets or sets the weight of this endpoint\rwhen using the 'Weighted' traffic routing method. Possible values are from 1\rto 1000."
           optional: true
         - id: parameters.priority
           type:
             - number
-          description: >-
-            Gets or sets the priority of this
-
-            endpoint when using the ‘Priority’ traffic routing method. Possible
-            values
-
-            are from 1 to 1000, lower values represent higher priority. This is
-            an
-
-            optional parameter.  If specified, it must be specified on all
-            endpoints,
-
-            and no two endpoints can share the same priority value.
+          description: "Gets or sets the priority of this\rendpoint when using the ‘Priority’ traffic routing method. Possible values\rare from 1 to 1000, lower values represent higher priority. This is an\roptional parameter.  If specified, it must be specified on all endpoints,\rand no two endpoints can share the same priority value."
           optional: true
         - id: parameters.endpointLocation
           type:
             - string
-          description: >-
-            Specifies the location of the
-
-            external or nested endpoints when using the ‘Performance’ traffic
-            routing
-
-            method.
+          description: "Specifies the location of the\rexternal or nested endpoints when using the ‘Performance’ traffic routing\rmethod."
           optional: true
         - id: parameters.endpointMonitorStatus
           type:
             - string
-          description: |-
-            Gets or sets the
-            monitoring status of the endpoint.
+          description: "Gets or sets the\rmonitoring status of the endpoint."
           optional: true
         - id: parameters.minChildEndpoints
           type:
             - number
-          description: >-
-            Gets or sets the minimum
-
-            number of endpoints that must be available in the child profile in
-            order for
-
-            the parent profile to be considered available. Only applicable to
-            endpoint
-
-            of type 'NestedEndpoints'.
+          description: "Gets or sets the minimum\rnumber of endpoints that must be available in the child profile in order for\rthe parent profile to be considered available. Only applicable to endpoint\rof type 'NestedEndpoints'."
           optional: true
         - id: parameters.geoMapping
           type:
             - array
-          description: >-
-            Gets or sets the list of
-
-            countries/regions mapped to this endpoint when using the
-            ‘Geographic’
-
-            traffic routing method. Please consult Traffic Manager Geographic
-
-            documentation for a full list of accepted values.
+          description: "Gets or sets the list of\rcountries/regions mapped to this endpoint when using the ‘Geographic’\rtraffic routing method. Please consult Traffic Manager Geographic\rdocumentation for a full list of accepted values."
           optional: true
         - id: options
           type:
@@ -823,9 +521,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -854,41 +550,15 @@ items:
         value: '{Endpoint} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Endpoint} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Endpoint} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Endpoint} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Endpoint} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint to be created or updated.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint to be created or updated."
         - id: profileName
           type:
             - string
@@ -896,150 +566,74 @@ items:
         - id: endpointType
           type:
             - string
-          description: |-
-            The type of the Traffic Manager endpoint to be
-            created or updated.
+          description: "The type of the Traffic Manager endpoint to be\rcreated or updated."
         - id: endpointName
           type:
             - string
-          description: |-
-            The name of the Traffic Manager endpoint to be
-            created or updated.
+          description: "The name of the Traffic Manager endpoint to be\rcreated or updated."
         - id: parameters
           type:
             - object
-          description: |-
-            The Traffic Manager endpoint parameters supplied
-            to the CreateOrUpdate operation.
+          description: "The Traffic Manager endpoint parameters supplied\rto the CreateOrUpdate operation."
         - id: parameters.id
           type:
             - string
-          description: |-
-            Gets or sets the ID of the Traffic Manager
-            endpoint.
+          description: "Gets or sets the ID of the Traffic Manager\rendpoint."
           optional: true
         - id: parameters.name
           type:
             - string
-          description: |-
-            Gets or sets the name of the Traffic
-            Manager endpoint.
+          description: "Gets or sets the name of the Traffic\rManager endpoint."
           optional: true
         - id: parameters.type
           type:
             - string
-          description: |-
-            Gets or sets the endpoint type of the
-            Traffic Manager endpoint.
+          description: "Gets or sets the endpoint type of the\rTraffic Manager endpoint."
           optional: true
         - id: parameters.targetResourceId
           type:
             - string
-          description: >-
-            Gets or sets the Azure
-
-            Resource URI of the of the endpoint.  Not applicable to endpoints of
-            type
-
-            'ExternalEndpoints'.
+          description: "Gets or sets the Azure\rResource URI of the of the endpoint.  Not applicable to endpoints of type\r'ExternalEndpoints'."
           optional: true
         - id: parameters.target
           type:
             - string
-          description: >-
-            Gets or sets the fully-qualified DNS
-
-            name of the endpoint.  Traffic Manager returns this value in DNS
-            responses
-
-            to direct traffic to this endpoint.
+          description: "Gets or sets the fully-qualified DNS\rname of the endpoint.  Traffic Manager returns this value in DNS responses\rto direct traffic to this endpoint."
           optional: true
         - id: parameters.endpointStatus
           type:
             - string
-          description: >-
-            Gets or sets the status of the
-
-            endpoint..  If the endpoint is Enabled, it is probed for endpoint
-            health and
-
-            is included in the traffic routing method.  Possible values are
-            'Enabled'
-
-            and 'Disabled'.
+          description: "Gets or sets the status of the\rendpoint..  If the endpoint is Enabled, it is probed for endpoint health and\ris included in the traffic routing method.  Possible values are 'Enabled'\rand 'Disabled'."
           optional: true
         - id: parameters.weight
           type:
             - number
-          description: >-
-            Gets or sets the weight of this endpoint
-
-            when using the 'Weighted' traffic routing method. Possible values
-            are from 1
-
-            to 1000.
+          description: "Gets or sets the weight of this endpoint\rwhen using the 'Weighted' traffic routing method. Possible values are from 1\rto 1000."
           optional: true
         - id: parameters.priority
           type:
             - number
-          description: >-
-            Gets or sets the priority of this
-
-            endpoint when using the ‘Priority’ traffic routing method. Possible
-            values
-
-            are from 1 to 1000, lower values represent higher priority. This is
-            an
-
-            optional parameter.  If specified, it must be specified on all
-            endpoints,
-
-            and no two endpoints can share the same priority value.
+          description: "Gets or sets the priority of this\rendpoint when using the ‘Priority’ traffic routing method. Possible values\rare from 1 to 1000, lower values represent higher priority. This is an\roptional parameter.  If specified, it must be specified on all endpoints,\rand no two endpoints can share the same priority value."
           optional: true
         - id: parameters.endpointLocation
           type:
             - string
-          description: >-
-            Specifies the location of the
-
-            external or nested endpoints when using the ‘Performance’ traffic
-            routing
-
-            method.
+          description: "Specifies the location of the\rexternal or nested endpoints when using the ‘Performance’ traffic routing\rmethod."
           optional: true
         - id: parameters.endpointMonitorStatus
           type:
             - string
-          description: |-
-            Gets or sets the
-            monitoring status of the endpoint.
+          description: "Gets or sets the\rmonitoring status of the endpoint."
           optional: true
         - id: parameters.minChildEndpoints
           type:
             - number
-          description: >-
-            Gets or sets the minimum
-
-            number of endpoints that must be available in the child profile in
-            order for
-
-            the parent profile to be considered available. Only applicable to
-            endpoint
-
-            of type 'NestedEndpoints'.
+          description: "Gets or sets the minimum\rnumber of endpoints that must be available in the child profile in order for\rthe parent profile to be considered available. Only applicable to endpoint\rof type 'NestedEndpoints'."
           optional: true
         - id: parameters.geoMapping
           type:
             - array
-          description: >-
-            Gets or sets the list of
-
-            countries/regions mapped to this endpoint when using the
-            ‘Geographic’
-
-            traffic routing method. Please consult Traffic Manager Geographic
-
-            documentation for a full list of accepted values.
+          description: "Gets or sets the list of\rcountries/regions mapped to this endpoint when using the ‘Geographic’\rtraffic routing method. Please consult Traffic Manager Geographic\rdocumentation for a full list of accepted values."
           optional: true
         - id: options
           type:
@@ -1049,9 +643,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1062,11 +654,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, profileName, endpointType,
         endpointName, parameters, options, optionalCallback)
@@ -1101,9 +689,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint to be deleted.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint to be deleted."
         - id: profileName
           type:
             - string
@@ -1111,15 +697,11 @@ items:
         - id: endpointType
           type:
             - string
-          description: |-
-            The type of the Traffic Manager endpoint to be
-            deleted.
+          description: "The type of the Traffic Manager endpoint to be\rdeleted."
         - id: endpointName
           type:
             - string
-          description: |-
-            The name of the Traffic Manager endpoint to be
-            deleted.
+          description: "The name of the Traffic Manager endpoint to be\rdeleted."
         - id: options
           type:
             - object
@@ -1128,9 +710,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1158,41 +738,15 @@ items:
         value: '{DeleteOperationResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeleteOperationResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeleteOperationResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeleteOperationResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeleteOperationResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the Traffic Manager endpoint to be deleted.
+          description: "The name of the resource group containing\rthe Traffic Manager endpoint to be deleted."
         - id: profileName
           type:
             - string
@@ -1200,15 +754,11 @@ items:
         - id: endpointType
           type:
             - string
-          description: |-
-            The type of the Traffic Manager endpoint to be
-            deleted.
+          description: "The type of the Traffic Manager endpoint to be\rdeleted."
         - id: endpointName
           type:
             - string
-          description: |-
-            The name of the Traffic Manager endpoint to be
-            deleted.
+          description: "The name of the Traffic Manager endpoint to be\rdeleted."
         - id: options
           type:
             - object
@@ -1217,9 +767,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1230,11 +778,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, profileName, endpointType,
         endpointName, options, optionalCallback)

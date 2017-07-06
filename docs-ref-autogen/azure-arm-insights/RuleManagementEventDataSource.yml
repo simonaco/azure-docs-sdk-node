@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-insights.RuleManagementEventDataSource
     id: azure-arm-insights.RuleManagementEventDataSource
     name: RuleManagementEventDataSource
-    summary: |-
-      A rule management event data source. The discriminator fields is always
-      RuleManagementEventDataSource in this case.
+    summary: "A rule management event data source. The discriminator fields is always\rRuleManagementEventDataSource in this case."
     fullName: azure-arm-insights.RuleManagementEventDataSource
     source:
       id: azure-arm-insights.RuleManagementEventDataSource

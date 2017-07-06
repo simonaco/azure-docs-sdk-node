@@ -98,9 +98,7 @@ items:
         - id: policyAssignmentName
           type:
             - string
-          description: |-
-            The name of the policy assignment to
-            delete.
+          description: "The name of the policy assignment to\rdelete."
         - id: options
           type:
             - object
@@ -109,9 +107,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -137,32 +133,8 @@ items:
         value: '{PolicyAssignment} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -173,9 +145,7 @@ items:
         - id: policyAssignmentName
           type:
             - string
-          description: |-
-            The name of the policy assignment to
-            delete.
+          description: "The name of the policy assignment to\rdelete."
         - id: options
           type:
             - object
@@ -184,9 +154,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -197,11 +165,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(scope, policyAssignmentName, options,
         optionalCallback)
@@ -213,16 +177,7 @@ items:
     name: >-
       createWithHttpOperationResponse(scope, policyAssignmentName, parameters,
       options)
-    summary: >-
-      Creates a policy assignment.
-
-
-      Policy assignments are inherited by child resources. For example, when you
-
-      apply a policy to a resource group that policy is assigned to all
-      resources
-
-      in the group.
+    summary: "Creates a policy assignment.\r\rPolicy assignments are inherited by child resources. For example, when you\rapply a policy to a resource group that policy is assigned to all resources\rin the group."
     fullName: >-
       azure-arm-resource.PolicyAssignments.createWithHttpOperationResponse(scope,
       policyAssignmentName, parameters, options)
@@ -257,16 +212,12 @@ items:
         - id: parameters.displayName
           type:
             - string
-          description: |-
-            The display name of the policy
-            assignment.
+          description: "The display name of the policy\rassignment."
           optional: true
         - id: parameters.policyDefinitionId
           type:
             - string
-          description: |-
-            The ID of the policy
-            definition.
+          description: "The ID of the policy\rdefinition."
           optional: true
         - id: parameters.scope
           type:
@@ -276,16 +227,12 @@ items:
         - id: parameters.parameters
           type:
             - object
-          description: |-
-            Required if a parameter is used in
-            policy rule.
+          description: "Required if a parameter is used in\rpolicy rule."
           optional: true
         - id: parameters.description
           type:
             - string
-          description: |-
-            This message will be part of
-            response in case of policy violation.
+          description: "This message will be part of\rresponse in case of policy violation."
           optional: true
         - id: parameters.id
           type:
@@ -310,9 +257,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -327,16 +272,7 @@ items:
     id: 'azure-arm-resource.PolicyAssignments#create'
     parent: azure-arm-resource.PolicyAssignments
     name: 'create(scope, policyAssignmentName, parameters, options, optionalCallback)'
-    summary: >-
-      Creates a policy assignment.
-
-
-      Policy assignments are inherited by child resources. For example, when you
-
-      apply a policy to a resource group that policy is assigned to all
-      resources
-
-      in the group.
+    summary: "Creates a policy assignment.\r\rPolicy assignments are inherited by child resources. For example, when you\rapply a policy to a resource group that policy is assigned to all resources\rin the group."
     fullName: >-
       azure-arm-resource.PolicyAssignments.create(scope, policyAssignmentName,
       parameters, options, optionalCallback)
@@ -347,32 +283,8 @@ items:
         value: '{PolicyAssignment} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -391,16 +303,12 @@ items:
         - id: parameters.displayName
           type:
             - string
-          description: |-
-            The display name of the policy
-            assignment.
+          description: "The display name of the policy\rassignment."
           optional: true
         - id: parameters.policyDefinitionId
           type:
             - string
-          description: |-
-            The ID of the policy
-            definition.
+          description: "The ID of the policy\rdefinition."
           optional: true
         - id: parameters.scope
           type:
@@ -410,16 +318,12 @@ items:
         - id: parameters.parameters
           type:
             - object
-          description: |-
-            Required if a parameter is used in
-            policy rule.
+          description: "Required if a parameter is used in\rpolicy rule."
           optional: true
         - id: parameters.description
           type:
             - string
-          description: |-
-            This message will be part of
-            response in case of policy violation.
+          description: "This message will be part of\rresponse in case of policy violation."
           optional: true
         - id: parameters.id
           type:
@@ -444,9 +348,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -457,11 +359,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function create(scope, policyAssignmentName, parameters, options,
         optionalCallback)
@@ -498,9 +396,7 @@ items:
         - id: policyAssignmentName
           type:
             - string
-          description: |-
-            The name of the policy assignment to
-            get.
+          description: "The name of the policy assignment to\rget."
         - id: options
           type:
             - object
@@ -509,9 +405,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -537,32 +431,8 @@ items:
         value: '{PolicyAssignment} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -573,9 +443,7 @@ items:
         - id: policyAssignmentName
           type:
             - string
-          description: |-
-            The name of the policy assignment to
-            get.
+          description: "The name of the policy assignment to\rget."
         - id: options
           type:
             - object
@@ -584,9 +452,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -597,11 +463,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(scope, policyAssignmentName, options, optionalCallback)'
     langs:
       - js
@@ -634,9 +496,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains policy assignments.
+          description: "The name of the resource group that\rcontains policy assignments."
         - id: options
           type:
             - object
@@ -650,9 +510,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -679,43 +537,15 @@ items:
         value: '{PolicyAssignmentListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains policy assignments.
+          description: "The name of the resource group that\rcontains policy assignments."
         - id: options
           type:
             - object
@@ -729,9 +559,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -742,11 +570,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listForResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -785,15 +609,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the resource. The name is case insensitive.
+          description: "The name of the resource group containing\rthe resource. The name is case insensitive."
         - id: resourceProviderNamespace
           type:
             - string
-          description: |-
-            The namespace of the resource
-            provider.
+          description: "The namespace of the resource\rprovider."
         - id: parentResourcePath
           type:
             - string
@@ -805,9 +625,7 @@ items:
         - id: resourceName
           type:
             - string
-          description: |-
-            The name of the resource with policy
-            assignments.
+          description: "The name of the resource with policy\rassignments."
         - id: options
           type:
             - object
@@ -821,9 +639,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -853,49 +669,19 @@ items:
         value: '{PolicyAssignmentListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group containing
-            the resource. The name is case insensitive.
+          description: "The name of the resource group containing\rthe resource. The name is case insensitive."
         - id: resourceProviderNamespace
           type:
             - string
-          description: |-
-            The namespace of the resource
-            provider.
+          description: "The namespace of the resource\rprovider."
         - id: parentResourcePath
           type:
             - string
@@ -907,9 +693,7 @@ items:
         - id: resourceName
           type:
             - string
-          description: |-
-            The name of the resource with policy
-            assignments.
+          description: "The name of the resource with policy\rassignments."
         - id: options
           type:
             - object
@@ -923,9 +707,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -936,11 +718,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listForResource(resourceGroupName, resourceProviderNamespace,
         parentResourcePath, resourceType, resourceName, options,
@@ -983,9 +761,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1007,34 +783,8 @@ items:
         value: '{PolicyAssignmentListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1051,9 +801,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1064,11 +812,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1076,22 +820,7 @@ items:
     id: 'azure-arm-resource.PolicyAssignments#deleteByIdWithHttpOperationResponse'
     parent: azure-arm-resource.PolicyAssignments
     name: 'deleteByIdWithHttpOperationResponse(policyAssignmentId, options)'
-    summary: >-
-      Deletes a policy assignment by ID.
-
-
-      When providing a scope for the assigment, use
-
-      '/subscriptions/{subscription-id}/' for subscriptions,
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-      for
-
-      resource groups, and
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-
-      for resources.
+    summary: "Deletes a policy assignment by ID.\r\rWhen providing a scope for the assigment, use\r'/subscriptions/{subscription-id}/' for subscriptions,\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for\rresource groups, and\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'\rfor resources."
     fullName: >-
       azure-arm-resource.PolicyAssignments.deleteByIdWithHttpOperationResponse(policyAssignmentId,
       options)
@@ -1114,12 +843,7 @@ items:
         - id: policyAssignmentId
           type:
             - string
-          description: >-
-            The ID of the policy assignment to
-
-            delete. Use the format
-
-            '/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'.
+          description: "The ID of the policy assignment to\rdelete. Use the format\r'/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'."
         - id: options
           type:
             - object
@@ -1128,9 +852,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1145,22 +867,7 @@ items:
     id: 'azure-arm-resource.PolicyAssignments#deleteById'
     parent: azure-arm-resource.PolicyAssignments
     name: 'deleteById(policyAssignmentId, options, optionalCallback)'
-    summary: >-
-      Deletes a policy assignment by ID.
-
-
-      When providing a scope for the assigment, use
-
-      '/subscriptions/{subscription-id}/' for subscriptions,
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-      for
-
-      resource groups, and
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-
-      for resources.
+    summary: "Deletes a policy assignment by ID.\r\rWhen providing a scope for the assigment, use\r'/subscriptions/{subscription-id}/' for subscriptions,\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for\rresource groups, and\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'\rfor resources."
     fullName: >-
       azure-arm-resource.PolicyAssignments.deleteById(policyAssignmentId,
       options, optionalCallback)
@@ -1171,44 +878,15 @@ items:
         value: '{PolicyAssignment} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: policyAssignmentId
           type:
             - string
-          description: >-
-            The ID of the policy assignment to
-
-            delete. Use the format
-
-            '/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'.
+          description: "The ID of the policy assignment to\rdelete. Use the format\r'/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'."
         - id: options
           type:
             - object
@@ -1217,9 +895,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1230,11 +906,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function deleteById(policyAssignmentId, options, optionalCallback)'
     langs:
       - js
@@ -1244,27 +916,7 @@ items:
     name: >-
       createByIdWithHttpOperationResponse(policyAssignmentId, parameters,
       options)
-    summary: >-
-      Creates a policy assignment by ID.
-
-
-      Policy assignments are inherited by child resources. For example, when you
-
-      apply a policy to a resource group that policy is assigned to all
-      resources
-
-      in the group. When providing a scope for the assigment, use
-
-      '/subscriptions/{subscription-id}/' for subscriptions,
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-      for
-
-      resource groups, and
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-
-      for resources.
+    summary: "Creates a policy assignment by ID.\r\rPolicy assignments are inherited by child resources. For example, when you\rapply a policy to a resource group that policy is assigned to all resources\rin the group. When providing a scope for the assigment, use\r'/subscriptions/{subscription-id}/' for subscriptions,\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for\rresource groups, and\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'\rfor resources."
     fullName: >-
       azure-arm-resource.PolicyAssignments.createByIdWithHttpOperationResponse(policyAssignmentId,
       parameters, options)
@@ -1287,12 +939,7 @@ items:
         - id: policyAssignmentId
           type:
             - string
-          description: >-
-            The ID of the policy assignment to
-
-            create. Use the format
-
-            '/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'.
+          description: "The ID of the policy assignment to\rcreate. Use the format\r'/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'."
         - id: parameters
           type:
             - object
@@ -1300,16 +947,12 @@ items:
         - id: parameters.displayName
           type:
             - string
-          description: |-
-            The display name of the policy
-            assignment.
+          description: "The display name of the policy\rassignment."
           optional: true
         - id: parameters.policyDefinitionId
           type:
             - string
-          description: |-
-            The ID of the policy
-            definition.
+          description: "The ID of the policy\rdefinition."
           optional: true
         - id: parameters.scope
           type:
@@ -1319,16 +962,12 @@ items:
         - id: parameters.parameters
           type:
             - object
-          description: |-
-            Required if a parameter is used in
-            policy rule.
+          description: "Required if a parameter is used in\rpolicy rule."
           optional: true
         - id: parameters.description
           type:
             - string
-          description: |-
-            This message will be part of
-            response in case of policy violation.
+          description: "This message will be part of\rresponse in case of policy violation."
           optional: true
         - id: parameters.id
           type:
@@ -1353,9 +992,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1370,27 +1007,7 @@ items:
     id: 'azure-arm-resource.PolicyAssignments#createById'
     parent: azure-arm-resource.PolicyAssignments
     name: 'createById(policyAssignmentId, parameters, options, optionalCallback)'
-    summary: >-
-      Creates a policy assignment by ID.
-
-
-      Policy assignments are inherited by child resources. For example, when you
-
-      apply a policy to a resource group that policy is assigned to all
-      resources
-
-      in the group. When providing a scope for the assigment, use
-
-      '/subscriptions/{subscription-id}/' for subscriptions,
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-      for
-
-      resource groups, and
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-
-      for resources.
+    summary: "Creates a policy assignment by ID.\r\rPolicy assignments are inherited by child resources. For example, when you\rapply a policy to a resource group that policy is assigned to all resources\rin the group. When providing a scope for the assigment, use\r'/subscriptions/{subscription-id}/' for subscriptions,\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for\rresource groups, and\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'\rfor resources."
     fullName: >-
       azure-arm-resource.PolicyAssignments.createById(policyAssignmentId,
       parameters, options, optionalCallback)
@@ -1401,44 +1018,15 @@ items:
         value: '{PolicyAssignment} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: policyAssignmentId
           type:
             - string
-          description: >-
-            The ID of the policy assignment to
-
-            create. Use the format
-
-            '/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'.
+          description: "The ID of the policy assignment to\rcreate. Use the format\r'/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'."
         - id: parameters
           type:
             - object
@@ -1446,16 +1034,12 @@ items:
         - id: parameters.displayName
           type:
             - string
-          description: |-
-            The display name of the policy
-            assignment.
+          description: "The display name of the policy\rassignment."
           optional: true
         - id: parameters.policyDefinitionId
           type:
             - string
-          description: |-
-            The ID of the policy
-            definition.
+          description: "The ID of the policy\rdefinition."
           optional: true
         - id: parameters.scope
           type:
@@ -1465,16 +1049,12 @@ items:
         - id: parameters.parameters
           type:
             - object
-          description: |-
-            Required if a parameter is used in
-            policy rule.
+          description: "Required if a parameter is used in\rpolicy rule."
           optional: true
         - id: parameters.description
           type:
             - string
-          description: |-
-            This message will be part of
-            response in case of policy violation.
+          description: "This message will be part of\rresponse in case of policy violation."
           optional: true
         - id: parameters.id
           type:
@@ -1499,9 +1079,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1512,11 +1090,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createById(policyAssignmentId, parameters, options,
         optionalCallback)
@@ -1526,22 +1100,7 @@ items:
     id: 'azure-arm-resource.PolicyAssignments#getByIdWithHttpOperationResponse'
     parent: azure-arm-resource.PolicyAssignments
     name: 'getByIdWithHttpOperationResponse(policyAssignmentId, options)'
-    summary: >-
-      Gets a policy assignment by ID.
-
-
-      When providing a scope for the assigment, use
-
-      '/subscriptions/{subscription-id}/' for subscriptions,
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-      for
-
-      resource groups, and
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-
-      for resources.
+    summary: "Gets a policy assignment by ID.\r\rWhen providing a scope for the assigment, use\r'/subscriptions/{subscription-id}/' for subscriptions,\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for\rresource groups, and\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'\rfor resources."
     fullName: >-
       azure-arm-resource.PolicyAssignments.getByIdWithHttpOperationResponse(policyAssignmentId,
       options)
@@ -1564,12 +1123,7 @@ items:
         - id: policyAssignmentId
           type:
             - string
-          description: >-
-            The ID of the policy assignment to get.
-
-            Use the format
-
-            '/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'.
+          description: "The ID of the policy assignment to get.\rUse the format\r'/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'."
         - id: options
           type:
             - object
@@ -1578,9 +1132,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1593,22 +1145,7 @@ items:
     id: 'azure-arm-resource.PolicyAssignments#getById'
     parent: azure-arm-resource.PolicyAssignments
     name: 'getById(policyAssignmentId, options, optionalCallback)'
-    summary: >-
-      Gets a policy assignment by ID.
-
-
-      When providing a scope for the assigment, use
-
-      '/subscriptions/{subscription-id}/' for subscriptions,
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-      for
-
-      resource groups, and
-
-      '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-
-      for resources.
+    summary: "Gets a policy assignment by ID.\r\rWhen providing a scope for the assigment, use\r'/subscriptions/{subscription-id}/' for subscriptions,\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for\rresource groups, and\r'/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'\rfor resources."
     fullName: >-
       azure-arm-resource.PolicyAssignments.getById(policyAssignmentId, options,
       optionalCallback)
@@ -1619,44 +1156,15 @@ items:
         value: '{PolicyAssignment} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignment} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignment} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: policyAssignmentId
           type:
             - string
-          description: >-
-            The ID of the policy assignment to get.
-
-            Use the format
-
-            '/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'.
+          description: "The ID of the policy assignment to get.\rUse the format\r'/{scope}/providers/Microsoft.Authorization/policyAssignments/{policy-assignment-name}'."
         - id: options
           type:
             - object
@@ -1665,9 +1173,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1678,11 +1184,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function getById(policyAssignmentId, options, optionalCallback)'
     langs:
       - js
@@ -1715,9 +1217,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1726,9 +1226,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1754,43 +1252,15 @@ items:
         value: '{PolicyAssignmentListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1799,9 +1269,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1812,11 +1280,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listForResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -1851,9 +1315,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1862,9 +1324,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1890,43 +1350,15 @@ items:
         value: '{PolicyAssignmentListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1935,9 +1367,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1948,11 +1378,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listForResourceNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -1983,9 +1409,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1994,9 +1418,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2020,43 +1442,15 @@ items:
         value: '{PolicyAssignmentListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PolicyAssignmentListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PolicyAssignmentListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2065,9 +1459,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2078,11 +1470,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

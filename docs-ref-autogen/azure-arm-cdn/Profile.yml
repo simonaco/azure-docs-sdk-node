@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-cdn.Profile
     id: azure-arm-cdn.Profile
     name: Profile
-    summary: |-
-      CDN profile represents the top level resource and the entry point into the
-      CDN API. This allows users to set up a logical grouping of endpoints in
-      addition to creating shared configuration settings and selecting pricing
-      tiers and providers.
+    summary: "CDN profile represents the top level resource and the entry point into the\rCDN API. This allows users to set up a logical grouping of endpoints in\raddition to creating shared configuration settings and selecting pricing\rtiers and providers."
     fullName: azure-arm-cdn.Profile
     source:
       id: azure-arm-cdn.Profile

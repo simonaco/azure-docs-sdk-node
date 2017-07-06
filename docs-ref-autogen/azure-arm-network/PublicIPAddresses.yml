@@ -94,9 +94,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -124,30 +122,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -167,9 +143,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -180,11 +154,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, publicIpAddressName, options,
         optionalCallback)
@@ -237,9 +207,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -265,32 +233,8 @@ items:
         value: '{PublicIPAddress} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddress} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddress} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddress} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddress} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -315,9 +259,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -328,11 +270,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, publicIpAddressName, options,
         optionalCallback)
@@ -377,82 +315,36 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update
-            public IP address operation.
+          description: "Parameters supplied to the create or update\rpublic IP address operation."
         - id: parameters.publicIPAllocationMethod
           type:
             - string
-          description: >-
-            The public IP
-
-            allocation method. Possible values are: 'Static' and 'Dynamic'.
-            Possible
-
-            values include: 'Static', 'Dynamic'
+          description: "The public IP\rallocation method. Possible values are: 'Static' and 'Dynamic'. Possible\rvalues include: 'Static', 'Dynamic'"
           optional: true
         - id: parameters.publicIPAddressVersion
           type:
             - string
-          description: >-
-            The public IP address
-
-            version. Possible values are: 'IPv4' and 'IPv6'. Possible values
-            include:
-
-            'IPv4', 'IPv6'
+          description: "The public IP address\rversion. Possible values are: 'IPv4' and 'IPv6'. Possible values include:\r'IPv4', 'IPv6'"
           optional: true
         - id: parameters.dnsSettings
           type:
             - object
-          description: |-
-            The FQDN of the DNS record
-            associated with the public IP address.
+          description: "The FQDN of the DNS record\rassociated with the public IP address."
           optional: true
         - id: parameters.dnsSettings.domainNameLabel
           type:
             - string
-          description: >-
-            Gets or sets the
-
-            Domain name label.The concatenation of the domain name label and the
-
-            regionalized DNS zone make up the fully qualified domain name
-            associated
-
-            with the public IP address. If a domain name label is specified, an
-            A DNS
-
-            record is created for the public IP in the Microsoft Azure DNS
-            system.
+          description: "Gets or sets the\rDomain name label.The concatenation of the domain name label and the\rregionalized DNS zone make up the fully qualified domain name associated\rwith the public IP address. If a domain name label is specified, an A DNS\rrecord is created for the public IP in the Microsoft Azure DNS system."
           optional: true
         - id: parameters.dnsSettings.fqdn
           type:
             - string
-          description: >-
-            Gets the FQDN, Fully qualified
-
-            domain name of the A DNS record associated with the public IP. This
-            is the
-
-            concatenation of the domainNameLabel and the regionalized DNS zone.
+          description: "Gets the FQDN, Fully qualified\rdomain name of the A DNS record associated with the public IP. This is the\rconcatenation of the domainNameLabel and the regionalized DNS zone."
           optional: true
         - id: parameters.dnsSettings.reverseFqdn
           type:
             - string
-          description: >-
-            Gets or Sets the
-
-            Reverse FQDN. A user-visible, fully qualified domain name that
-            resolves to
-
-            this public IP address. If the reverseFqdn is specified, then a PTR
-            DNS
-
-            record is created pointing from the IP address in the in-addr.arpa
-            domain to
-
-            the reverse FQDN.
+          description: "Gets or Sets the\rReverse FQDN. A user-visible, fully qualified domain name that resolves to\rthis public IP address. If the reverseFqdn is specified, then a PTR DNS\rrecord is created pointing from the IP address in the in-addr.arpa domain to\rthe reverse FQDN."
           optional: true
         - id: parameters.ipAddress
           type:
@@ -462,31 +354,22 @@ items:
         - id: parameters.idleTimeoutInMinutes
           type:
             - number
-          description: |-
-            The idle timeout of the
-            public IP address.
+          description: "The idle timeout of the\rpublic IP address."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            public IP resource.
+          description: "The resource GUID property of the\rpublic IP resource."
           optional: true
         - id: parameters.provisioningState
           type:
             - string
-          description: |-
-            The provisioning state of the
-            PublicIP resource. Possible values are: 'Updating', 'Deleting', and
-            'Failed'.
+          description: "The provisioning state of the\rPublicIP resource. Possible values are: 'Updating', 'Deleting', and\r'Failed'."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -511,9 +394,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -541,32 +422,8 @@ items:
         value: '{PublicIPAddress} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddress} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddress} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddress} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddress} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -581,82 +438,36 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update
-            public IP address operation.
+          description: "Parameters supplied to the create or update\rpublic IP address operation."
         - id: parameters.publicIPAllocationMethod
           type:
             - string
-          description: >-
-            The public IP
-
-            allocation method. Possible values are: 'Static' and 'Dynamic'.
-            Possible
-
-            values include: 'Static', 'Dynamic'
+          description: "The public IP\rallocation method. Possible values are: 'Static' and 'Dynamic'. Possible\rvalues include: 'Static', 'Dynamic'"
           optional: true
         - id: parameters.publicIPAddressVersion
           type:
             - string
-          description: >-
-            The public IP address
-
-            version. Possible values are: 'IPv4' and 'IPv6'. Possible values
-            include:
-
-            'IPv4', 'IPv6'
+          description: "The public IP address\rversion. Possible values are: 'IPv4' and 'IPv6'. Possible values include:\r'IPv4', 'IPv6'"
           optional: true
         - id: parameters.dnsSettings
           type:
             - object
-          description: |-
-            The FQDN of the DNS record
-            associated with the public IP address.
+          description: "The FQDN of the DNS record\rassociated with the public IP address."
           optional: true
         - id: parameters.dnsSettings.domainNameLabel
           type:
             - string
-          description: >-
-            Gets or sets the
-
-            Domain name label.The concatenation of the domain name label and the
-
-            regionalized DNS zone make up the fully qualified domain name
-            associated
-
-            with the public IP address. If a domain name label is specified, an
-            A DNS
-
-            record is created for the public IP in the Microsoft Azure DNS
-            system.
+          description: "Gets or sets the\rDomain name label.The concatenation of the domain name label and the\rregionalized DNS zone make up the fully qualified domain name associated\rwith the public IP address. If a domain name label is specified, an A DNS\rrecord is created for the public IP in the Microsoft Azure DNS system."
           optional: true
         - id: parameters.dnsSettings.fqdn
           type:
             - string
-          description: >-
-            Gets the FQDN, Fully qualified
-
-            domain name of the A DNS record associated with the public IP. This
-            is the
-
-            concatenation of the domainNameLabel and the regionalized DNS zone.
+          description: "Gets the FQDN, Fully qualified\rdomain name of the A DNS record associated with the public IP. This is the\rconcatenation of the domainNameLabel and the regionalized DNS zone."
           optional: true
         - id: parameters.dnsSettings.reverseFqdn
           type:
             - string
-          description: >-
-            Gets or Sets the
-
-            Reverse FQDN. A user-visible, fully qualified domain name that
-            resolves to
-
-            this public IP address. If the reverseFqdn is specified, then a PTR
-            DNS
-
-            record is created pointing from the IP address in the in-addr.arpa
-            domain to
-
-            the reverse FQDN.
+          description: "Gets or Sets the\rReverse FQDN. A user-visible, fully qualified domain name that resolves to\rthis public IP address. If the reverseFqdn is specified, then a PTR DNS\rrecord is created pointing from the IP address in the in-addr.arpa domain to\rthe reverse FQDN."
           optional: true
         - id: parameters.ipAddress
           type:
@@ -666,31 +477,22 @@ items:
         - id: parameters.idleTimeoutInMinutes
           type:
             - number
-          description: |-
-            The idle timeout of the
-            public IP address.
+          description: "The idle timeout of the\rpublic IP address."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            public IP resource.
+          description: "The resource GUID property of the\rpublic IP resource."
           optional: true
         - id: parameters.provisioningState
           type:
             - string
-          description: |-
-            The provisioning state of the
-            PublicIP resource. Possible values are: 'Updating', 'Deleting', and
-            'Failed'.
+          description: "The provisioning state of the\rPublicIP resource. Possible values are: 'Updating', 'Deleting', and\r'Failed'."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -715,9 +517,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -728,11 +528,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, publicIpAddressName,
         parameters, options, optionalCallback)
@@ -769,9 +565,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -793,34 +587,8 @@ items:
         value: '{PublicIPAddressListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -832,9 +600,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -845,11 +611,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listAll(options, optionalCallback)'
     langs:
       - js
@@ -889,9 +651,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -915,34 +675,8 @@ items:
         value: '{PublicIPAddressListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -958,9 +692,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -971,11 +703,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(resourceGroupName, options, optionalCallback)'
     langs:
       - js
@@ -1019,9 +747,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1049,30 +775,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1092,9 +796,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1105,11 +807,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, publicIpAddressName,
         options, optionalCallback)
@@ -1154,82 +852,36 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update
-            public IP address operation.
+          description: "Parameters supplied to the create or update\rpublic IP address operation."
         - id: parameters.publicIPAllocationMethod
           type:
             - string
-          description: >-
-            The public IP
-
-            allocation method. Possible values are: 'Static' and 'Dynamic'.
-            Possible
-
-            values include: 'Static', 'Dynamic'
+          description: "The public IP\rallocation method. Possible values are: 'Static' and 'Dynamic'. Possible\rvalues include: 'Static', 'Dynamic'"
           optional: true
         - id: parameters.publicIPAddressVersion
           type:
             - string
-          description: >-
-            The public IP address
-
-            version. Possible values are: 'IPv4' and 'IPv6'. Possible values
-            include:
-
-            'IPv4', 'IPv6'
+          description: "The public IP address\rversion. Possible values are: 'IPv4' and 'IPv6'. Possible values include:\r'IPv4', 'IPv6'"
           optional: true
         - id: parameters.dnsSettings
           type:
             - object
-          description: |-
-            The FQDN of the DNS record
-            associated with the public IP address.
+          description: "The FQDN of the DNS record\rassociated with the public IP address."
           optional: true
         - id: parameters.dnsSettings.domainNameLabel
           type:
             - string
-          description: >-
-            Gets or sets the
-
-            Domain name label.The concatenation of the domain name label and the
-
-            regionalized DNS zone make up the fully qualified domain name
-            associated
-
-            with the public IP address. If a domain name label is specified, an
-            A DNS
-
-            record is created for the public IP in the Microsoft Azure DNS
-            system.
+          description: "Gets or sets the\rDomain name label.The concatenation of the domain name label and the\rregionalized DNS zone make up the fully qualified domain name associated\rwith the public IP address. If a domain name label is specified, an A DNS\rrecord is created for the public IP in the Microsoft Azure DNS system."
           optional: true
         - id: parameters.dnsSettings.fqdn
           type:
             - string
-          description: >-
-            Gets the FQDN, Fully qualified
-
-            domain name of the A DNS record associated with the public IP. This
-            is the
-
-            concatenation of the domainNameLabel and the regionalized DNS zone.
+          description: "Gets the FQDN, Fully qualified\rdomain name of the A DNS record associated with the public IP. This is the\rconcatenation of the domainNameLabel and the regionalized DNS zone."
           optional: true
         - id: parameters.dnsSettings.reverseFqdn
           type:
             - string
-          description: >-
-            Gets or Sets the
-
-            Reverse FQDN. A user-visible, fully qualified domain name that
-            resolves to
-
-            this public IP address. If the reverseFqdn is specified, then a PTR
-            DNS
-
-            record is created pointing from the IP address in the in-addr.arpa
-            domain to
-
-            the reverse FQDN.
+          description: "Gets or Sets the\rReverse FQDN. A user-visible, fully qualified domain name that resolves to\rthis public IP address. If the reverseFqdn is specified, then a PTR DNS\rrecord is created pointing from the IP address in the in-addr.arpa domain to\rthe reverse FQDN."
           optional: true
         - id: parameters.ipAddress
           type:
@@ -1239,31 +891,22 @@ items:
         - id: parameters.idleTimeoutInMinutes
           type:
             - number
-          description: |-
-            The idle timeout of the
-            public IP address.
+          description: "The idle timeout of the\rpublic IP address."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            public IP resource.
+          description: "The resource GUID property of the\rpublic IP resource."
           optional: true
         - id: parameters.provisioningState
           type:
             - string
-          description: |-
-            The provisioning state of the
-            PublicIP resource. Possible values are: 'Updating', 'Deleting', and
-            'Failed'.
+          description: "The provisioning state of the\rPublicIP resource. Possible values are: 'Updating', 'Deleting', and\r'Failed'."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -1288,9 +931,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1318,32 +959,8 @@ items:
         value: '{PublicIPAddress} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddress} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddress} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddress} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddress} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1358,82 +975,36 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update
-            public IP address operation.
+          description: "Parameters supplied to the create or update\rpublic IP address operation."
         - id: parameters.publicIPAllocationMethod
           type:
             - string
-          description: >-
-            The public IP
-
-            allocation method. Possible values are: 'Static' and 'Dynamic'.
-            Possible
-
-            values include: 'Static', 'Dynamic'
+          description: "The public IP\rallocation method. Possible values are: 'Static' and 'Dynamic'. Possible\rvalues include: 'Static', 'Dynamic'"
           optional: true
         - id: parameters.publicIPAddressVersion
           type:
             - string
-          description: >-
-            The public IP address
-
-            version. Possible values are: 'IPv4' and 'IPv6'. Possible values
-            include:
-
-            'IPv4', 'IPv6'
+          description: "The public IP address\rversion. Possible values are: 'IPv4' and 'IPv6'. Possible values include:\r'IPv4', 'IPv6'"
           optional: true
         - id: parameters.dnsSettings
           type:
             - object
-          description: |-
-            The FQDN of the DNS record
-            associated with the public IP address.
+          description: "The FQDN of the DNS record\rassociated with the public IP address."
           optional: true
         - id: parameters.dnsSettings.domainNameLabel
           type:
             - string
-          description: >-
-            Gets or sets the
-
-            Domain name label.The concatenation of the domain name label and the
-
-            regionalized DNS zone make up the fully qualified domain name
-            associated
-
-            with the public IP address. If a domain name label is specified, an
-            A DNS
-
-            record is created for the public IP in the Microsoft Azure DNS
-            system.
+          description: "Gets or sets the\rDomain name label.The concatenation of the domain name label and the\rregionalized DNS zone make up the fully qualified domain name associated\rwith the public IP address. If a domain name label is specified, an A DNS\rrecord is created for the public IP in the Microsoft Azure DNS system."
           optional: true
         - id: parameters.dnsSettings.fqdn
           type:
             - string
-          description: >-
-            Gets the FQDN, Fully qualified
-
-            domain name of the A DNS record associated with the public IP. This
-            is the
-
-            concatenation of the domainNameLabel and the regionalized DNS zone.
+          description: "Gets the FQDN, Fully qualified\rdomain name of the A DNS record associated with the public IP. This is the\rconcatenation of the domainNameLabel and the regionalized DNS zone."
           optional: true
         - id: parameters.dnsSettings.reverseFqdn
           type:
             - string
-          description: >-
-            Gets or Sets the
-
-            Reverse FQDN. A user-visible, fully qualified domain name that
-            resolves to
-
-            this public IP address. If the reverseFqdn is specified, then a PTR
-            DNS
-
-            record is created pointing from the IP address in the in-addr.arpa
-            domain to
-
-            the reverse FQDN.
+          description: "Gets or Sets the\rReverse FQDN. A user-visible, fully qualified domain name that resolves to\rthis public IP address. If the reverseFqdn is specified, then a PTR DNS\rrecord is created pointing from the IP address in the in-addr.arpa domain to\rthe reverse FQDN."
           optional: true
         - id: parameters.ipAddress
           type:
@@ -1443,31 +1014,22 @@ items:
         - id: parameters.idleTimeoutInMinutes
           type:
             - number
-          description: |-
-            The idle timeout of the
-            public IP address.
+          description: "The idle timeout of the\rpublic IP address."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            public IP resource.
+          description: "The resource GUID property of the\rpublic IP resource."
           optional: true
         - id: parameters.provisioningState
           type:
             - string
-          description: |-
-            The provisioning state of the
-            PublicIP resource. Possible values are: 'Updating', 'Deleting', and
-            'Failed'.
+          description: "The provisioning state of the\rPublicIP resource. Possible values are: 'Updating', 'Deleting', and\r'Failed'."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -1492,9 +1054,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1505,11 +1065,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreateOrUpdate(resourceGroupName, publicIpAddressName,
         parameters, options, optionalCallback)
@@ -1542,9 +1098,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1553,9 +1107,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1579,43 +1131,15 @@ items:
         value: '{PublicIPAddressListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1624,9 +1148,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1637,11 +1159,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listAllNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -1672,9 +1190,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1683,9 +1199,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1709,43 +1223,15 @@ items:
         value: '{PublicIPAddressListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PublicIPAddressListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link PublicIPAddressListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1754,9 +1240,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1767,11 +1251,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
