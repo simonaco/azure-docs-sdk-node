@@ -72,7 +72,9 @@ items:
     name: >-
       checkNameAvailabilityWithHttpOperationResponse(checkNameAvailabilityInput,
       options)
-    summary: "Checks whether the Media Service resource name is available. The name must\rbe globally unique."
+    summary: |-
+      Checks whether the Media Service resource name is available. The name must
+      be globally unique.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.checkNameAvailabilityWithHttpOperationResponse(checkNameAvailabilityInput,
       options)
@@ -95,11 +97,15 @@ items:
         - id: checkNameAvailabilityInput
           type:
             - object
-          description: "Properties needed to check the\ravailability of a name."
+          description: |-
+            Properties needed to check the
+            availability of a name.
         - id: checkNameAvailabilityInput.name
           type:
             - string
-          description: "The name of the resource. A\rname must be globally unique."
+          description: |-
+            The name of the resource. A
+            name must be globally unique.
         - id: options
           type:
             - object
@@ -108,7 +114,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -126,7 +134,9 @@ items:
     name: >-
       checkNameAvailability(checkNameAvailabilityInput, options,
       optionalCallback)
-    summary: "Checks whether the Media Service resource name is available. The name must\rbe globally unique."
+    summary: |-
+      Checks whether the Media Service resource name is available. The name must
+      be globally unique.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.checkNameAvailability(checkNameAvailabilityInput,
       options, optionalCallback)
@@ -137,19 +147,49 @@ items:
         value: '{CheckNameAvailabilityOutput} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link CheckNameAvailabilityOutput} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link CheckNameAvailabilityOutput} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityOutput} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityOutput} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: checkNameAvailabilityInput
           type:
             - object
-          description: "Properties needed to check the\ravailability of a name."
+          description: |-
+            Properties needed to check the
+            availability of a name.
         - id: checkNameAvailabilityInput.name
           type:
             - string
-          description: "The name of the resource. A\rname must be globally unique."
+          description: |-
+            The name of the resource. A
+            name must be globally unique.
         - id: options
           type:
             - object
@@ -158,7 +198,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -169,7 +211,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function checkNameAvailability(checkNameAvailabilityInput, options,
         optionalCallback)
@@ -204,7 +250,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: options
           type:
             - object
@@ -213,7 +261,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -239,15 +289,43 @@ items:
         value: '{MediaServiceCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaServiceCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaServiceCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaServiceCollection} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaServiceCollection} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: options
           type:
             - object
@@ -256,7 +334,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -267,7 +347,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -302,7 +386,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -315,7 +401,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -341,15 +429,41 @@ items:
         value: '{MediaService} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaService} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaService} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaService} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaService} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -362,7 +476,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -373,7 +489,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function get(resourceGroupName, mediaServiceName, options,
         optionalCallback)
@@ -410,7 +530,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -422,17 +544,27 @@ items:
         - id: mediaService.storageAccounts
           type:
             - array
-          description: "The storage accounts for this\rresource."
+          description: |-
+            The storage accounts for this
+            resource.
           optional: true
         - id: mediaService.location
           type:
             - string
-          description: "The geographic location of the\rresource. This must be one of the supported and registered Azure Geo Regions\r(for example, West US, East US, Southeast Asia, and so forth)."
+          description: >-
+            The geographic location of the
+
+            resource. This must be one of the supported and registered Azure Geo
+            Regions
+
+            (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
         - id: mediaService.tags
           type:
             - object
-          description: "Tags to help categorize the resource in\rthe Azure portal."
+          description: |-
+            Tags to help categorize the resource in
+            the Azure portal.
           optional: true
         - id: options
           type:
@@ -442,7 +574,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -470,15 +604,41 @@ items:
         value: '{MediaService} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaService} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaService} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaService} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaService} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -490,17 +650,27 @@ items:
         - id: mediaService.storageAccounts
           type:
             - array
-          description: "The storage accounts for this\rresource."
+          description: |-
+            The storage accounts for this
+            resource.
           optional: true
         - id: mediaService.location
           type:
             - string
-          description: "The geographic location of the\rresource. This must be one of the supported and registered Azure Geo Regions\r(for example, West US, East US, Southeast Asia, and so forth)."
+          description: >-
+            The geographic location of the
+
+            resource. This must be one of the supported and registered Azure Geo
+            Regions
+
+            (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
         - id: mediaService.tags
           type:
             - object
-          description: "Tags to help categorize the resource in\rthe Azure portal."
+          description: |-
+            Tags to help categorize the resource in
+            the Azure portal.
           optional: true
         - id: options
           type:
@@ -510,7 +680,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -521,7 +693,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function create(resourceGroupName, mediaServiceName, mediaService,
         options, optionalCallback)
@@ -554,7 +730,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -567,7 +745,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -595,15 +775,39 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -616,7 +820,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -627,7 +833,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, mediaServiceName, options,
         optionalCallback)
@@ -664,7 +874,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -676,17 +888,27 @@ items:
         - id: mediaService.storageAccounts
           type:
             - array
-          description: "The storage accounts for this\rresource."
+          description: |-
+            The storage accounts for this
+            resource.
           optional: true
         - id: mediaService.location
           type:
             - string
-          description: "The geographic location of the\rresource. This must be one of the supported and registered Azure Geo Regions\r(for example, West US, East US, Southeast Asia, and so forth)."
+          description: >-
+            The geographic location of the
+
+            resource. This must be one of the supported and registered Azure Geo
+            Regions
+
+            (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
         - id: mediaService.tags
           type:
             - object
-          description: "Tags to help categorize the resource in\rthe Azure portal."
+          description: |-
+            Tags to help categorize the resource in
+            the Azure portal.
           optional: true
         - id: options
           type:
@@ -696,7 +918,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -724,15 +948,41 @@ items:
         value: '{MediaService} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaService} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link MediaService} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaService} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MediaService} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -744,17 +994,27 @@ items:
         - id: mediaService.storageAccounts
           type:
             - array
-          description: "The storage accounts for this\rresource."
+          description: |-
+            The storage accounts for this
+            resource.
           optional: true
         - id: mediaService.location
           type:
             - string
-          description: "The geographic location of the\rresource. This must be one of the supported and registered Azure Geo Regions\r(for example, West US, East US, Southeast Asia, and so forth)."
+          description: >-
+            The geographic location of the
+
+            resource. This must be one of the supported and registered Azure Geo
+            Regions
+
+            (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
         - id: mediaService.tags
           type:
             - object
-          description: "Tags to help categorize the resource in\rthe Azure portal."
+          description: |-
+            Tags to help categorize the resource in
+            the Azure portal.
           optional: true
         - id: options
           type:
@@ -764,7 +1024,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -775,7 +1037,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function update(resourceGroupName, mediaServiceName, mediaService,
         options, optionalCallback)
@@ -812,7 +1078,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -820,11 +1088,19 @@ items:
         - id: regenerateKeyInput
           type:
             - object
-          description: "Properties needed to regenerate the Media\rService key."
+          description: |-
+            Properties needed to regenerate the Media
+            Service key.
         - id: regenerateKeyInput.keyType
           type:
             - string
-          description: "The keyType indicating which key\ryou want to regenerate, Primary or Secondary. Possible values include:\r'Primary', 'Secondary'"
+          description: >-
+            The keyType indicating which key
+
+            you want to regenerate, Primary or Secondary. Possible values
+            include:
+
+            'Primary', 'Secondary'
         - id: options
           type:
             - object
@@ -833,7 +1109,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -861,15 +1139,41 @@ items:
         value: '{RegenerateKeyOutput} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RegenerateKeyOutput} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RegenerateKeyOutput} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RegenerateKeyOutput} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RegenerateKeyOutput} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -877,11 +1181,19 @@ items:
         - id: regenerateKeyInput
           type:
             - object
-          description: "Properties needed to regenerate the Media\rService key."
+          description: |-
+            Properties needed to regenerate the Media
+            Service key.
         - id: regenerateKeyInput.keyType
           type:
             - string
-          description: "The keyType indicating which key\ryou want to regenerate, Primary or Secondary. Possible values include:\r'Primary', 'Secondary'"
+          description: >-
+            The keyType indicating which key
+
+            you want to regenerate, Primary or Secondary. Possible values
+            include:
+
+            'Primary', 'Secondary'
         - id: options
           type:
             - object
@@ -890,7 +1202,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -901,7 +1215,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function regenerateKey(resourceGroupName, mediaServiceName,
         regenerateKeyInput, options, optionalCallback)
@@ -934,7 +1252,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -947,7 +1267,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -973,15 +1295,41 @@ items:
         value: '{ServiceKeys} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServiceKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServiceKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceKeys} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceKeys} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -994,7 +1342,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1005,7 +1355,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listKeys(resourceGroupName, mediaServiceName, options,
         optionalCallback)
@@ -1019,7 +1373,11 @@ items:
     name: >-
       syncStorageKeysWithHttpOperationResponse(resourceGroupName,
       mediaServiceName, syncStorageKeysInput, options)
-    summary: "Synchronizes storage account keys for a storage account associated with the\rMedia Service account."
+    summary: >-
+      Synchronizes storage account keys for a storage account associated with
+      the
+
+      Media Service account.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.syncStorageKeysWithHttpOperationResponse(resourceGroupName,
       mediaServiceName, syncStorageKeysInput, options)
@@ -1038,7 +1396,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -1046,11 +1406,15 @@ items:
         - id: syncStorageKeysInput
           type:
             - object
-          description: "Properties needed to synchronize the\rkeys for a storage account to the Media Service."
+          description: |-
+            Properties needed to synchronize the
+            keys for a storage account to the Media Service.
         - id: syncStorageKeysInput.id
           type:
             - string
-          description: "The id of the storage account\rresource."
+          description: |-
+            The id of the storage account
+            resource.
         - id: options
           type:
             - object
@@ -1059,7 +1423,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1076,7 +1442,11 @@ items:
     name: >-
       syncStorageKeys(resourceGroupName, mediaServiceName, syncStorageKeysInput,
       options, optionalCallback)
-    summary: "Synchronizes storage account keys for a storage account associated with the\rMedia Service account."
+    summary: >-
+      Synchronizes storage account keys for a storage account associated with
+      the
+
+      Media Service account.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.syncStorageKeys(resourceGroupName,
       mediaServiceName, syncStorageKeysInput, options, optionalCallback)
@@ -1087,15 +1457,39 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "Name of the resource group within the\rAzure subscription."
+          description: |-
+            Name of the resource group within the
+            Azure subscription.
         - id: mediaServiceName
           type:
             - string
@@ -1103,11 +1497,15 @@ items:
         - id: syncStorageKeysInput
           type:
             - object
-          description: "Properties needed to synchronize the\rkeys for a storage account to the Media Service."
+          description: |-
+            Properties needed to synchronize the
+            keys for a storage account to the Media Service.
         - id: syncStorageKeysInput.id
           type:
             - string
-          description: "The id of the storage account\rresource."
+          description: |-
+            The id of the storage account
+            resource.
         - id: options
           type:
             - object
@@ -1116,7 +1514,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1127,7 +1527,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function syncStorageKeys(resourceGroupName, mediaServiceName,
         syncStorageKeysInput, options, optionalCallback)

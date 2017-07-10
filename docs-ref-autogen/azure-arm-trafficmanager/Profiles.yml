@@ -83,7 +83,9 @@ items:
         - id: parameters
           type:
             - object
-          description: "The Traffic Manager name parameters supplied to\rthe CheckTrafficManagerNameAvailability operation."
+          description: |-
+            The Traffic Manager name parameters supplied to
+            the CheckTrafficManagerNameAvailability operation.
         - id: parameters.name
           type:
             - string
@@ -102,7 +104,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -133,15 +137,43 @@ items:
         value: '{TrafficManagerNameAvailability} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link TrafficManagerNameAvailability} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link TrafficManagerNameAvailability} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TrafficManagerNameAvailability} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TrafficManagerNameAvailability} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: parameters
           type:
             - object
-          description: "The Traffic Manager name parameters supplied to\rthe CheckTrafficManagerNameAvailability operation."
+          description: |-
+            The Traffic Manager name parameters supplied to
+            the CheckTrafficManagerNameAvailability operation.
         - id: parameters.name
           type:
             - string
@@ -160,7 +192,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -171,7 +205,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function checkTrafficManagerRelativeDnsNameAvailability(parameters,
         options, optionalCallback)
@@ -208,7 +246,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profiles to be listed."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profiles to be listed.
         - id: options
           type:
             - object
@@ -217,7 +257,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -244,15 +286,41 @@ items:
         value: '{ProfileListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profiles to be listed."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profiles to be listed.
         - id: options
           type:
             - object
@@ -261,7 +329,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -272,7 +342,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listAllInResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -309,7 +383,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -331,8 +407,32 @@ items:
         value: '{ProfileListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -344,7 +444,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -355,7 +457,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function listAll(options, optionalCallback)'
     langs:
       - js
@@ -382,7 +488,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile.
         - id: profileName
           type:
             - string
@@ -395,7 +503,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -421,15 +531,41 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile.
         - id: profileName
           type:
             - string
@@ -442,7 +578,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -453,7 +591,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function get(resourceGroupName, profileName, options, optionalCallback)'
     langs:
       - js
@@ -482,7 +624,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile.
         - id: profileName
           type:
             - string
@@ -490,66 +634,118 @@ items:
         - id: parameters
           type:
             - object
-          description: "The Traffic Manager profile parameters supplied\rto the CreateOrUpdate operation."
+          description: |-
+            The Traffic Manager profile parameters supplied
+            to the CreateOrUpdate operation.
         - id: parameters.profileStatus
           type:
             - string
-          description: "Gets or sets the status of the\rTraffic Manager profile.  Possible values are 'Enabled' and 'Disabled'."
+          description: >-
+            Gets or sets the status of the
+
+            Traffic Manager profile.  Possible values are 'Enabled' and
+            'Disabled'.
           optional: true
         - id: parameters.trafficRoutingMethod
           type:
             - string
-          description: "Gets or sets the traffic\rrouting method of the Traffic Manager profile.  Possible values are\r'Performance', 'Weighted', 'Priority' or 'Geographic'."
+          description: |-
+            Gets or sets the traffic
+            routing method of the Traffic Manager profile.  Possible values are
+            'Performance', 'Weighted', 'Priority' or 'Geographic'.
           optional: true
         - id: parameters.dnsConfig
           type:
             - object
-          description: "Gets or sets the DNS settings of the\rTraffic Manager profile."
+          description: |-
+            Gets or sets the DNS settings of the
+            Traffic Manager profile.
           optional: true
         - id: parameters.dnsConfig.relativeName
           type:
             - string
-          description: "Gets or sets the\rrelative DNS name provided by this Traffic Manager profile.  This value is\rcombined with the DNS domain name used by Azure Traffic Manager to form the\rfully-qualified domain name (FQDN) of the profile."
+          description: >-
+            Gets or sets the
+
+            relative DNS name provided by this Traffic Manager profile.  This
+            value is
+
+            combined with the DNS domain name used by Azure Traffic Manager to
+            form the
+
+            fully-qualified domain name (FQDN) of the profile.
           optional: true
         - id: parameters.dnsConfig.fqdn
           type:
             - string
-          description: "Gets or sets the fully-qualified\rdomain name (FQDN) of the Traffic Manager profile.  This is formed from the\rconcatenation of the RelativeName with the DNS domain used by Azure Traffic\rManager."
+          description: >-
+            Gets or sets the fully-qualified
+
+            domain name (FQDN) of the Traffic Manager profile.  This is formed
+            from the
+
+            concatenation of the RelativeName with the DNS domain used by Azure
+            Traffic
+
+            Manager.
           optional: true
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: >-
+            Gets or sets the DNS
+
+            Ttime-To-Live (TTL), in seconds.  This informs the local DNS
+            resolvers and
+
+            DNS clients how long to cache DNS responses provided by this Traffic
+            Manager
+
+            profile.
           optional: true
         - id: parameters.monitorConfig
           type:
             - object
-          description: "Gets or sets the endpoint\rmonitoring settings of the Traffic Manager profile."
+          description: |-
+            Gets or sets the endpoint
+            monitoring settings of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.profileMonitorStatus
           type:
             - string
-          description: "Gets or sets\rthe profile-level monitoring status of the Traffic Manager profile."
+          description: |-
+            Gets or sets
+            the profile-level monitoring status of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: |-
+            Gets or sets the
+            protocol (HTTP or HTTPS) used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.port
           type:
             - number
-          description: "Gets or sets the TCP port\rused to probe for endpoint health."
+          description: |-
+            Gets or sets the TCP port
+            used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.path
           type:
             - string
-          description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          description: >-
+            Gets or sets the path
+
+            relative to the endpoint domain name used to probe for endpoint
+            health.
           optional: true
         - id: parameters.endpoints
           type:
             - array
-          description: "Gets or sets the list of endpoints in\rthe Traffic Manager profile."
+          description: |-
+            Gets or sets the list of endpoints in
+            the Traffic Manager profile.
           optional: true
         - id: parameters.location
           type:
@@ -569,7 +765,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -597,15 +795,41 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile.
         - id: profileName
           type:
             - string
@@ -613,66 +837,118 @@ items:
         - id: parameters
           type:
             - object
-          description: "The Traffic Manager profile parameters supplied\rto the CreateOrUpdate operation."
+          description: |-
+            The Traffic Manager profile parameters supplied
+            to the CreateOrUpdate operation.
         - id: parameters.profileStatus
           type:
             - string
-          description: "Gets or sets the status of the\rTraffic Manager profile.  Possible values are 'Enabled' and 'Disabled'."
+          description: >-
+            Gets or sets the status of the
+
+            Traffic Manager profile.  Possible values are 'Enabled' and
+            'Disabled'.
           optional: true
         - id: parameters.trafficRoutingMethod
           type:
             - string
-          description: "Gets or sets the traffic\rrouting method of the Traffic Manager profile.  Possible values are\r'Performance', 'Weighted', 'Priority' or 'Geographic'."
+          description: |-
+            Gets or sets the traffic
+            routing method of the Traffic Manager profile.  Possible values are
+            'Performance', 'Weighted', 'Priority' or 'Geographic'.
           optional: true
         - id: parameters.dnsConfig
           type:
             - object
-          description: "Gets or sets the DNS settings of the\rTraffic Manager profile."
+          description: |-
+            Gets or sets the DNS settings of the
+            Traffic Manager profile.
           optional: true
         - id: parameters.dnsConfig.relativeName
           type:
             - string
-          description: "Gets or sets the\rrelative DNS name provided by this Traffic Manager profile.  This value is\rcombined with the DNS domain name used by Azure Traffic Manager to form the\rfully-qualified domain name (FQDN) of the profile."
+          description: >-
+            Gets or sets the
+
+            relative DNS name provided by this Traffic Manager profile.  This
+            value is
+
+            combined with the DNS domain name used by Azure Traffic Manager to
+            form the
+
+            fully-qualified domain name (FQDN) of the profile.
           optional: true
         - id: parameters.dnsConfig.fqdn
           type:
             - string
-          description: "Gets or sets the fully-qualified\rdomain name (FQDN) of the Traffic Manager profile.  This is formed from the\rconcatenation of the RelativeName with the DNS domain used by Azure Traffic\rManager."
+          description: >-
+            Gets or sets the fully-qualified
+
+            domain name (FQDN) of the Traffic Manager profile.  This is formed
+            from the
+
+            concatenation of the RelativeName with the DNS domain used by Azure
+            Traffic
+
+            Manager.
           optional: true
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: >-
+            Gets or sets the DNS
+
+            Ttime-To-Live (TTL), in seconds.  This informs the local DNS
+            resolvers and
+
+            DNS clients how long to cache DNS responses provided by this Traffic
+            Manager
+
+            profile.
           optional: true
         - id: parameters.monitorConfig
           type:
             - object
-          description: "Gets or sets the endpoint\rmonitoring settings of the Traffic Manager profile."
+          description: |-
+            Gets or sets the endpoint
+            monitoring settings of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.profileMonitorStatus
           type:
             - string
-          description: "Gets or sets\rthe profile-level monitoring status of the Traffic Manager profile."
+          description: |-
+            Gets or sets
+            the profile-level monitoring status of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: |-
+            Gets or sets the
+            protocol (HTTP or HTTPS) used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.port
           type:
             - number
-          description: "Gets or sets the TCP port\rused to probe for endpoint health."
+          description: |-
+            Gets or sets the TCP port
+            used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.path
           type:
             - string
-          description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          description: >-
+            Gets or sets the path
+
+            relative to the endpoint domain name used to probe for endpoint
+            health.
           optional: true
         - id: parameters.endpoints
           type:
             - array
-          description: "Gets or sets the list of endpoints in\rthe Traffic Manager profile."
+          description: |-
+            Gets or sets the list of endpoints in
+            the Traffic Manager profile.
           optional: true
         - id: parameters.location
           type:
@@ -692,7 +968,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -703,7 +981,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, profileName, parameters,
         options, optionalCallback)
@@ -738,11 +1020,15 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile to be deleted."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile to be deleted.
         - id: profileName
           type:
             - string
-          description: "The name of the Traffic Manager profile to be\rdeleted."
+          description: |-
+            The name of the Traffic Manager profile to be
+            deleted.
         - id: options
           type:
             - object
@@ -751,7 +1037,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -777,19 +1065,47 @@ items:
         value: '{DeleteOperationResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeleteOperationResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeleteOperationResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DeleteOperationResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DeleteOperationResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile to be deleted."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile to be deleted.
         - id: profileName
           type:
             - string
-          description: "The name of the Traffic Manager profile to be\rdeleted."
+          description: |-
+            The name of the Traffic Manager profile to be
+            deleted.
         - id: options
           type:
             - object
@@ -798,7 +1114,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -809,7 +1127,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, profileName, options,
         optionalCallback)
@@ -840,7 +1162,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile.
         - id: profileName
           type:
             - string
@@ -848,66 +1172,118 @@ items:
         - id: parameters
           type:
             - object
-          description: "The Traffic Manager profile parameters supplied\rto the Update operation."
+          description: |-
+            The Traffic Manager profile parameters supplied
+            to the Update operation.
         - id: parameters.profileStatus
           type:
             - string
-          description: "Gets or sets the status of the\rTraffic Manager profile.  Possible values are 'Enabled' and 'Disabled'."
+          description: >-
+            Gets or sets the status of the
+
+            Traffic Manager profile.  Possible values are 'Enabled' and
+            'Disabled'.
           optional: true
         - id: parameters.trafficRoutingMethod
           type:
             - string
-          description: "Gets or sets the traffic\rrouting method of the Traffic Manager profile.  Possible values are\r'Performance', 'Weighted', 'Priority' or 'Geographic'."
+          description: |-
+            Gets or sets the traffic
+            routing method of the Traffic Manager profile.  Possible values are
+            'Performance', 'Weighted', 'Priority' or 'Geographic'.
           optional: true
         - id: parameters.dnsConfig
           type:
             - object
-          description: "Gets or sets the DNS settings of the\rTraffic Manager profile."
+          description: |-
+            Gets or sets the DNS settings of the
+            Traffic Manager profile.
           optional: true
         - id: parameters.dnsConfig.relativeName
           type:
             - string
-          description: "Gets or sets the\rrelative DNS name provided by this Traffic Manager profile.  This value is\rcombined with the DNS domain name used by Azure Traffic Manager to form the\rfully-qualified domain name (FQDN) of the profile."
+          description: >-
+            Gets or sets the
+
+            relative DNS name provided by this Traffic Manager profile.  This
+            value is
+
+            combined with the DNS domain name used by Azure Traffic Manager to
+            form the
+
+            fully-qualified domain name (FQDN) of the profile.
           optional: true
         - id: parameters.dnsConfig.fqdn
           type:
             - string
-          description: "Gets or sets the fully-qualified\rdomain name (FQDN) of the Traffic Manager profile.  This is formed from the\rconcatenation of the RelativeName with the DNS domain used by Azure Traffic\rManager."
+          description: >-
+            Gets or sets the fully-qualified
+
+            domain name (FQDN) of the Traffic Manager profile.  This is formed
+            from the
+
+            concatenation of the RelativeName with the DNS domain used by Azure
+            Traffic
+
+            Manager.
           optional: true
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: >-
+            Gets or sets the DNS
+
+            Ttime-To-Live (TTL), in seconds.  This informs the local DNS
+            resolvers and
+
+            DNS clients how long to cache DNS responses provided by this Traffic
+            Manager
+
+            profile.
           optional: true
         - id: parameters.monitorConfig
           type:
             - object
-          description: "Gets or sets the endpoint\rmonitoring settings of the Traffic Manager profile."
+          description: |-
+            Gets or sets the endpoint
+            monitoring settings of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.profileMonitorStatus
           type:
             - string
-          description: "Gets or sets\rthe profile-level monitoring status of the Traffic Manager profile."
+          description: |-
+            Gets or sets
+            the profile-level monitoring status of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: |-
+            Gets or sets the
+            protocol (HTTP or HTTPS) used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.port
           type:
             - number
-          description: "Gets or sets the TCP port\rused to probe for endpoint health."
+          description: |-
+            Gets or sets the TCP port
+            used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.path
           type:
             - string
-          description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          description: >-
+            Gets or sets the path
+
+            relative to the endpoint domain name used to probe for endpoint
+            health.
           optional: true
         - id: parameters.endpoints
           type:
             - array
-          description: "Gets or sets the list of endpoints in\rthe Traffic Manager profile."
+          description: |-
+            Gets or sets the list of endpoints in
+            the Traffic Manager profile.
           optional: true
         - id: parameters.location
           type:
@@ -927,7 +1303,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -955,15 +1333,41 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group containing\rthe Traffic Manager profile."
+          description: |-
+            The name of the resource group containing
+            the Traffic Manager profile.
         - id: profileName
           type:
             - string
@@ -971,66 +1375,118 @@ items:
         - id: parameters
           type:
             - object
-          description: "The Traffic Manager profile parameters supplied\rto the Update operation."
+          description: |-
+            The Traffic Manager profile parameters supplied
+            to the Update operation.
         - id: parameters.profileStatus
           type:
             - string
-          description: "Gets or sets the status of the\rTraffic Manager profile.  Possible values are 'Enabled' and 'Disabled'."
+          description: >-
+            Gets or sets the status of the
+
+            Traffic Manager profile.  Possible values are 'Enabled' and
+            'Disabled'.
           optional: true
         - id: parameters.trafficRoutingMethod
           type:
             - string
-          description: "Gets or sets the traffic\rrouting method of the Traffic Manager profile.  Possible values are\r'Performance', 'Weighted', 'Priority' or 'Geographic'."
+          description: |-
+            Gets or sets the traffic
+            routing method of the Traffic Manager profile.  Possible values are
+            'Performance', 'Weighted', 'Priority' or 'Geographic'.
           optional: true
         - id: parameters.dnsConfig
           type:
             - object
-          description: "Gets or sets the DNS settings of the\rTraffic Manager profile."
+          description: |-
+            Gets or sets the DNS settings of the
+            Traffic Manager profile.
           optional: true
         - id: parameters.dnsConfig.relativeName
           type:
             - string
-          description: "Gets or sets the\rrelative DNS name provided by this Traffic Manager profile.  This value is\rcombined with the DNS domain name used by Azure Traffic Manager to form the\rfully-qualified domain name (FQDN) of the profile."
+          description: >-
+            Gets or sets the
+
+            relative DNS name provided by this Traffic Manager profile.  This
+            value is
+
+            combined with the DNS domain name used by Azure Traffic Manager to
+            form the
+
+            fully-qualified domain name (FQDN) of the profile.
           optional: true
         - id: parameters.dnsConfig.fqdn
           type:
             - string
-          description: "Gets or sets the fully-qualified\rdomain name (FQDN) of the Traffic Manager profile.  This is formed from the\rconcatenation of the RelativeName with the DNS domain used by Azure Traffic\rManager."
+          description: >-
+            Gets or sets the fully-qualified
+
+            domain name (FQDN) of the Traffic Manager profile.  This is formed
+            from the
+
+            concatenation of the RelativeName with the DNS domain used by Azure
+            Traffic
+
+            Manager.
           optional: true
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: >-
+            Gets or sets the DNS
+
+            Ttime-To-Live (TTL), in seconds.  This informs the local DNS
+            resolvers and
+
+            DNS clients how long to cache DNS responses provided by this Traffic
+            Manager
+
+            profile.
           optional: true
         - id: parameters.monitorConfig
           type:
             - object
-          description: "Gets or sets the endpoint\rmonitoring settings of the Traffic Manager profile."
+          description: |-
+            Gets or sets the endpoint
+            monitoring settings of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.profileMonitorStatus
           type:
             - string
-          description: "Gets or sets\rthe profile-level monitoring status of the Traffic Manager profile."
+          description: |-
+            Gets or sets
+            the profile-level monitoring status of the Traffic Manager profile.
           optional: true
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: |-
+            Gets or sets the
+            protocol (HTTP or HTTPS) used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.port
           type:
             - number
-          description: "Gets or sets the TCP port\rused to probe for endpoint health."
+          description: |-
+            Gets or sets the TCP port
+            used to probe for endpoint health.
           optional: true
         - id: parameters.monitorConfig.path
           type:
             - string
-          description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          description: >-
+            Gets or sets the path
+
+            relative to the endpoint domain name used to probe for endpoint
+            health.
           optional: true
         - id: parameters.endpoints
           type:
             - array
-          description: "Gets or sets the list of endpoints in\rthe Traffic Manager profile."
+          description: |-
+            Gets or sets the list of endpoints in
+            the Traffic Manager profile.
           optional: true
         - id: parameters.location
           type:
@@ -1050,7 +1506,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1061,7 +1519,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function update(resourceGroupName, profileName, parameters, options,
         optionalCallback)

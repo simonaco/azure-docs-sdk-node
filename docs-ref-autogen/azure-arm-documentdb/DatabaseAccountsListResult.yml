@@ -3,7 +3,9 @@ items:
   - uid: azure-arm-documentdb.DatabaseAccountsListResult
     id: azure-arm-documentdb.DatabaseAccountsListResult
     name: DatabaseAccountsListResult
-    summary: "The List operation response, that contains the database accounts and their\rproperties."
+    summary: |-
+      The List operation response, that contains the database accounts and their
+      properties.
     fullName: azure-arm-documentdb.DatabaseAccountsListResult
     source:
       id: azure-arm-documentdb.DatabaseAccountsListResult

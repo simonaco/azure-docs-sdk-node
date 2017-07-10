@@ -93,11 +93,15 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Put disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Put disk
+            operation.
         - id: disk.sku
           type:
             - object
@@ -106,25 +110,45 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: disk.osType
           type:
             - string
-          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            The Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.creationData
           type:
             - object
-          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
+          description: |-
+            Disk source information. CreationData
+            information cannot be changed after the disk has been created.
         - id: disk.creationData.createOption
           type:
             - string
-          description: "This enumerates the possible\rsources of a disk's creation. Possible values include: 'Empty', 'Attach',\r'FromImage', 'Import', 'Copy'"
+          description: >-
+            This enumerates the possible
+
+            sources of a disk's creation. Possible values include: 'Empty',
+            'Attach',
+
+            'FromImage', 'Import', 'Copy'
         - id: disk.creationData.storageAccountId
           type:
             - string
-          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
+          description: >-
+            If createOption is
+
+            Import, the Azure Resource Manager identifier of the storage account
+
+            containing the blob to import as a disk. Required only if the blob
+            is in a
+
+            different subscription
           optional: true
         - id: disk.creationData.imageReference
           type:
@@ -134,41 +158,81 @@ items:
         - id: disk.creationData.imageReference.id
           type:
             - string
-          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
+          description: >-
+            A relative uri
+
+            containing either a Platform Imgage Repository or user image
+            reference.
         - id: disk.creationData.imageReference.lun
           type:
             - number
-          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
+          description: >-
+            If the disk is
+
+            created from an image's data disk, this is an index that indicates
+            which of
+
+            the data disks in the image to use. For OS disks, this field is
+            null.
           optional: true
         - id: disk.creationData.sourceUri
           type:
             - string
-          description: "If creationOption is Import,\rthis is the URI of a blob to be imported into a managed disk."
+          description: |-
+            If creationOption is Import,
+            this is the URI of a blob to be imported into a managed disk.
           optional: true
         - id: disk.creationData.sourceResourceId
           type:
             - string
-          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
+          description: |-
+            If createOption is
+            Copy, this is the ARM id of the source snapshot or disk.
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -177,11 +241,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -195,7 +263,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.location
           type:
             - string
@@ -213,7 +283,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -241,8 +313,32 @@ items:
         value: '{Disk} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -253,11 +349,15 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Put disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Put disk
+            operation.
         - id: disk.sku
           type:
             - object
@@ -266,25 +366,45 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: disk.osType
           type:
             - string
-          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            The Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.creationData
           type:
             - object
-          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
+          description: |-
+            Disk source information. CreationData
+            information cannot be changed after the disk has been created.
         - id: disk.creationData.createOption
           type:
             - string
-          description: "This enumerates the possible\rsources of a disk's creation. Possible values include: 'Empty', 'Attach',\r'FromImage', 'Import', 'Copy'"
+          description: >-
+            This enumerates the possible
+
+            sources of a disk's creation. Possible values include: 'Empty',
+            'Attach',
+
+            'FromImage', 'Import', 'Copy'
         - id: disk.creationData.storageAccountId
           type:
             - string
-          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
+          description: >-
+            If createOption is
+
+            Import, the Azure Resource Manager identifier of the storage account
+
+            containing the blob to import as a disk. Required only if the blob
+            is in a
+
+            different subscription
           optional: true
         - id: disk.creationData.imageReference
           type:
@@ -294,41 +414,81 @@ items:
         - id: disk.creationData.imageReference.id
           type:
             - string
-          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
+          description: >-
+            A relative uri
+
+            containing either a Platform Imgage Repository or user image
+            reference.
         - id: disk.creationData.imageReference.lun
           type:
             - number
-          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
+          description: >-
+            If the disk is
+
+            created from an image's data disk, this is an index that indicates
+            which of
+
+            the data disks in the image to use. For OS disks, this field is
+            null.
           optional: true
         - id: disk.creationData.sourceUri
           type:
             - string
-          description: "If creationOption is Import,\rthis is the URI of a blob to be imported into a managed disk."
+          description: |-
+            If creationOption is Import,
+            this is the URI of a blob to be imported into a managed disk.
           optional: true
         - id: disk.creationData.sourceResourceId
           type:
             - string
-          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
+          description: |-
+            If createOption is
+            Copy, this is the ARM id of the source snapshot or disk.
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -337,11 +497,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -355,7 +519,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.location
           type:
             - string
@@ -373,7 +539,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -384,7 +552,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, diskName, disk, options,
         optionalCallback)
@@ -419,35 +591,66 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Patch disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Patch disk
+            operation.
         - id: disk.osType
           type:
             - string
-          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            the Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -456,11 +659,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -474,7 +681,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.tags
           type:
             - object
@@ -488,7 +697,9 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: options
           type:
@@ -498,7 +709,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -524,8 +737,32 @@ items:
         value: '{Disk} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -536,35 +773,66 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Patch disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Patch disk
+            operation.
         - id: disk.osType
           type:
             - string
-          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            the Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -573,11 +841,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -591,7 +863,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.tags
           type:
             - object
@@ -605,7 +879,9 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: options
           type:
@@ -615,7 +891,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -626,7 +904,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function update(resourceGroupName, diskName, disk, options,
         optionalCallback)
@@ -659,7 +941,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -668,7 +952,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -694,8 +980,32 @@ items:
         value: '{Disk} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -706,7 +1016,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -715,7 +1027,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -726,7 +1040,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function get(resourceGroupName, diskName, options, optionalCallback)'
     langs:
       - js
@@ -763,7 +1081,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -772,7 +1092,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -798,8 +1120,34 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -810,7 +1158,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -819,7 +1169,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -830,7 +1182,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, diskName, options,
         optionalCallback)
@@ -868,7 +1224,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -894,8 +1252,32 @@ items:
         value: '{DiskList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -911,7 +1293,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -922,7 +1306,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -954,7 +1342,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -976,8 +1366,32 @@ items:
         value: '{DiskList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -989,7 +1403,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1000,7 +1416,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1033,19 +1453,27 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: grantAccessData
           type:
             - object
-          description: "Access data object supplied in the body of\rthe get disk access operation."
+          description: |-
+            Access data object supplied in the body of
+            the get disk access operation.
         - id: grantAccessData.access
           type:
             - string
-          description: "Possible values include: 'None',\r'Read'"
+          description: |-
+            Possible values include: 'None',
+            'Read'
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: "Time duration in seconds\runtil the SAS access expires."
+          description: |-
+            Time duration in seconds
+            until the SAS access expires.
         - id: options
           type:
             - object
@@ -1054,7 +1482,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1082,8 +1512,32 @@ items:
         value: '{AccessUri} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1094,19 +1548,27 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: grantAccessData
           type:
             - object
-          description: "Access data object supplied in the body of\rthe get disk access operation."
+          description: |-
+            Access data object supplied in the body of
+            the get disk access operation.
         - id: grantAccessData.access
           type:
             - string
-          description: "Possible values include: 'None',\r'Read'"
+          description: |-
+            Possible values include: 'None',
+            'Read'
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: "Time duration in seconds\runtil the SAS access expires."
+          description: |-
+            Time duration in seconds
+            until the SAS access expires.
         - id: options
           type:
             - object
@@ -1115,7 +1577,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1126,7 +1590,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function grantAccess(resourceGroupName, diskName, grantAccessData,
         options, optionalCallback)
@@ -1165,7 +1633,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -1174,7 +1644,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1200,8 +1672,34 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1212,7 +1710,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -1221,7 +1721,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1232,7 +1734,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function revokeAccess(resourceGroupName, diskName, options,
         optionalCallback)
@@ -1267,11 +1773,15 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Put disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Put disk
+            operation.
         - id: disk.sku
           type:
             - object
@@ -1280,25 +1790,45 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: disk.osType
           type:
             - string
-          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            The Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.creationData
           type:
             - object
-          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
+          description: |-
+            Disk source information. CreationData
+            information cannot be changed after the disk has been created.
         - id: disk.creationData.createOption
           type:
             - string
-          description: "This enumerates the possible\rsources of a disk's creation. Possible values include: 'Empty', 'Attach',\r'FromImage', 'Import', 'Copy'"
+          description: >-
+            This enumerates the possible
+
+            sources of a disk's creation. Possible values include: 'Empty',
+            'Attach',
+
+            'FromImage', 'Import', 'Copy'
         - id: disk.creationData.storageAccountId
           type:
             - string
-          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
+          description: >-
+            If createOption is
+
+            Import, the Azure Resource Manager identifier of the storage account
+
+            containing the blob to import as a disk. Required only if the blob
+            is in a
+
+            different subscription
           optional: true
         - id: disk.creationData.imageReference
           type:
@@ -1308,41 +1838,81 @@ items:
         - id: disk.creationData.imageReference.id
           type:
             - string
-          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
+          description: >-
+            A relative uri
+
+            containing either a Platform Imgage Repository or user image
+            reference.
         - id: disk.creationData.imageReference.lun
           type:
             - number
-          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
+          description: >-
+            If the disk is
+
+            created from an image's data disk, this is an index that indicates
+            which of
+
+            the data disks in the image to use. For OS disks, this field is
+            null.
           optional: true
         - id: disk.creationData.sourceUri
           type:
             - string
-          description: "If creationOption is Import,\rthis is the URI of a blob to be imported into a managed disk."
+          description: |-
+            If creationOption is Import,
+            this is the URI of a blob to be imported into a managed disk.
           optional: true
         - id: disk.creationData.sourceResourceId
           type:
             - string
-          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
+          description: |-
+            If createOption is
+            Copy, this is the ARM id of the source snapshot or disk.
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -1351,11 +1921,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -1369,7 +1943,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.location
           type:
             - string
@@ -1387,7 +1963,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1415,8 +1993,32 @@ items:
         value: '{Disk} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1427,11 +2029,15 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Put disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Put disk
+            operation.
         - id: disk.sku
           type:
             - object
@@ -1440,25 +2046,45 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: disk.osType
           type:
             - string
-          description: "The Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            The Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.creationData
           type:
             - object
-          description: "Disk source information. CreationData\rinformation cannot be changed after the disk has been created."
+          description: |-
+            Disk source information. CreationData
+            information cannot be changed after the disk has been created.
         - id: disk.creationData.createOption
           type:
             - string
-          description: "This enumerates the possible\rsources of a disk's creation. Possible values include: 'Empty', 'Attach',\r'FromImage', 'Import', 'Copy'"
+          description: >-
+            This enumerates the possible
+
+            sources of a disk's creation. Possible values include: 'Empty',
+            'Attach',
+
+            'FromImage', 'Import', 'Copy'
         - id: disk.creationData.storageAccountId
           type:
             - string
-          description: "If createOption is\rImport, the Azure Resource Manager identifier of the storage account\rcontaining the blob to import as a disk. Required only if the blob is in a\rdifferent subscription"
+          description: >-
+            If createOption is
+
+            Import, the Azure Resource Manager identifier of the storage account
+
+            containing the blob to import as a disk. Required only if the blob
+            is in a
+
+            different subscription
           optional: true
         - id: disk.creationData.imageReference
           type:
@@ -1468,41 +2094,81 @@ items:
         - id: disk.creationData.imageReference.id
           type:
             - string
-          description: "A relative uri\rcontaining either a Platform Imgage Repository or user image reference."
+          description: >-
+            A relative uri
+
+            containing either a Platform Imgage Repository or user image
+            reference.
         - id: disk.creationData.imageReference.lun
           type:
             - number
-          description: "If the disk is\rcreated from an image's data disk, this is an index that indicates which of\rthe data disks in the image to use. For OS disks, this field is null."
+          description: >-
+            If the disk is
+
+            created from an image's data disk, this is an index that indicates
+            which of
+
+            the data disks in the image to use. For OS disks, this field is
+            null.
           optional: true
         - id: disk.creationData.sourceUri
           type:
             - string
-          description: "If creationOption is Import,\rthis is the URI of a blob to be imported into a managed disk."
+          description: |-
+            If creationOption is Import,
+            this is the URI of a blob to be imported into a managed disk.
           optional: true
         - id: disk.creationData.sourceResourceId
           type:
             - string
-          description: "If createOption is\rCopy, this is the ARM id of the source snapshot or disk."
+          description: |-
+            If createOption is
+            Copy, this is the ARM id of the source snapshot or disk.
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -1511,11 +2177,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -1529,7 +2199,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.location
           type:
             - string
@@ -1547,7 +2219,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1558,7 +2232,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginCreateOrUpdate(resourceGroupName, diskName, disk, options,
         optionalCallback)
@@ -1593,35 +2271,66 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Patch disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Patch disk
+            operation.
         - id: disk.osType
           type:
             - string
-          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            the Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -1630,11 +2339,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -1648,7 +2361,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.tags
           type:
             - object
@@ -1662,7 +2377,9 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: options
           type:
@@ -1672,7 +2389,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1698,8 +2417,32 @@ items:
         value: '{Disk} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Disk} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1710,35 +2453,66 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: disk
           type:
             - object
-          description: "Disk object supplied in the body of the Patch disk\roperation."
+          description: |-
+            Disk object supplied in the body of the Patch disk
+            operation.
         - id: disk.osType
           type:
             - string
-          description: "the Operating System type. Possible values\rinclude: 'Windows', 'Linux'"
+          description: |-
+            the Operating System type. Possible values
+            include: 'Windows', 'Linux'
           optional: true
         - id: disk.diskSizeGB
           type:
             - number
-          description: "If creationData.createOption is Empty,\rthis field is mandatory and it indicates the size of the VHD to create. If\rthis field is present for updates or creation with other options, it\rindicates a resize. Resizes are only allowed if the disk is not attached to\ra running VM, and can only increase the disk's size."
+          description: >-
+            If creationData.createOption is Empty,
+
+            this field is mandatory and it indicates the size of the VHD to
+            create. If
+
+            this field is present for updates or creation with other options, it
+
+            indicates a resize. Resizes are only allowed if the disk is not
+            attached to
+
+            a running VM, and can only increase the disk's size.
           optional: true
         - id: disk.encryptionSettings
           type:
             - object
-          description: "Encryption settings for disk or\rsnapshot"
+          description: |-
+            Encryption settings for disk or
+            snapshot
           optional: true
         - id: disk.encryptionSettings.enabled
           type:
             - boolean
-          description: "Set this flag to true and\rprovide DiskEncryptionKey and optional KeyEncryptionKey to enable\rencryption. Set this flag to false and remove DiskEncryptionKey and\rKeyEncryptionKey to disable encryption. If EncryptionSettings is null in the\rrequest object, the existing settings remain unchanged."
+          description: >-
+            Set this flag to true and
+
+            provide DiskEncryptionKey and optional KeyEncryptionKey to enable
+
+            encryption. Set this flag to false and remove DiskEncryptionKey and
+
+            KeyEncryptionKey to disable encryption. If EncryptionSettings is
+            null in the
+
+            request object, the existing settings remain unchanged.
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey
           type:
             - object
-          description: "Key Vault Secret\rUrl and vault id of the disk encryption key"
+          description: |-
+            Key Vault Secret
+            Url and vault id of the disk encryption key
           optional: true
         - id: disk.encryptionSettings.diskEncryptionKey.sourceVault
           type:
@@ -1747,11 +2521,15 @@ items:
         - id: disk.encryptionSettings.diskEncryptionKey.secretUrl
           type:
             - string
-          description: "Url\rpointing to a key or secret in KeyVault"
+          description: |-
+            Url
+            pointing to a key or secret in KeyVault
         - id: disk.encryptionSettings.keyEncryptionKey
           type:
             - object
-          description: "Key Vault Key Url\rand vault id of the key encryption key"
+          description: |-
+            Key Vault Key Url
+            and vault id of the key encryption key
           optional: true
         - id: disk.encryptionSettings.keyEncryptionKey.sourceVault
           type:
@@ -1765,7 +2543,9 @@ items:
         - id: disk.encryptionSettings.keyEncryptionKey.keyUrl
           type:
             - string
-          description: "Url pointing\rto a key or secret in KeyVault"
+          description: |-
+            Url pointing
+            to a key or secret in KeyVault
         - id: disk.tags
           type:
             - object
@@ -1779,7 +2559,9 @@ items:
         - id: disk.sku.name
           type:
             - string
-          description: "The sku name. Possible values include:\r'Standard_LRS', 'Premium_LRS'"
+          description: |-
+            The sku name. Possible values include:
+            'Standard_LRS', 'Premium_LRS'
           optional: true
         - id: options
           type:
@@ -1789,7 +2571,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1800,7 +2584,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginUpdate(resourceGroupName, diskName, disk, options,
         optionalCallback)
@@ -1839,7 +2627,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -1848,7 +2638,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1874,8 +2666,34 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1886,7 +2704,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -1895,7 +2715,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1906,7 +2728,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginDeleteMethod(resourceGroupName, diskName, options,
         optionalCallback)
@@ -1941,19 +2767,27 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: grantAccessData
           type:
             - object
-          description: "Access data object supplied in the body of\rthe get disk access operation."
+          description: |-
+            Access data object supplied in the body of
+            the get disk access operation.
         - id: grantAccessData.access
           type:
             - string
-          description: "Possible values include: 'None',\r'Read'"
+          description: |-
+            Possible values include: 'None',
+            'Read'
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: "Time duration in seconds\runtil the SAS access expires."
+          description: |-
+            Time duration in seconds
+            until the SAS access expires.
         - id: options
           type:
             - object
@@ -1962,7 +2796,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1990,8 +2826,32 @@ items:
         value: '{AccessUri} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AccessUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2002,19 +2862,27 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: grantAccessData
           type:
             - object
-          description: "Access data object supplied in the body of\rthe get disk access operation."
+          description: |-
+            Access data object supplied in the body of
+            the get disk access operation.
         - id: grantAccessData.access
           type:
             - string
-          description: "Possible values include: 'None',\r'Read'"
+          description: |-
+            Possible values include: 'None',
+            'Read'
         - id: grantAccessData.durationInSeconds
           type:
             - number
-          description: "Time duration in seconds\runtil the SAS access expires."
+          description: |-
+            Time duration in seconds
+            until the SAS access expires.
         - id: options
           type:
             - object
@@ -2023,7 +2891,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2034,7 +2904,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginGrantAccess(resourceGroupName, diskName, grantAccessData,
         options, optionalCallback)
@@ -2073,7 +2947,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -2082,7 +2958,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2108,8 +2986,34 @@ items:
         value: '{OperationStatusResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link OperationStatusResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link OperationStatusResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2120,7 +3024,9 @@ items:
         - id: diskName
           type:
             - string
-          description: "The name of the disk within the given subscription\rand resource group."
+          description: |-
+            The name of the disk within the given subscription
+            and resource group.
         - id: options
           type:
             - object
@@ -2129,7 +3035,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2140,7 +3048,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginRevokeAccess(resourceGroupName, diskName, options,
         optionalCallback)
@@ -2169,7 +3081,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2178,7 +3092,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2204,15 +3120,41 @@ items:
         value: '{DiskList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2221,7 +3163,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2232,7 +3176,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -2261,7 +3209,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2270,7 +3220,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2292,15 +3244,41 @@ items:
         value: '{DiskList} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DiskList} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2309,7 +3287,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2320,7 +3300,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

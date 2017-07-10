@@ -89,7 +89,9 @@ items:
         - id: parameters
           type:
             - object
-          description: "Parameters supplied to the create or update redis\rfirewall rule operation."
+          description: |-
+            Parameters supplied to the create or update redis
+            firewall rule operation.
         - id: parameters.startIP
           type:
             - string
@@ -106,7 +108,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -134,8 +138,32 @@ items:
         value: '{RedisFirewallRule} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisFirewallRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisFirewallRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RedisFirewallRule} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RedisFirewallRule} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -154,7 +182,9 @@ items:
         - id: parameters
           type:
             - object
-          description: "Parameters supplied to the create or update redis\rfirewall rule operation."
+          description: |-
+            Parameters supplied to the create or update redis
+            firewall rule operation.
         - id: parameters.startIP
           type:
             - string
@@ -171,7 +201,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -182,7 +214,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, cacheName, ruleName,
         parameters, options, optionalCallback)
@@ -236,7 +272,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -262,8 +300,32 @@ items:
         value: '{RedisFirewallRule} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisFirewallRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link RedisFirewallRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RedisFirewallRule} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RedisFirewallRule} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -287,7 +349,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -298,7 +362,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function get(resourceGroupName, cacheName, ruleName, options,
         optionalCallback)
@@ -348,7 +416,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -376,8 +446,30 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -401,7 +493,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -412,7 +506,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, cacheName, ruleName, options,
         optionalCallback)

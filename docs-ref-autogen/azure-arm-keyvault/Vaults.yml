@@ -74,7 +74,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe server belongs."
+          description: |-
+            The name of the Resource Group to which
+            the server belongs.
         - id: vaultName
           type:
             - string
@@ -86,11 +88,15 @@ items:
         - id: parameters.location
           type:
             - string
-          description: "The supported Azure location where the\rkey vault should be created."
+          description: |-
+            The supported Azure location where the
+            key vault should be created.
         - id: parameters.tags
           type:
             - object
-          description: "The tags that will be assigned to the key\rvault."
+          description: |-
+            The tags that will be assigned to the key
+            vault.
           optional: true
         - id: parameters.properties
           type:
@@ -99,12 +105,18 @@ items:
         - id: parameters.properties.vaultUri
           type:
             - string
-          description: "The URI of the vault for\rperforming operations on keys and secrets."
+          description: |-
+            The URI of the vault for
+            performing operations on keys and secrets.
           optional: true
         - id: parameters.properties.tenantId
           type:
             - azure-arm-keyvault.uuid
-          description: "The Azure Active Directory\rtenant ID that should be used for authenticating requests to the key vault."
+          description: >-
+            The Azure Active Directory
+
+            tenant ID that should be used for authenticating requests to the key
+            vault.
         - id: parameters.properties.sku
           type:
             - object
@@ -112,30 +124,61 @@ items:
         - id: parameters.properties.sku.name
           type:
             - string
-          description: "SKU name to specify whether\rthe key vault is a standard vault or a premium vault. Possible values\rinclude: 'standard', 'premium'"
+          description: >-
+            SKU name to specify whether
+
+            the key vault is a standard vault or a premium vault. Possible
+            values
+
+            include: 'standard', 'premium'
         - id: parameters.properties.accessPolicies
           type:
             - array
-          description: "An array of 0 to 16\ridentities that have access to the key vault. All identities in the array\rmust use the same tenant ID as the key vault's tenant ID."
+          description: >-
+            An array of 0 to 16
+
+            identities that have access to the key vault. All identities in the
+            array
+
+            must use the same tenant ID as the key vault's tenant ID.
         - id: parameters.properties.enabledForDeployment
           type:
             - boolean
-          description: "Property to\rspecify whether Azure Virtual Machines are permitted to retrieve\rcertificates stored as secrets from the key vault."
+          description: |-
+            Property to
+            specify whether Azure Virtual Machines are permitted to retrieve
+            certificates stored as secrets from the key vault.
           optional: true
         - id: parameters.properties.enabledForDiskEncryption
           type:
             - boolean
-          description: "Property\rto specify whether Azure Disk Encryption is permitted to retrieve secrets\rfrom the vault and unwrap keys."
+          description: >-
+            Property
+
+            to specify whether Azure Disk Encryption is permitted to retrieve
+            secrets
+
+            from the vault and unwrap keys.
           optional: true
         - id: parameters.properties.enabledForTemplateDeployment
           type:
             - boolean
-          description: "Property to specify whether Azure Resource Manager is permitted to retrieve\rsecrets from the key vault."
+          description: >-
+            Property to specify whether Azure Resource Manager is permitted to
+            retrieve
+
+            secrets from the key vault.
           optional: true
         - id: parameters.properties.enableSoftDelete
           type:
             - boolean
-          description: "Property to\rspecify whether the 'soft delete' functionality is enabled for this key\rvault."
+          description: >-
+            Property to
+
+            specify whether the 'soft delete' functionality is enabled for this
+            key
+
+            vault.
           optional: true
         - id: options
           type:
@@ -145,7 +188,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -173,15 +218,41 @@ items:
         value: '{Vault} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Vault} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Vault} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Vault} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Vault} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe server belongs."
+          description: |-
+            The name of the Resource Group to which
+            the server belongs.
         - id: vaultName
           type:
             - string
@@ -193,11 +264,15 @@ items:
         - id: parameters.location
           type:
             - string
-          description: "The supported Azure location where the\rkey vault should be created."
+          description: |-
+            The supported Azure location where the
+            key vault should be created.
         - id: parameters.tags
           type:
             - object
-          description: "The tags that will be assigned to the key\rvault."
+          description: |-
+            The tags that will be assigned to the key
+            vault.
           optional: true
         - id: parameters.properties
           type:
@@ -206,12 +281,18 @@ items:
         - id: parameters.properties.vaultUri
           type:
             - string
-          description: "The URI of the vault for\rperforming operations on keys and secrets."
+          description: |-
+            The URI of the vault for
+            performing operations on keys and secrets.
           optional: true
         - id: parameters.properties.tenantId
           type:
             - azure-arm-keyvault.uuid
-          description: "The Azure Active Directory\rtenant ID that should be used for authenticating requests to the key vault."
+          description: >-
+            The Azure Active Directory
+
+            tenant ID that should be used for authenticating requests to the key
+            vault.
         - id: parameters.properties.sku
           type:
             - object
@@ -219,30 +300,61 @@ items:
         - id: parameters.properties.sku.name
           type:
             - string
-          description: "SKU name to specify whether\rthe key vault is a standard vault or a premium vault. Possible values\rinclude: 'standard', 'premium'"
+          description: >-
+            SKU name to specify whether
+
+            the key vault is a standard vault or a premium vault. Possible
+            values
+
+            include: 'standard', 'premium'
         - id: parameters.properties.accessPolicies
           type:
             - array
-          description: "An array of 0 to 16\ridentities that have access to the key vault. All identities in the array\rmust use the same tenant ID as the key vault's tenant ID."
+          description: >-
+            An array of 0 to 16
+
+            identities that have access to the key vault. All identities in the
+            array
+
+            must use the same tenant ID as the key vault's tenant ID.
         - id: parameters.properties.enabledForDeployment
           type:
             - boolean
-          description: "Property to\rspecify whether Azure Virtual Machines are permitted to retrieve\rcertificates stored as secrets from the key vault."
+          description: |-
+            Property to
+            specify whether Azure Virtual Machines are permitted to retrieve
+            certificates stored as secrets from the key vault.
           optional: true
         - id: parameters.properties.enabledForDiskEncryption
           type:
             - boolean
-          description: "Property\rto specify whether Azure Disk Encryption is permitted to retrieve secrets\rfrom the vault and unwrap keys."
+          description: >-
+            Property
+
+            to specify whether Azure Disk Encryption is permitted to retrieve
+            secrets
+
+            from the vault and unwrap keys.
           optional: true
         - id: parameters.properties.enabledForTemplateDeployment
           type:
             - boolean
-          description: "Property to specify whether Azure Resource Manager is permitted to retrieve\rsecrets from the key vault."
+          description: >-
+            Property to specify whether Azure Resource Manager is permitted to
+            retrieve
+
+            secrets from the key vault.
           optional: true
         - id: parameters.properties.enableSoftDelete
           type:
             - boolean
-          description: "Property to\rspecify whether the 'soft delete' functionality is enabled for this key\rvault."
+          description: >-
+            Property to
+
+            specify whether the 'soft delete' functionality is enabled for this
+            key
+
+            vault.
           optional: true
         - id: options
           type:
@@ -252,7 +364,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -263,7 +377,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, vaultName, parameters,
         options, optionalCallback)
@@ -294,7 +412,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe vault belongs."
+          description: |-
+            The name of the Resource Group to which
+            the vault belongs.
         - id: vaultName
           type:
             - string
@@ -307,7 +427,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -333,15 +455,39 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe vault belongs."
+          description: |-
+            The name of the Resource Group to which
+            the vault belongs.
         - id: vaultName
           type:
             - string
@@ -354,7 +500,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -365,7 +513,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, vaultName, options,
         optionalCallback)
@@ -394,7 +546,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe vault belongs."
+          description: |-
+            The name of the Resource Group to which
+            the vault belongs.
         - id: vaultName
           type:
             - string
@@ -407,7 +561,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -433,15 +589,41 @@ items:
         value: '{Vault} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Vault} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Vault} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Vault} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Vault} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe vault belongs."
+          description: |-
+            The name of the Resource Group to which
+            the vault belongs.
         - id: vaultName
           type:
             - string
@@ -454,7 +636,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -465,7 +649,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function get(resourceGroupName, vaultName, options, optionalCallback)'
     langs:
       - js
@@ -473,7 +661,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listByResourceGroupWithHttpOperationResponse'
     parent: azure-arm-keyvault.Vaults
     name: 'listByResourceGroupWithHttpOperationResponse(resourceGroupName, options)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription and within the specified resource group."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription and within the specified resource group.
     fullName: >-
       azure-arm-keyvault.Vaults.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
@@ -496,7 +686,9 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe vault belongs."
+          description: |-
+            The name of the Resource Group to which
+            the vault belongs.
         - id: options
           type:
             - object
@@ -510,7 +702,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -525,7 +719,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listByResourceGroup'
     parent: azure-arm-keyvault.Vaults
     name: 'listByResourceGroup(resourceGroupName, options, optionalCallback)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription and within the specified resource group."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription and within the specified resource group.
     fullName: >-
       azure-arm-keyvault.Vaults.listByResourceGroup(resourceGroupName, options,
       optionalCallback)
@@ -536,15 +732,41 @@ items:
         value: '{VaultListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link VaultListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link VaultListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VaultListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VaultListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the Resource Group to which\rthe vault belongs."
+          description: |-
+            The name of the Resource Group to which
+            the vault belongs.
         - id: options
           type:
             - object
@@ -558,7 +780,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -569,7 +793,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -579,7 +807,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listWithHttpOperationResponse'
     parent: azure-arm-keyvault.Vaults
     name: listWithHttpOperationResponse(options)
-    summary: "The List operation gets information about the vaults associated with the\rsubscription."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription.
     fullName: azure-arm-keyvault.Vaults.listWithHttpOperationResponse(options)
     tags:
       - originalTitle: resolve
@@ -610,7 +840,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -623,7 +855,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#list'
     parent: azure-arm-keyvault.Vaults
     name: 'list(options, optionalCallback)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription.
     fullName: 'azure-arm-keyvault.Vaults.list(options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -632,8 +866,32 @@ items:
         value: '{ResourceListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -650,7 +908,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -661,7 +921,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -669,7 +933,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listByResourceGroupNextWithHttpOperationResponse'
     parent: azure-arm-keyvault.Vaults
     name: 'listByResourceGroupNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription and within the specified resource group."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription and within the specified resource group.
     fullName: >-
       azure-arm-keyvault.Vaults.listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -692,7 +958,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -701,7 +969,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -716,7 +986,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listByResourceGroupNext'
     parent: azure-arm-keyvault.Vaults
     name: 'listByResourceGroupNext(nextPageLink, options, optionalCallback)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription and within the specified resource group."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription and within the specified resource group.
     fullName: >-
       azure-arm-keyvault.Vaults.listByResourceGroupNext(nextPageLink, options,
       optionalCallback)
@@ -727,15 +999,41 @@ items:
         value: '{VaultListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link VaultListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link VaultListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VaultListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VaultListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -744,7 +1042,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -755,7 +1055,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -765,7 +1069,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listNextWithHttpOperationResponse'
     parent: azure-arm-keyvault.Vaults
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription.
     fullName: >-
       azure-arm-keyvault.Vaults.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -788,7 +1094,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -797,7 +1105,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -810,7 +1120,9 @@ items:
     id: 'azure-arm-keyvault.Vaults#listNext'
     parent: azure-arm-keyvault.Vaults
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: "The List operation gets information about the vaults associated with the\rsubscription."
+    summary: |-
+      The List operation gets information about the vaults associated with the
+      subscription.
     fullName: >-
       azure-arm-keyvault.Vaults.listNext(nextPageLink, options,
       optionalCallback)
@@ -821,15 +1133,41 @@ items:
         value: '{ResourceListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -838,7 +1176,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -849,7 +1189,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

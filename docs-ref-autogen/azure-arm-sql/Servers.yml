@@ -117,7 +117,9 @@ items:
         - id: parameters.name
           type:
             - string
-          description: "The name whose availability is to be\rchecked."
+          description: |-
+            The name whose availability is to be
+            checked.
         - id: options
           type:
             - object
@@ -126,7 +128,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -152,8 +156,34 @@ items:
         value: '{CheckNameAvailabilityResponse} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link CheckNameAvailabilityResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link CheckNameAvailabilityResponse} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -164,7 +194,9 @@ items:
         - id: parameters.name
           type:
             - string
-          description: "The name whose availability is to be\rchecked."
+          description: |-
+            The name whose availability is to be
+            checked.
         - id: options
           type:
             - object
@@ -173,7 +205,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -184,7 +218,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function checkNameAvailability(parameters, options, optionalCallback)'
     langs:
       - js
@@ -219,7 +257,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -232,7 +276,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -261,15 +307,47 @@ items:
         value: '{BackupLongTermRetentionVault} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link BackupLongTermRetentionVault} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link BackupLongTermRetentionVault} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupLongTermRetentionVault} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupLongTermRetentionVault} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -282,7 +360,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -293,7 +373,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function getBackupLongTermRetentionVault(resourceGroupName, serverName,
         options, optionalCallback)
@@ -330,7 +414,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -338,11 +428,15 @@ items:
         - id: parameters
           type:
             - object
-          description: "The required parameters to update a backup long\rterm retention vault"
+          description: |-
+            The required parameters to update a backup long
+            term retention vault
         - id: parameters.recoveryServicesVaultResourceId
           type:
             - string
-          description: "The azure\rrecovery services vault resource id"
+          description: |-
+            The azure
+            recovery services vault resource id
           optional: true
         - id: options
           type:
@@ -352,7 +446,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -381,15 +477,47 @@ items:
         value: '{BackupLongTermRetentionVault} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link BackupLongTermRetentionVault} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link BackupLongTermRetentionVault} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupLongTermRetentionVault} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupLongTermRetentionVault} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -397,11 +525,15 @@ items:
         - id: parameters
           type:
             - object
-          description: "The required parameters to update a backup long\rterm retention vault"
+          description: |-
+            The required parameters to update a backup long
+            term retention vault
         - id: parameters.recoveryServicesVaultResourceId
           type:
             - string
-          description: "The azure\rrecovery services vault resource id"
+          description: |-
+            The azure
+            recovery services vault resource id
           optional: true
         - id: options
           type:
@@ -411,7 +543,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -422,7 +556,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createBackupLongTermRetentionVault(resourceGroupName,
         serverName, parameters, options, optionalCallback)
@@ -457,7 +595,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -465,7 +609,9 @@ items:
         - id: serviceObjectiveName
           type:
             - string
-          description: "The name of the service objective to\rretrieve."
+          description: |-
+            The name of the service objective to
+            retrieve.
         - id: options
           type:
             - object
@@ -474,7 +620,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -502,15 +650,45 @@ items:
         value: '{ServiceObjective} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServiceObjective} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServiceObjective} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceObjective} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceObjective} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -518,7 +696,9 @@ items:
         - id: serviceObjectiveName
           type:
             - string
-          description: "The name of the service objective to\rretrieve."
+          description: |-
+            The name of the service objective to
+            retrieve.
         - id: options
           type:
             - object
@@ -527,7 +707,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -538,7 +720,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function getServiceObjective(resourceGroupName, serverName,
         serviceObjectiveName, options, optionalCallback)
@@ -573,7 +759,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -586,7 +778,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -615,15 +809,47 @@ items:
         value: '{ServiceObjectiveListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServiceObjectiveListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServiceObjectiveListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceObjectiveListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceObjectiveListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -636,7 +862,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -647,7 +875,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listServiceObjectives(resourceGroupName, serverName, options,
         optionalCallback)
@@ -682,7 +914,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -695,7 +933,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -721,15 +961,45 @@ items:
         value: '{ServerUsageListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerUsageListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerUsageListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerUsageListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerUsageListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -742,7 +1012,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -753,7 +1025,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listUsages(resourceGroupName, serverName, options,
         optionalCallback)
@@ -789,7 +1065,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -811,8 +1089,32 @@ items:
         value: '{ServerListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -824,7 +1126,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -835,7 +1139,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -866,7 +1174,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: options
           type:
             - object
@@ -875,7 +1189,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -901,15 +1217,45 @@ items:
         value: '{ServerListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: options
           type:
             - object
@@ -918,7 +1264,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -929,7 +1277,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -958,7 +1310,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -971,7 +1329,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -997,15 +1357,45 @@ items:
         value: '{Server} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1018,7 +1408,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1029,7 +1421,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function get(resourceGroupName, serverName, options, optionalCallback)'
     langs:
       - js
@@ -1058,7 +1454,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1070,22 +1472,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -1109,7 +1525,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1137,15 +1555,45 @@ items:
         value: '{Server} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1157,22 +1605,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -1196,7 +1658,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1207,7 +1671,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, serverName, parameters,
         options, optionalCallback)
@@ -1238,7 +1706,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1251,7 +1725,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1277,15 +1753,43 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1298,7 +1802,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1309,7 +1815,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
@@ -1340,7 +1850,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1352,22 +1868,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -1391,7 +1921,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1419,15 +1951,45 @@ items:
         value: '{Server} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1439,22 +2001,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -1478,7 +2054,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1489,7 +2067,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function update(resourceGroupName, serverName, parameters, options,
         optionalCallback)
@@ -1524,7 +2106,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1537,7 +2125,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1566,15 +2156,47 @@ items:
         value: '{EncryptionProtectorListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtectorListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtectorListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtectorListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtectorListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1587,7 +2209,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1598,7 +2222,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listEncryptionProtectors(resourceGroupName, serverName,
         options, optionalCallback)
@@ -1633,7 +2261,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1646,7 +2280,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1675,15 +2311,45 @@ items:
         value: '{EncryptionProtector} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtector} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtector} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtector} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtector} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1696,7 +2362,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1707,7 +2375,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function getEncryptionProtector(resourceGroupName, serverName, options,
         optionalCallback)
@@ -1744,7 +2416,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1752,11 +2430,19 @@ items:
         - id: parameters
           type:
             - object
-          description: "The requested encryption protector resource\rstate."
+          description: |-
+            The requested encryption protector resource
+            state.
         - id: parameters.kind
           type:
             - string
-          description: "Kind of encryption protector. This is\rmetadata used for the Azure portal experience. Possible values include: '',\r'azurekeyvault', 'servicemanaged'"
+          description: >-
+            Kind of encryption protector. This is
+
+            metadata used for the Azure portal experience. Possible values
+            include: '',
+
+            'azurekeyvault', 'servicemanaged'
           optional: true
         - id: parameters.serverKeyName
           type:
@@ -1766,7 +2452,10 @@ items:
         - id: parameters.serverKeyType
           type:
             - string
-          description: "The encryption protector type\rlike 'ServiceManaged', 'AzureKeyVault'. Possible values include:\r'ServiceManaged', 'AzureKeyVault'"
+          description: |-
+            The encryption protector type
+            like 'ServiceManaged', 'AzureKeyVault'. Possible values include:
+            'ServiceManaged', 'AzureKeyVault'
           optional: true
         - id: options
           type:
@@ -1776,7 +2465,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1805,15 +2496,45 @@ items:
         value: '{EncryptionProtector} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtector} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtector} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtector} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtector} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1821,11 +2542,19 @@ items:
         - id: parameters
           type:
             - object
-          description: "The requested encryption protector resource\rstate."
+          description: |-
+            The requested encryption protector resource
+            state.
         - id: parameters.kind
           type:
             - string
-          description: "Kind of encryption protector. This is\rmetadata used for the Azure portal experience. Possible values include: '',\r'azurekeyvault', 'servicemanaged'"
+          description: >-
+            Kind of encryption protector. This is
+
+            metadata used for the Azure portal experience. Possible values
+            include: '',
+
+            'azurekeyvault', 'servicemanaged'
           optional: true
         - id: parameters.serverKeyName
           type:
@@ -1835,7 +2564,10 @@ items:
         - id: parameters.serverKeyType
           type:
             - string
-          description: "The encryption protector type\rlike 'ServiceManaged', 'AzureKeyVault'. Possible values include:\r'ServiceManaged', 'AzureKeyVault'"
+          description: |-
+            The encryption protector type
+            like 'ServiceManaged', 'AzureKeyVault'. Possible values include:
+            'ServiceManaged', 'AzureKeyVault'
           optional: true
         - id: options
           type:
@@ -1845,7 +2577,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1856,7 +2590,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdateEncryptionProtector(resourceGroupName,
         serverName, parameters, options, optionalCallback)
@@ -1893,7 +2631,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1901,11 +2645,15 @@ items:
         - id: parameters
           type:
             - object
-          description: "The required parameters to update a backup long\rterm retention vault"
+          description: |-
+            The required parameters to update a backup long
+            term retention vault
         - id: parameters.recoveryServicesVaultResourceId
           type:
             - string
-          description: "The azure\rrecovery services vault resource id"
+          description: |-
+            The azure
+            recovery services vault resource id
           optional: true
         - id: options
           type:
@@ -1915,7 +2663,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -1944,15 +2694,47 @@ items:
         value: '{BackupLongTermRetentionVault} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link BackupLongTermRetentionVault} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link BackupLongTermRetentionVault} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupLongTermRetentionVault} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupLongTermRetentionVault} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -1960,11 +2742,15 @@ items:
         - id: parameters
           type:
             - object
-          description: "The required parameters to update a backup long\rterm retention vault"
+          description: |-
+            The required parameters to update a backup long
+            term retention vault
         - id: parameters.recoveryServicesVaultResourceId
           type:
             - string
-          description: "The azure\rrecovery services vault resource id"
+          description: |-
+            The azure
+            recovery services vault resource id
           optional: true
         - id: options
           type:
@@ -1974,7 +2760,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -1985,7 +2773,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginCreateBackupLongTermRetentionVault(resourceGroupName,
         serverName, parameters, options, optionalCallback)
@@ -2016,7 +2808,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2028,22 +2826,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -2067,7 +2879,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2095,15 +2909,45 @@ items:
         value: '{Server} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2115,22 +2959,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -2154,7 +3012,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2165,7 +3025,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginCreateOrUpdate(resourceGroupName, serverName, parameters,
         options, optionalCallback)
@@ -2196,7 +3060,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2209,7 +3079,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2237,15 +3109,43 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2258,7 +3158,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2269,7 +3171,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginDeleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
@@ -2300,7 +3206,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2312,22 +3224,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -2351,7 +3277,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2379,15 +3307,45 @@ items:
         value: '{Server} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Server} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2399,22 +3357,36 @@ items:
         - id: parameters.identity
           type:
             - object
-          description: "The Azure Active Directory identity of\rthe server."
+          description: |-
+            The Azure Active Directory identity of
+            the server.
           optional: true
         - id: parameters.identity.type
           type:
             - string
-          description: "The identity type. Set this to\r'SystemAssigned' in order to automatically create and assign an Azure Active\rDirectory principal for the resource. Possible values include:\r'SystemAssigned'"
+          description: >-
+            The identity type. Set this to
+
+            'SystemAssigned' in order to automatically create and assign an
+            Azure Active
+
+            Directory principal for the resource. Possible values include:
+
+            'SystemAssigned'
           optional: true
         - id: parameters.administratorLogin
           type:
             - string
-          description: "Administrator username for\rthe server. Once created it cannot be changed."
+          description: |-
+            Administrator username for
+            the server. Once created it cannot be changed.
           optional: true
         - id: parameters.administratorLoginPassword
           type:
             - string
-          description: "The administrator\rlogin password (required for server creation)."
+          description: |-
+            The administrator
+            login password (required for server creation).
           optional: true
         - id: parameters.version
           type:
@@ -2438,7 +3410,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2449,7 +3423,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginUpdate(resourceGroupName, serverName, parameters, options,
         optionalCallback)
@@ -2486,7 +3464,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2494,11 +3478,19 @@ items:
         - id: parameters
           type:
             - object
-          description: "The requested encryption protector resource\rstate."
+          description: |-
+            The requested encryption protector resource
+            state.
         - id: parameters.kind
           type:
             - string
-          description: "Kind of encryption protector. This is\rmetadata used for the Azure portal experience. Possible values include: '',\r'azurekeyvault', 'servicemanaged'"
+          description: >-
+            Kind of encryption protector. This is
+
+            metadata used for the Azure portal experience. Possible values
+            include: '',
+
+            'azurekeyvault', 'servicemanaged'
           optional: true
         - id: parameters.serverKeyName
           type:
@@ -2508,7 +3500,10 @@ items:
         - id: parameters.serverKeyType
           type:
             - string
-          description: "The encryption protector type\rlike 'ServiceManaged', 'AzureKeyVault'. Possible values include:\r'ServiceManaged', 'AzureKeyVault'"
+          description: |-
+            The encryption protector type
+            like 'ServiceManaged', 'AzureKeyVault'. Possible values include:
+            'ServiceManaged', 'AzureKeyVault'
           optional: true
         - id: options
           type:
@@ -2518,7 +3513,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2547,15 +3544,45 @@ items:
         value: '{EncryptionProtector} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtector} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtector} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtector} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtector} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -2563,11 +3590,19 @@ items:
         - id: parameters
           type:
             - object
-          description: "The requested encryption protector resource\rstate."
+          description: |-
+            The requested encryption protector resource
+            state.
         - id: parameters.kind
           type:
             - string
-          description: "Kind of encryption protector. This is\rmetadata used for the Azure portal experience. Possible values include: '',\r'azurekeyvault', 'servicemanaged'"
+          description: >-
+            Kind of encryption protector. This is
+
+            metadata used for the Azure portal experience. Possible values
+            include: '',
+
+            'azurekeyvault', 'servicemanaged'
           optional: true
         - id: parameters.serverKeyName
           type:
@@ -2577,7 +3612,10 @@ items:
         - id: parameters.serverKeyType
           type:
             - string
-          description: "The encryption protector type\rlike 'ServiceManaged', 'AzureKeyVault'. Possible values include:\r'ServiceManaged', 'AzureKeyVault'"
+          description: |-
+            The encryption protector type
+            like 'ServiceManaged', 'AzureKeyVault'. Possible values include:
+            'ServiceManaged', 'AzureKeyVault'
           optional: true
         - id: options
           type:
@@ -2587,7 +3625,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2598,7 +3638,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginCreateOrUpdateEncryptionProtector(resourceGroupName,
         serverName, parameters, options, optionalCallback)
@@ -2631,7 +3675,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2640,7 +3686,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2662,15 +3710,41 @@ items:
         value: '{ServerListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2679,7 +3753,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2690,7 +3766,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -2721,7 +3801,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2730,7 +3812,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2756,15 +3840,41 @@ items:
         value: '{ServerListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2773,7 +3883,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2784,7 +3896,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -2821,7 +3937,9 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2830,7 +3948,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -2857,15 +3977,43 @@ items:
         value: '{EncryptionProtectorListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtectorListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link EncryptionProtectorListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtectorListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EncryptionProtectorListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: "The NextLink from the previous successful call\rto List operation."
+          description: |-
+            The NextLink from the previous successful call
+            to List operation.
         - id: options
           type:
             - object
@@ -2874,7 +4022,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -2885,7 +4035,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function listEncryptionProtectorsNext(nextPageLink, options,
         optionalCallback)

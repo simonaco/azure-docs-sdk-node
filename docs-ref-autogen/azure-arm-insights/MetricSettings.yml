@@ -3,7 +3,9 @@ items:
   - uid: azure-arm-insights.MetricSettings
     id: azure-arm-insights.MetricSettings
     name: MetricSettings
-    summary: "Part of MultiTenantDiagnosticSettings. Specifies the settings for a\rparticular metric."
+    summary: |-
+      Part of MultiTenantDiagnosticSettings. Specifies the settings for a
+      particular metric.
     fullName: azure-arm-insights.MetricSettings
     source:
       id: azure-arm-insights.MetricSettings

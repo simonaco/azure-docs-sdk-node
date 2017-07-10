@@ -61,7 +61,9 @@ items:
     name: >-
       createOrUpdateWithHttpOperationResponse(resourceGroupName, serverName,
       properties, options)
-    summary: "Creates a new Server Active Directory Administrator or updates an existing\rserver Active Directory Administrator."
+    summary: |-
+      Creates a new Server Active Directory Administrator or updates an existing
+      server Active Directory Administrator.
     fullName: >-
       azure-arm-sql.ServerAzureADAdministrators.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, properties, options)
@@ -84,7 +86,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -92,7 +100,9 @@ items:
         - id: properties
           type:
             - object
-          description: "The required parameters for creating or updating\ran Active Directory Administrator."
+          description: |-
+            The required parameters for creating or updating
+            an Active Directory Administrator.
         - id: properties.login
           type:
             - string
@@ -104,7 +114,9 @@ items:
         - id: properties.tenantId
           type:
             - azure-arm-sql.uuid
-          description: "The server Active Directory Administrator\rtenant id."
+          description: |-
+            The server Active Directory Administrator
+            tenant id.
         - id: options
           type:
             - object
@@ -113,7 +125,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -130,7 +144,9 @@ items:
     name: >-
       createOrUpdate(resourceGroupName, serverName, properties, options,
       optionalCallback)
-    summary: "Creates a new Server Active Directory Administrator or updates an existing\rserver Active Directory Administrator."
+    summary: |-
+      Creates a new Server Active Directory Administrator or updates an existing
+      server Active Directory Administrator.
     fullName: >-
       azure-arm-sql.ServerAzureADAdministrators.createOrUpdate(resourceGroupName,
       serverName, properties, options, optionalCallback)
@@ -141,15 +157,47 @@ items:
         value: '{ServerAzureADAdministrator} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -157,7 +205,9 @@ items:
         - id: properties
           type:
             - object
-          description: "The required parameters for creating or updating\ran Active Directory Administrator."
+          description: |-
+            The required parameters for creating or updating
+            an Active Directory Administrator.
         - id: properties.login
           type:
             - string
@@ -169,7 +219,9 @@ items:
         - id: properties.tenantId
           type:
             - azure-arm-sql.uuid
-          description: "The server Active Directory Administrator\rtenant id."
+          description: |-
+            The server Active Directory Administrator
+            tenant id.
         - id: options
           type:
             - object
@@ -178,7 +230,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -189,7 +243,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, serverName, properties,
         options, optionalCallback)
@@ -226,7 +284,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -239,7 +303,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -265,15 +331,47 @@ items:
         value: '{ServerAzureADAdministrator} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -286,7 +384,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -297,7 +397,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
@@ -330,7 +434,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -343,7 +453,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -369,15 +481,47 @@ items:
         value: '{ServerAzureADAdministrator} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -390,7 +534,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -401,7 +547,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function get(resourceGroupName, serverName, options, optionalCallback)'
     langs:
       - js
@@ -432,7 +582,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -445,7 +601,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -471,15 +629,47 @@ items:
         value: '{ServerAdministratorListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAdministratorListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAdministratorListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAdministratorListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAdministratorListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -492,7 +682,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -503,7 +695,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: 'function list(resourceGroupName, serverName, options, optionalCallback)'
     langs:
       - js
@@ -515,7 +711,9 @@ items:
     name: >-
       beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, properties, options)
-    summary: "Creates a new Server Active Directory Administrator or updates an existing\rserver Active Directory Administrator."
+    summary: |-
+      Creates a new Server Active Directory Administrator or updates an existing
+      server Active Directory Administrator.
     fullName: >-
       azure-arm-sql.ServerAzureADAdministrators.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, properties, options)
@@ -538,7 +736,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -546,7 +750,9 @@ items:
         - id: properties
           type:
             - object
-          description: "The required parameters for creating or updating\ran Active Directory Administrator."
+          description: |-
+            The required parameters for creating or updating
+            an Active Directory Administrator.
         - id: properties.login
           type:
             - string
@@ -558,7 +764,9 @@ items:
         - id: properties.tenantId
           type:
             - azure-arm-sql.uuid
-          description: "The server Active Directory Administrator\rtenant id."
+          description: |-
+            The server Active Directory Administrator
+            tenant id.
         - id: options
           type:
             - object
@@ -567,7 +775,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -584,7 +794,9 @@ items:
     name: >-
       beginCreateOrUpdate(resourceGroupName, serverName, properties, options,
       optionalCallback)
-    summary: "Creates a new Server Active Directory Administrator or updates an existing\rserver Active Directory Administrator."
+    summary: |-
+      Creates a new Server Active Directory Administrator or updates an existing
+      server Active Directory Administrator.
     fullName: >-
       azure-arm-sql.ServerAzureADAdministrators.beginCreateOrUpdate(resourceGroupName,
       serverName, properties, options, optionalCallback)
@@ -595,15 +807,47 @@ items:
         value: '{ServerAzureADAdministrator} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -611,7 +855,9 @@ items:
         - id: properties
           type:
             - object
-          description: "The required parameters for creating or updating\ran Active Directory Administrator."
+          description: |-
+            The required parameters for creating or updating
+            an Active Directory Administrator.
         - id: properties.login
           type:
             - string
@@ -623,7 +869,9 @@ items:
         - id: properties.tenantId
           type:
             - azure-arm-sql.uuid
-          description: "The server Active Directory Administrator\rtenant id."
+          description: |-
+            The server Active Directory Administrator
+            tenant id.
         - id: options
           type:
             - object
@@ -632,7 +880,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -643,7 +893,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginCreateOrUpdate(resourceGroupName, serverName, properties,
         options, optionalCallback)
@@ -680,7 +934,13 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -693,7 +953,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
       return:
         type:
@@ -721,15 +983,47 @@ items:
         value: '{ServerAzureADAdministrator} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ServerAzureADAdministrator} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerAzureADAdministrator} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: "The name of the resource group that\rcontains the resource. You can obtain this value from the Azure Resource\rManager API or the portal."
+          description: >-
+            The name of the resource group that
+
+            contains the resource. You can obtain this value from the Azure
+            Resource
+
+            Manager API or the portal.
         - id: serverName
           type:
             - string
@@ -742,7 +1036,9 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: "Headers that will be added to the\rrequest"
+          description: |-
+            Headers that will be added to the
+            request
           optional: true
         - id: optionalCallback
           type:
@@ -753,7 +1049,11 @@ items:
         type:
           - function
           - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function beginDeleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
