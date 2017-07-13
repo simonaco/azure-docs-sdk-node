@@ -3,13 +3,15 @@ items:
   - uid: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     id: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     name: DataLakeAnalyticsCatalogManagementClient
-    summary: Class representing a DataLakeAnalyticsCatalogManagementClient.
+    summary: >-
+      Initializes a new instance of the DataLakeAnalyticsCatalogManagementClient
+      class.
     fullName: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     source:
       id: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
       path: >-
         lib\services\dataLake.Analytics\lib\catalog\dataLakeAnalyticsCatalogManagementClient.js
-      startLine: 26
+      startLine: 52
       remote:
         branch: jsdoc
         path: >-
@@ -30,7 +32,7 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient.DataLakeAnalyticsCatalogManagementClient(credentials,
       options)
-    summary: Create a DataLakeAnalyticsCatalogManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

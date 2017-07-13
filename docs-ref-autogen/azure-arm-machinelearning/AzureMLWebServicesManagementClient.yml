@@ -3,13 +3,15 @@ items:
   - uid: azure-arm-machinelearning.AzureMLWebServicesManagementClient
     id: azure-arm-machinelearning.AzureMLWebServicesManagementClient
     name: AzureMLWebServicesManagementClient
-    summary: Class representing a AzureMLWebServicesManagementClient.
+    summary: >-
+      Initializes a new instance of the AzureMLWebServicesManagementClient
+      class.
     fullName: azure-arm-machinelearning.AzureMLWebServicesManagementClient
     source:
       id: azure-arm-machinelearning.AzureMLWebServicesManagementClient
       path: >-
         lib\services\machinelearning\lib\webservices\azureMLWebServicesManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -29,7 +31,7 @@ items:
     fullName: >-
       azure-arm-machinelearning.AzureMLWebServicesManagementClient.AzureMLWebServicesManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a AzureMLWebServicesManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

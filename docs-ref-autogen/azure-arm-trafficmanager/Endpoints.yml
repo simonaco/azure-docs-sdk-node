@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-trafficmanager.Endpoints
     id: azure-arm-trafficmanager.Endpoints
     name: Endpoints
-    summary: Class representing a Endpoints.
+    summary: "Endpoints\r__NOTE__: An instance of this class is automatically created for an\rinstance of the TrafficManagerManagementClient.\rInitializes a new instance of the Endpoints class."
     fullName: azure-arm-trafficmanager.Endpoints
     source:
       id: azure-arm-trafficmanager.Endpoints
       path: lib\services\trafficManagerManagement2\lib\operations\endpoints.js
-      startLine: 828
+      startLine: 837
       remote:
         branch: jsdoc
         path: lib\services\trafficManagerManagement2\lib\operations\endpoints.js
@@ -32,7 +32,7 @@ items:
     parent: azure-arm-trafficmanager.Endpoints
     name: Endpoints(client)
     fullName: azure-arm-trafficmanager.Endpoints.Endpoints(client)
-    summary: Create a Endpoints.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

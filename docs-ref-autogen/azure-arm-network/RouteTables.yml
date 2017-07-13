@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-network.RouteTables
     id: azure-arm-network.RouteTables
     name: RouteTables
-    summary: Class representing a RouteTables.
+    summary: "RouteTables\r__NOTE__: An instance of this class is automatically created for an\rinstance of the NetworkManagementClient.\rInitializes a new instance of the RouteTables class."
     fullName: azure-arm-network.RouteTables
     source:
       id: azure-arm-network.RouteTables
       path: lib\services\networkManagement2\lib\operations\routeTables.js
-      startLine: 1171
+      startLine: 1180
       remote:
         branch: jsdoc
         path: lib\services\networkManagement2\lib\operations\routeTables.js
@@ -42,7 +42,7 @@ items:
     parent: azure-arm-network.RouteTables
     name: RouteTables(client)
     fullName: azure-arm-network.RouteTables.RouteTables(client)
-    summary: Create a RouteTables.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

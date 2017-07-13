@@ -3,13 +3,15 @@ items:
   - uid: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     id: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     name: DataLakeAnalyticsAccountManagementClient
-    summary: Class representing a DataLakeAnalyticsAccountManagementClient.
+    summary: >-
+      Initializes a new instance of the DataLakeAnalyticsAccountManagementClient
+      class.
     fullName: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     source:
       id: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
       path: >-
         lib\services\dataLake.Analytics\lib\account\dataLakeAnalyticsAccountManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -32,7 +34,7 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient.DataLakeAnalyticsAccountManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a DataLakeAnalyticsAccountManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-notificationhubs.Namespaces
     id: azure-arm-notificationhubs.Namespaces
     name: Namespaces
-    summary: Class representing a Namespaces.
+    summary: "Namespaces\r__NOTE__: An instance of this class is automatically created for an\rinstance of the NotificationHubsManagementClient.\rInitializes a new instance of the Namespaces class."
     fullName: azure-arm-notificationhubs.Namespaces
     source:
       id: azure-arm-notificationhubs.Namespaces
       path: lib\services\notificationHubsManagement\lib\operations\namespaces.js
-      startLine: 2558
+      startLine: 2567
       remote:
         branch: jsdoc
         path: lib\services\notificationHubsManagement\lib\operations\namespaces.js
@@ -68,7 +68,7 @@ items:
     parent: azure-arm-notificationhubs.Namespaces
     name: Namespaces(client)
     fullName: azure-arm-notificationhubs.Namespaces.Namespaces(client)
-    summary: Create a Namespaces.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

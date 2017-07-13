@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-resource.PolicyClient
     id: azure-arm-resource.PolicyClient
     name: PolicyClient
-    summary: Class representing a PolicyClient.
+    summary: Initializes a new instance of the PolicyClient class.
     fullName: azure-arm-resource.PolicyClient
     source:
       id: azure-arm-resource.PolicyClient
       path: lib\services\resourceManagement\lib\policy\policyClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\resourceManagement\lib\policy\policyClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-resource.PolicyClient.PolicyClient(credentials, subscriptionId,
       baseUri, options)
-    summary: Create a PolicyClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

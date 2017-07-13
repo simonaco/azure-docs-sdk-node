@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-website.AppServiceCertificateOrders
     id: azure-arm-website.AppServiceCertificateOrders
     name: AppServiceCertificateOrders
-    summary: Class representing a AppServiceCertificateOrders.
+    summary: "AppServiceCertificateOrders\r__NOTE__: An instance of this class is automatically created for an\rinstance of the WebSiteManagementClient.\rInitializes a new instance of the AppServiceCertificateOrders class."
     fullName: azure-arm-website.AppServiceCertificateOrders
     source:
       id: azure-arm-website.AppServiceCertificateOrders
       path: >-
         lib\services\webSiteManagement2\lib\operations\appServiceCertificateOrders.js
-      startLine: 3656
+      startLine: 3686
       remote:
         branch: jsdoc
         path: >-
@@ -98,7 +98,7 @@ items:
     name: AppServiceCertificateOrders(client)
     fullName: >-
       azure-arm-website.AppServiceCertificateOrders.AppServiceCertificateOrders(client)
-    summary: Create a AppServiceCertificateOrders.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -261,6 +261,20 @@ items:
             - string
           description: "Last CSR that was created\rfor this order."
           optional: true
+        - id: appServiceCertificateOrder.isPrivateKeyExternal
+          type:
+            - boolean
+          description: >-
+            <code>true</code> if private key is external; otherwise,
+            <code>false</code>.
+          optional: true
+        - id: appServiceCertificateOrder.appServiceCertificateNotRenewableReasons
+          type:
+            - array
+          description: >-
+            Reasons why App Service Certificate is not renewable at the current
+            moment.
+          optional: true
         - id: appServiceCertificateOrder.name
           type:
             - string
@@ -365,6 +379,20 @@ items:
           type:
             - string
           description: "Last CSR that was created\rfor this order."
+          optional: true
+        - id: appServiceCertificateOrder.isPrivateKeyExternal
+          type:
+            - boolean
+          description: >-
+            <code>true</code> if private key is external; otherwise,
+            <code>false</code>.
+          optional: true
+        - id: appServiceCertificateOrder.appServiceCertificateNotRenewableReasons
+          type:
+            - array
+          description: >-
+            Reasons why App Service Certificate is not renewable at the current
+            moment.
           optional: true
         - id: appServiceCertificateOrder.name
           type:
@@ -698,6 +726,21 @@ items:
             - string
           description: "Last CSR that was created\rfor this order."
           optional: true
+        - id: certificateDistinguishedName.isPrivateKeyExternal
+          type:
+            - boolean
+          description: >-
+            <code>true</code> if private key is external; otherwise,
+            <code>false</code>.
+          optional: true
+        - id: >-
+            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
+          type:
+            - array
+          description: >-
+            Reasons why App Service Certificate is not renewable at the current
+            moment.
+          optional: true
         - id: certificateDistinguishedName.name
           type:
             - string
@@ -810,6 +853,21 @@ items:
           type:
             - string
           description: "Last CSR that was created\rfor this order."
+          optional: true
+        - id: certificateDistinguishedName.isPrivateKeyExternal
+          type:
+            - boolean
+          description: >-
+            <code>true</code> if private key is external; otherwise,
+            <code>false</code>.
+          optional: true
+        - id: >-
+            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
+          type:
+            - array
+          description: >-
+            Reasons why App Service Certificate is not renewable at the current
+            moment.
           optional: true
         - id: certificateDistinguishedName.name
           type:
@@ -2655,6 +2713,21 @@ items:
             - string
           description: "Last CSR that was created\rfor this order."
           optional: true
+        - id: certificateDistinguishedName.isPrivateKeyExternal
+          type:
+            - boolean
+          description: >-
+            <code>true</code> if private key is external; otherwise,
+            <code>false</code>.
+          optional: true
+        - id: >-
+            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
+          type:
+            - array
+          description: >-
+            Reasons why App Service Certificate is not renewable at the current
+            moment.
+          optional: true
         - id: certificateDistinguishedName.name
           type:
             - string
@@ -2767,6 +2840,21 @@ items:
           type:
             - string
           description: "Last CSR that was created\rfor this order."
+          optional: true
+        - id: certificateDistinguishedName.isPrivateKeyExternal
+          type:
+            - boolean
+          description: >-
+            <code>true</code> if private key is external; otherwise,
+            <code>false</code>.
+          optional: true
+        - id: >-
+            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
+          type:
+            - array
+          description: >-
+            Reasons why App Service Certificate is not renewable at the current
+            moment.
           optional: true
         - id: certificateDistinguishedName.name
           type:

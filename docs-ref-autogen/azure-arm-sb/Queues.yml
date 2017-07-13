@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-sb.Queues
     id: azure-arm-sb.Queues
     name: Queues
-    summary: Class representing a Queues.
+    summary: "Queues\r__NOTE__: An instance of this class is automatically created for an\rinstance of the ServiceBusManagementClient.\rInitializes a new instance of the Queues class."
     fullName: azure-arm-sb.Queues
     source:
       id: azure-arm-sb.Queues
       path: lib\services\serviceBusManagement2\lib\operations\queues.js
-      startLine: 2253
+      startLine: 2262
       remote:
         branch: jsdoc
         path: lib\services\serviceBusManagement2\lib\operations\queues.js
@@ -48,7 +48,7 @@ items:
     parent: azure-arm-sb.Queues
     name: Queues(client)
     fullName: azure-arm-sb.Queues.Queues(client)
-    summary: Create a Queues.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

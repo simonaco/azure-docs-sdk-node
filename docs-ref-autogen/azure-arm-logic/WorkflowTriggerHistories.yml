@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-logic.WorkflowTriggerHistories
     id: azure-arm-logic.WorkflowTriggerHistories
     name: WorkflowTriggerHistories
-    summary: Class representing a WorkflowTriggerHistories.
+    summary: "WorkflowTriggerHistories\r__NOTE__: An instance of this class is automatically created for an\rinstance of the LogicManagementClient.\rInitializes a new instance of the WorkflowTriggerHistories class."
     fullName: azure-arm-logic.WorkflowTriggerHistories
     source:
       id: azure-arm-logic.WorkflowTriggerHistories
       path: lib\services\logicManagement\lib\operations\workflowTriggerHistories.js
-      startLine: 616
+      startLine: 484
       remote:
         branch: jsdoc
         path: >-
@@ -22,9 +22,6 @@ items:
       - 'azure-arm-logic.WorkflowTriggerHistories#getWithHttpOperationResponse'
       - 'azure-arm-logic.WorkflowTriggerHistories#get'
       - >-
-        azure-arm-logic.WorkflowTriggerHistories#resubmitWithHttpOperationResponse
-      - 'azure-arm-logic.WorkflowTriggerHistories#resubmit'
-      - >-
         azure-arm-logic.WorkflowTriggerHistories#listNextWithHttpOperationResponse
       - 'azure-arm-logic.WorkflowTriggerHistories#listNext'
     langs:
@@ -34,7 +31,7 @@ items:
     parent: azure-arm-logic.WorkflowTriggerHistories
     name: WorkflowTriggerHistories(client)
     fullName: azure-arm-logic.WorkflowTriggerHistories.WorkflowTriggerHistories(client)
-    summary: Create a WorkflowTriggerHistories.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -222,7 +219,7 @@ items:
         - id: historyName
           type:
             - string
-          description: "The workflow trigger history name. Corresponds\rto the run name for triggers that resulted in a run."
+          description: The workflow trigger history name.
         - id: options
           type:
             - object
@@ -279,7 +276,7 @@ items:
         - id: historyName
           type:
             - string
-          description: "The workflow trigger history name. Corresponds\rto the run name for triggers that resulted in a run."
+          description: The workflow trigger history name.
         - id: options
           type:
             - object
@@ -303,126 +300,6 @@ items:
       content: >-
         function get(resourceGroupName, workflowName, triggerName, historyName,
         options, optionalCallback)
-    langs:
-      - js
-  - uid: 'azure-arm-logic.WorkflowTriggerHistories#resubmitWithHttpOperationResponse'
-    id: 'azure-arm-logic.WorkflowTriggerHistories#resubmitWithHttpOperationResponse'
-    parent: azure-arm-logic.WorkflowTriggerHistories
-    name: >-
-      resubmitWithHttpOperationResponse(resourceGroupName, workflowName,
-      triggerName, historyName, options)
-    summary: Resubmits a workflow run based on the trigger history.
-    fullName: >-
-      azure-arm-logic.WorkflowTriggerHistories.resubmitWithHttpOperationResponse(resourceGroupName,
-      workflowName, triggerName, historyName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
-    type: Function
-    syntax:
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: The resource group name.
-        - id: workflowName
-          type:
-            - string
-          description: The workflow name.
-        - id: triggerName
-          type:
-            - string
-          description: The workflow trigger name.
-        - id: historyName
-          type:
-            - string
-          description: "The workflow trigger history name. Corresponds\rto the run name for triggers that resulted in a run."
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: "Headers that will be added to the\rrequest"
-          optional: true
-      return:
-        type:
-          - Promise
-        description: A promise is returned
-      content: >-
-        function resubmitWithHttpOperationResponse(resourceGroupName,
-        workflowName, triggerName, historyName, options)
-    langs:
-      - js
-  - uid: 'azure-arm-logic.WorkflowTriggerHistories#resubmit'
-    id: 'azure-arm-logic.WorkflowTriggerHistories#resubmit'
-    parent: azure-arm-logic.WorkflowTriggerHistories
-    name: >-
-      resubmit(resourceGroupName, workflowName, triggerName, historyName,
-      options, optionalCallback)
-    summary: Resubmits a workflow run based on the trigger history.
-    fullName: >-
-      azure-arm-logic.WorkflowTriggerHistories.resubmit(resourceGroupName,
-      workflowName, triggerName, historyName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-    type: Function
-    syntax:
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: The resource group name.
-        - id: workflowName
-          type:
-            - string
-          description: The workflow name.
-        - id: triggerName
-          type:
-            - string
-          description: The workflow trigger name.
-        - id: historyName
-          type:
-            - string
-          description: "The workflow trigger history name. Corresponds\rto the run name for triggers that resulted in a run."
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: "Headers that will be added to the\rrequest"
-          optional: true
-        - id: optionalCallback
-          type:
-            - function
-          description: The optional callback.
-          optional: true
-      return:
-        type:
-          - function
-          - Promise
-        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
-      content: >-
-        function resubmit(resourceGroupName, workflowName, triggerName,
-        historyName, options, optionalCallback)
     langs:
       - js
   - uid: 'azure-arm-logic.WorkflowTriggerHistories#listNextWithHttpOperationResponse'

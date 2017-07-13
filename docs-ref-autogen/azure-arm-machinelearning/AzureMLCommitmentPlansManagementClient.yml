@@ -3,13 +3,15 @@ items:
   - uid: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
     id: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
     name: AzureMLCommitmentPlansManagementClient
-    summary: Class representing a AzureMLCommitmentPlansManagementClient.
+    summary: >-
+      Initializes a new instance of the AzureMLCommitmentPlansManagementClient
+      class.
     fullName: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
     source:
       id: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
       path: >-
         lib\services\machinelearning\lib\commitmentPlan\azureMLCommitmentPlansManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -29,7 +31,7 @@ items:
     fullName: >-
       azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient.AzureMLCommitmentPlansManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a AzureMLCommitmentPlansManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

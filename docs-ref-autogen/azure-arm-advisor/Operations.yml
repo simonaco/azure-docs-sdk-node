@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-advisor.Operations
     id: azure-arm-advisor.Operations
     name: Operations
-    summary: Class representing a Operations.
+    summary: "Operations\r__NOTE__: An instance of this class is automatically created for an\rinstance of the AdvisorManagementClient.\rInitializes a new instance of the Operations class."
     fullName: azure-arm-advisor.Operations
     source:
       id: azure-arm-advisor.Operations
       path: lib\services\advisorManagement\lib\operations\operations.js
-      startLine: 276
+      startLine: 285
       remote:
         branch: jsdoc
         path: lib\services\advisorManagement\lib\operations\operations.js
@@ -27,7 +27,7 @@ items:
     parent: azure-arm-advisor.Operations
     name: Operations(client)
     fullName: azure-arm-advisor.Operations.Operations(client)
-    summary: Create a Operations.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

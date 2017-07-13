@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-cdn.CustomDomains
     id: azure-arm-cdn.CustomDomains
     name: CustomDomains
-    summary: Class representing a CustomDomains.
+    summary: "CustomDomains\r__NOTE__: An instance of this class is automatically created for an\rinstance of the CdnManagementClient.\rInitializes a new instance of the CustomDomains class."
     fullName: azure-arm-cdn.CustomDomains
     source:
       id: azure-arm-cdn.CustomDomains
       path: lib\services\cdnManagement\lib\operations\customDomains.js
-      startLine: 1431
+      startLine: 1440
       remote:
         branch: jsdoc
         path: lib\services\cdnManagement\lib\operations\customDomains.js
@@ -41,7 +41,7 @@ items:
     parent: azure-arm-cdn.CustomDomains
     name: CustomDomains(client)
     fullName: azure-arm-cdn.CustomDomains.CustomDomains(client)
-    summary: Create a CustomDomains.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-billing.BillingClient
     id: azure-arm-billing.BillingClient
     name: BillingClient
-    summary: Class representing a BillingClient.
+    summary: Initializes a new instance of the BillingClient class.
     fullName: azure-arm-billing.BillingClient
     source:
       id: azure-arm-billing.BillingClient
       path: lib\services\billingManagement\lib\billingClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\billingManagement\lib\billingClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-billing.BillingClient.BillingClient(credentials, subscriptionId,
       baseUri, options)
-    summary: Create a BillingClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

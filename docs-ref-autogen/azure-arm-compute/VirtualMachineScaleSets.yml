@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-compute.VirtualMachineScaleSets
     id: azure-arm-compute.VirtualMachineScaleSets
     name: VirtualMachineScaleSets
-    summary: Class representing a VirtualMachineScaleSets.
+    summary: "VirtualMachineScaleSets\r__NOTE__: An instance of this class is automatically created for an\rinstance of the ComputeManagementClient.\rInitializes a new instance of the VirtualMachineScaleSets class."
     fullName: azure-arm-compute.VirtualMachineScaleSets
     source:
       id: azure-arm-compute.VirtualMachineScaleSets
       path: >-
         lib\services\computeManagement2\lib\operations\virtualMachineScaleSets.js
-      startLine: 4036
+      startLine: 4051
       remote:
         branch: jsdoc
         path: >-
@@ -106,7 +106,7 @@ items:
     parent: azure-arm-compute.VirtualMachineScaleSets
     name: VirtualMachineScaleSets(client)
     fullName: azure-arm-compute.VirtualMachineScaleSets.VirtualMachineScaleSets(client)
-    summary: Create a VirtualMachineScaleSets.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -468,6 +468,11 @@ items:
           type:
             - boolean
           description: "Specifies whether the Virtual\rMachine Scale Set should be overprovisioned."
+          optional: true
+        - id: parameters.uniqueId
+          type:
+            - string
+          description: "Specifies the ID which uniquely\ridentifies a Virtual Machine Scale Set."
           optional: true
         - id: parameters.singlePlacementGroup
           type:
@@ -857,6 +862,11 @@ items:
           type:
             - boolean
           description: "Specifies whether the Virtual\rMachine Scale Set should be overprovisioned."
+          optional: true
+        - id: parameters.uniqueId
+          type:
+            - string
+          description: "Specifies the ID which uniquely\ridentifies a Virtual Machine Scale Set."
           optional: true
         - id: parameters.singlePlacementGroup
           type:
@@ -2788,6 +2798,11 @@ items:
             - boolean
           description: "Specifies whether the Virtual\rMachine Scale Set should be overprovisioned."
           optional: true
+        - id: parameters.uniqueId
+          type:
+            - string
+          description: "Specifies the ID which uniquely\ridentifies a Virtual Machine Scale Set."
+          optional: true
         - id: parameters.singlePlacementGroup
           type:
             - boolean
@@ -3176,6 +3191,11 @@ items:
           type:
             - boolean
           description: "Specifies whether the Virtual\rMachine Scale Set should be overprovisioned."
+          optional: true
+        - id: parameters.uniqueId
+          type:
+            - string
+          description: "Specifies the ID which uniquely\ridentifies a Virtual Machine Scale Set."
           optional: true
         - id: parameters.singlePlacementGroup
           type:

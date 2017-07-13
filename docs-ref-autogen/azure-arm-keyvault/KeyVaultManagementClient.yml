@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-keyvault.KeyVaultManagementClient
     id: azure-arm-keyvault.KeyVaultManagementClient
     name: KeyVaultManagementClient
-    summary: Class representing a KeyVaultManagementClient.
+    summary: Initializes a new instance of the KeyVaultManagementClient class.
     fullName: azure-arm-keyvault.KeyVaultManagementClient
     source:
       id: azure-arm-keyvault.KeyVaultManagementClient
       path: lib\services\keyVaultManagement\lib\keyVaultManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\keyVaultManagement\lib\keyVaultManagementClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-keyvault.KeyVaultManagementClient.KeyVaultManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a KeyVaultManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

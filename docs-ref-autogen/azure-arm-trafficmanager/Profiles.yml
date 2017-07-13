@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-trafficmanager.Profiles
     id: azure-arm-trafficmanager.Profiles
     name: Profiles
-    summary: Class representing a Profiles.
+    summary: "Profiles\r__NOTE__: An instance of this class is automatically created for an\rinstance of the TrafficManagerManagementClient.\rInitializes a new instance of the Profiles class."
     fullName: azure-arm-trafficmanager.Profiles
     source:
       id: azure-arm-trafficmanager.Profiles
       path: lib\services\trafficManagerManagement2\lib\operations\profiles.js
-      startLine: 1198
+      startLine: 1237
       remote:
         branch: jsdoc
         path: lib\services\trafficManagerManagement2\lib\operations\profiles.js
@@ -41,7 +41,7 @@ items:
     parent: azure-arm-trafficmanager.Profiles
     name: Profiles(client)
     fullName: azure-arm-trafficmanager.Profiles.Profiles(client)
-    summary: Create a Profiles.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -519,7 +519,7 @@ items:
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: "Gets or sets the DNS Time-To-Live\r(TTL), in seconds.  This informs the local DNS resolvers and DNS clients how\rlong to cache DNS responses provided by this Traffic Manager profile."
           optional: true
         - id: parameters.monitorConfig
           type:
@@ -534,7 +534,7 @@ items:
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: "Gets or sets the\rprotocol (HTTP, HTTPS or TCP) used to probe for endpoint health."
           optional: true
         - id: parameters.monitorConfig.port
           type:
@@ -545,6 +545,21 @@ items:
           type:
             - string
           description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          optional: true
+        - id: parameters.monitorConfig.intervalInSeconds
+          type:
+            - number
+          description: "Gets or sets\rthe monitor interval for endpoints in this profile. This is the interval at\rwhich Traffic Manager will check the health of each endpoint in this\rprofile."
+          optional: true
+        - id: parameters.monitorConfig.timeoutInSeconds
+          type:
+            - number
+          description: "Gets or sets the\rmonitor timeout for endpoints in this profile. This is the time that Traffic\rManager allows endpoints in this profile to response to the health check."
+          optional: true
+        - id: parameters.monitorConfig.toleratedNumberOfFailures
+          type:
+            - number
+          description: "Gets or\rsets the number of consecutive failed health check that Traffic Manager\rtolerates before declaring an endpoint in this profile Degraded after the\rnext failed health check."
           optional: true
         - id: parameters.endpoints
           type:
@@ -642,7 +657,7 @@ items:
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: "Gets or sets the DNS Time-To-Live\r(TTL), in seconds.  This informs the local DNS resolvers and DNS clients how\rlong to cache DNS responses provided by this Traffic Manager profile."
           optional: true
         - id: parameters.monitorConfig
           type:
@@ -657,7 +672,7 @@ items:
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: "Gets or sets the\rprotocol (HTTP, HTTPS or TCP) used to probe for endpoint health."
           optional: true
         - id: parameters.monitorConfig.port
           type:
@@ -668,6 +683,21 @@ items:
           type:
             - string
           description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          optional: true
+        - id: parameters.monitorConfig.intervalInSeconds
+          type:
+            - number
+          description: "Gets or sets\rthe monitor interval for endpoints in this profile. This is the interval at\rwhich Traffic Manager will check the health of each endpoint in this\rprofile."
+          optional: true
+        - id: parameters.monitorConfig.timeoutInSeconds
+          type:
+            - number
+          description: "Gets or sets the\rmonitor timeout for endpoints in this profile. This is the time that Traffic\rManager allows endpoints in this profile to response to the health check."
+          optional: true
+        - id: parameters.monitorConfig.toleratedNumberOfFailures
+          type:
+            - number
+          description: "Gets or\rsets the number of consecutive failed health check that Traffic Manager\rtolerates before declaring an endpoint in this profile Degraded after the\rnext failed health check."
           optional: true
         - id: parameters.endpoints
           type:
@@ -877,7 +907,7 @@ items:
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: "Gets or sets the DNS Time-To-Live\r(TTL), in seconds.  This informs the local DNS resolvers and DNS clients how\rlong to cache DNS responses provided by this Traffic Manager profile."
           optional: true
         - id: parameters.monitorConfig
           type:
@@ -892,7 +922,7 @@ items:
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: "Gets or sets the\rprotocol (HTTP, HTTPS or TCP) used to probe for endpoint health."
           optional: true
         - id: parameters.monitorConfig.port
           type:
@@ -903,6 +933,21 @@ items:
           type:
             - string
           description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          optional: true
+        - id: parameters.monitorConfig.intervalInSeconds
+          type:
+            - number
+          description: "Gets or sets\rthe monitor interval for endpoints in this profile. This is the interval at\rwhich Traffic Manager will check the health of each endpoint in this\rprofile."
+          optional: true
+        - id: parameters.monitorConfig.timeoutInSeconds
+          type:
+            - number
+          description: "Gets or sets the\rmonitor timeout for endpoints in this profile. This is the time that Traffic\rManager allows endpoints in this profile to response to the health check."
+          optional: true
+        - id: parameters.monitorConfig.toleratedNumberOfFailures
+          type:
+            - number
+          description: "Gets or\rsets the number of consecutive failed health check that Traffic Manager\rtolerates before declaring an endpoint in this profile Degraded after the\rnext failed health check."
           optional: true
         - id: parameters.endpoints
           type:
@@ -1000,7 +1045,7 @@ items:
         - id: parameters.dnsConfig.ttl
           type:
             - number
-          description: "Gets or sets the DNS\rTtime-To-Live (TTL), in seconds.  This informs the local DNS resolvers and\rDNS clients how long to cache DNS responses provided by this Traffic Manager\rprofile."
+          description: "Gets or sets the DNS Time-To-Live\r(TTL), in seconds.  This informs the local DNS resolvers and DNS clients how\rlong to cache DNS responses provided by this Traffic Manager profile."
           optional: true
         - id: parameters.monitorConfig
           type:
@@ -1015,7 +1060,7 @@ items:
         - id: parameters.monitorConfig.protocol
           type:
             - string
-          description: "Gets or sets the\rprotocol (HTTP or HTTPS) used to probe for endpoint health."
+          description: "Gets or sets the\rprotocol (HTTP, HTTPS or TCP) used to probe for endpoint health."
           optional: true
         - id: parameters.monitorConfig.port
           type:
@@ -1026,6 +1071,21 @@ items:
           type:
             - string
           description: "Gets or sets the path\rrelative to the endpoint domain name used to probe for endpoint health."
+          optional: true
+        - id: parameters.monitorConfig.intervalInSeconds
+          type:
+            - number
+          description: "Gets or sets\rthe monitor interval for endpoints in this profile. This is the interval at\rwhich Traffic Manager will check the health of each endpoint in this\rprofile."
+          optional: true
+        - id: parameters.monitorConfig.timeoutInSeconds
+          type:
+            - number
+          description: "Gets or sets the\rmonitor timeout for endpoints in this profile. This is the time that Traffic\rManager allows endpoints in this profile to response to the health check."
+          optional: true
+        - id: parameters.monitorConfig.toleratedNumberOfFailures
+          type:
+            - number
+          description: "Gets or\rsets the number of consecutive failed health check that Traffic Manager\rtolerates before declaring an endpoint in this profile Degraded after the\rnext failed health check."
           optional: true
         - id: parameters.endpoints
           type:

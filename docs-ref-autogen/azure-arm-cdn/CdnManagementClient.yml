@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-cdn.CdnManagementClient
     id: azure-arm-cdn.CdnManagementClient
     name: CdnManagementClient
-    summary: Class representing a CdnManagementClient.
+    summary: Initializes a new instance of the CdnManagementClient class.
     fullName: azure-arm-cdn.CdnManagementClient
     source:
       id: azure-arm-cdn.CdnManagementClient
       path: lib\services\cdnManagement\lib\cdnManagementClient.js
-      startLine: 711
+      startLine: 739
       remote:
         branch: jsdoc
         path: lib\services\cdnManagement\lib\cdnManagementClient.js
@@ -40,7 +40,7 @@ items:
     fullName: >-
       azure-arm-cdn.CdnManagementClient.CdnManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a CdnManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

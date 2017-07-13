@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-compute.VirtualMachineRunCommands
     id: azure-arm-compute.VirtualMachineRunCommands
     name: VirtualMachineRunCommands
-    summary: Class representing a VirtualMachineRunCommands.
+    summary: "VirtualMachineRunCommands\r__NOTE__: An instance of this class is automatically created for an\rinstance of the ComputeManagementClient.\rInitializes a new instance of the VirtualMachineRunCommands class."
     fullName: azure-arm-compute.VirtualMachineRunCommands
     source:
       id: azure-arm-compute.VirtualMachineRunCommands
       path: >-
         lib\services\computeManagement2\lib\operations\virtualMachineRunCommands.js
-      startLine: 437
+      startLine: 446
       remote:
         branch: jsdoc
         path: >-
@@ -34,7 +34,7 @@ items:
     name: VirtualMachineRunCommands(client)
     fullName: >-
       azure-arm-compute.VirtualMachineRunCommands.VirtualMachineRunCommands(client)
-    summary: Create a VirtualMachineRunCommands.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

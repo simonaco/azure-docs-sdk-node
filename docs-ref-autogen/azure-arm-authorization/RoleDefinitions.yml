@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-authorization.RoleDefinitions
     id: azure-arm-authorization.RoleDefinitions
     name: RoleDefinitions
-    summary: Class representing a RoleDefinitions.
+    summary: "RoleDefinitions\r__NOTE__: An instance of this class is automatically created for an\rinstance of the AuthorizationManagementClient.\rInitializes a new instance of the RoleDefinitions class."
     fullName: azure-arm-authorization.RoleDefinitions
     source:
       id: azure-arm-authorization.RoleDefinitions
       path: lib\services\authorizationManagement\lib\operations\roleDefinitions.js
-      startLine: 891
+      startLine: 900
       remote:
         branch: jsdoc
         path: lib\services\authorizationManagement\lib\operations\roleDefinitions.js
@@ -38,7 +38,7 @@ items:
     parent: azure-arm-authorization.RoleDefinitions
     name: RoleDefinitions(client)
     fullName: azure-arm-authorization.RoleDefinitions.RoleDefinitions(client)
-    summary: Create a RoleDefinitions.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

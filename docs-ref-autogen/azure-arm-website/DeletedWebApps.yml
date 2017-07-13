@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-website.DeletedWebApps
     id: azure-arm-website.DeletedWebApps
     name: DeletedWebApps
-    summary: Class representing a DeletedWebApps.
+    summary: "DeletedWebApps\r__NOTE__: An instance of this class is automatically created for an\rinstance of the WebSiteManagementClient.\rInitializes a new instance of the DeletedWebApps class."
     fullName: azure-arm-website.DeletedWebApps
     source:
       id: azure-arm-website.DeletedWebApps
       path: lib\services\webSiteManagement2\lib\operations\deletedWebApps.js
-      startLine: 567
+      startLine: 576
       remote:
         branch: jsdoc
         path: lib\services\webSiteManagement2\lib\operations\deletedWebApps.js
@@ -33,7 +33,7 @@ items:
     parent: azure-arm-website.DeletedWebApps
     name: DeletedWebApps(client)
     fullName: azure-arm-website.DeletedWebApps.DeletedWebApps(client)
-    summary: Create a DeletedWebApps.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

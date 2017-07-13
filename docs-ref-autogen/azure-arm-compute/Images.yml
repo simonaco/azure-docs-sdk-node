@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-compute.Images
     id: azure-arm-compute.Images
     name: Images
-    summary: Class representing a Images.
+    summary: "Images\r__NOTE__: An instance of this class is automatically created for an\rinstance of the ComputeManagementClient.\rInitializes a new instance of the Images class."
     fullName: azure-arm-compute.Images
     source:
       id: azure-arm-compute.Images
       path: lib\services\computeManagement2\lib\operations\images.js
-      startLine: 1261
+      startLine: 1270
       remote:
         branch: jsdoc
         path: lib\services\computeManagement2\lib\operations\images.js
@@ -42,7 +42,7 @@ items:
     parent: azure-arm-compute.Images
     name: Images(client)
     fullName: azure-arm-compute.Images.Images(client)
-    summary: Create a Images.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

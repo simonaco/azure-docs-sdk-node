@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-mediaservices.MediaServicesManagementClient
     id: azure-arm-mediaservices.MediaServicesManagementClient
     name: MediaServicesManagementClient
-    summary: Class representing a MediaServicesManagementClient.
+    summary: Initializes a new instance of the MediaServicesManagementClient class.
     fullName: azure-arm-mediaservices.MediaServicesManagementClient
     source:
       id: azure-arm-mediaservices.MediaServicesManagementClient
       path: >-
         lib\services\mediaServicesManagement\lib\mediaServicesManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -29,7 +29,7 @@ items:
     fullName: >-
       azure-arm-mediaservices.MediaServicesManagementClient.MediaServicesManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a MediaServicesManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

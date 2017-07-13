@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-network.PacketCaptures
     id: azure-arm-network.PacketCaptures
     name: PacketCaptures
-    summary: Class representing a PacketCaptures.
+    summary: "PacketCaptures\r__NOTE__: An instance of this class is automatically created for an\rinstance of the NetworkManagementClient.\rInitializes a new instance of the PacketCaptures class."
     fullName: azure-arm-network.PacketCaptures
     source:
       id: azure-arm-network.PacketCaptures
       path: lib\services\networkManagement2\lib\operations\packetCaptures.js
-      startLine: 1263
+      startLine: 1272
       remote:
         branch: jsdoc
         path: lib\services\networkManagement2\lib\operations\packetCaptures.js
@@ -44,7 +44,7 @@ items:
     parent: azure-arm-network.PacketCaptures
     name: PacketCaptures(client)
     fullName: azure-arm-network.PacketCaptures.PacketCaptures(client)
-    summary: Create a PacketCaptures.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

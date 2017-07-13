@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-commerce.UsageManagementClient
     id: azure-arm-commerce.UsageManagementClient
     name: UsageManagementClient
-    summary: Class representing a UsageManagementClient.
+    summary: Initializes a new instance of the UsageManagementClient class.
     fullName: azure-arm-commerce.UsageManagementClient
     source:
       id: azure-arm-commerce.UsageManagementClient
       path: lib\services\commerce\lib\usageManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\commerce\lib\usageManagementClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-commerce.UsageManagementClient.UsageManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a UsageManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

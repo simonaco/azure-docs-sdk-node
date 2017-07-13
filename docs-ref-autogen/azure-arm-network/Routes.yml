@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-network.Routes
     id: azure-arm-network.Routes
     name: Routes
-    summary: Class representing a Routes.
+    summary: "Routes\r__NOTE__: An instance of this class is automatically created for an\rinstance of the NetworkManagementClient.\rInitializes a new instance of the Routes class."
     fullName: azure-arm-network.Routes
     source:
       id: azure-arm-network.Routes
       path: lib\services\networkManagement2\lib\operations\routes.js
-      startLine: 952
+      startLine: 961
       remote:
         branch: jsdoc
         path: lib\services\networkManagement2\lib\operations\routes.js
@@ -37,7 +37,7 @@ items:
     parent: azure-arm-network.Routes
     name: Routes(client)
     fullName: azure-arm-network.Routes.Routes(client)
-    summary: Create a Routes.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

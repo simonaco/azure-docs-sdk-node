@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-datalake-store.TrustedIdProviders
     id: azure-arm-datalake-store.TrustedIdProviders
     name: TrustedIdProviders
-    summary: Class representing a TrustedIdProviders.
+    summary: "TrustedIdProviders\r__NOTE__: An instance of this class is automatically created for an\rinstance of the DataLakeStoreAccountManagementClient.\rInitializes a new instance of the TrustedIdProviders class."
     fullName: azure-arm-datalake-store.TrustedIdProviders
     source:
       id: azure-arm-datalake-store.TrustedIdProviders
       path: lib\services\dataLake.Store\lib\account\operations\trustedIdProviders.js
-      startLine: 943
+      startLine: 952
       remote:
         branch: jsdoc
         path: >-
@@ -41,7 +41,7 @@ items:
     parent: azure-arm-datalake-store.TrustedIdProviders
     name: TrustedIdProviders(client)
     fullName: azure-arm-datalake-store.TrustedIdProviders.TrustedIdProviders(client)
-    summary: Create a TrustedIdProviders.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

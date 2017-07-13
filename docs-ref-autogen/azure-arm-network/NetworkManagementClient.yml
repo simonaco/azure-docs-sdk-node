@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-network.NetworkManagementClient
     id: azure-arm-network.NetworkManagementClient
     name: NetworkManagementClient
-    summary: Class representing a NetworkManagementClient.
+    summary: Initializes a new instance of the NetworkManagementClient class.
     fullName: azure-arm-network.NetworkManagementClient
     source:
       id: azure-arm-network.NetworkManagementClient
       path: lib\services\networkManagement2\lib\networkManagementClient.js
-      startLine: 176
+      startLine: 202
       remote:
         branch: jsdoc
         path: lib\services\networkManagement2\lib\networkManagementClient.js
@@ -24,13 +24,11 @@ items:
   - id: 'azure-arm-network.NetworkManagementClient.#ctor'
     uid: 'azure-arm-network.NetworkManagementClient.#ctor'
     parent: azure-arm-network.NetworkManagementClient
-    name: >-
-      NetworkManagementClient(credentials, subscriptionId, predefinedPolicyName,
-      baseUri, options)
+    name: 'NetworkManagementClient(credentials, subscriptionId, baseUri, options)'
     fullName: >-
       azure-arm-network.NetworkManagementClient.NetworkManagementClient(credentials,
-      subscriptionId, predefinedPolicyName, baseUri, options)
-    summary: Create a NetworkManagementClient.
+      subscriptionId, baseUri, options)
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -45,10 +43,6 @@ items:
             The subscription credentials which uniquely identify the Microsoft
             Azure subscription. The subscription ID forms part of the URI for
             every service call.
-        - id: predefinedPolicyName
-          type:
-            - string
-          description: Name of Ssl predefined policy.
         - id: baseUri
           type:
             - string
@@ -94,8 +88,8 @@ items:
             and included in each request. Default is true.
           optional: true
       content: >-
-        new NetworkManagementClient(credentials, subscriptionId,
-        predefinedPolicyName, baseUri, options)
+        new NetworkManagementClient(credentials, subscriptionId, baseUri,
+        options)
     langs:
       - js
   - uid: >-

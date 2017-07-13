@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-relay.HybridConnections
     id: azure-arm-relay.HybridConnections
     name: HybridConnections
-    summary: Class representing a HybridConnections.
+    summary: "HybridConnections\r__NOTE__: An instance of this class is automatically created for an\rinstance of the RelayManagementClient.\rInitializes a new instance of the HybridConnections class."
     fullName: azure-arm-relay.HybridConnections
     source:
       id: azure-arm-relay.HybridConnections
       path: lib\services\relayManagement\lib\operations\hybridConnections.js
-      startLine: 2205
+      startLine: 2218
       remote:
         branch: jsdoc
         path: lib\services\relayManagement\lib\operations\hybridConnections.js
@@ -56,7 +56,7 @@ items:
     parent: azure-arm-relay.HybridConnections
     name: HybridConnections(client)
     fullName: azure-arm-relay.HybridConnections.HybridConnections(client)
-    summary: Create a HybridConnections.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -229,6 +229,11 @@ items:
             - string
           description: "usermetadata is a placeholder to\rstore user-defined string data for the HybridConnection endpoint.e.g. it can\rbe used to store  descriptive data, such as list of teams and their contact\rinformation also user-defined configuration settings can be stored."
           optional: true
+        - id: parameters.path
+          type:
+            - string
+          description: The path of the HybridConnection.
+          optional: true
         - id: options
           type:
             - object
@@ -298,6 +303,11 @@ items:
           type:
             - string
           description: "usermetadata is a placeholder to\rstore user-defined string data for the HybridConnection endpoint.e.g. it can\rbe used to store  descriptive data, such as list of teams and their contact\rinformation also user-defined configuration settings can be stored."
+          optional: true
+        - id: parameters.path
+          type:
+            - string
+          description: The path of the HybridConnection.
           optional: true
         - id: options
           type:
@@ -568,10 +578,10 @@ items:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<AuthorizationRuleListResult>} - The
+          {HttpOperationResponse<SharedAccessAuthorizationRuleListResult>} - The
           deserialized result object.
         value: >-
-          {HttpOperationResponse<AuthorizationRuleListResult>} - The
+          {HttpOperationResponse<SharedAccessAuthorizationRuleListResult>} - The
           deserialized result object.
       - originalTitle: reject
         title: reject
@@ -625,12 +635,16 @@ items:
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{AuthorizationRuleListResult} - The deserialized result object.'
-        value: '{AuthorizationRuleListResult} - The deserialized result object.'
+        text: >-
+          {SharedAccessAuthorizationRuleListResult} - The deserialized result
+          object.
+        value: >-
+          {SharedAccessAuthorizationRuleListResult} - The deserialized result
+          object.
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -689,11 +703,11 @@ items:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<AuthorizationRule>} - The deserialized result
-          object.
+          {HttpOperationResponse<SharedAccessAuthorizationRule>} - The
+          deserialized result object.
         value: >-
-          {HttpOperationResponse<AuthorizationRule>} - The deserialized result
-          object.
+          {HttpOperationResponse<SharedAccessAuthorizationRule>} - The
+          deserialized result object.
       - originalTitle: reject
         title: reject
         text: '{Error} - The error object.'
@@ -720,7 +734,7 @@ items:
         - id: parameters
           type:
             - object
-          description: The authorization rule parameters
+          description: The shared access authorization rule.
         - id: parameters.rights
           type:
             - array
@@ -761,12 +775,12 @@ items:
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{AuthorizationRule} - The deserialized result object.'
-        value: '{AuthorizationRule} - The deserialized result object.'
+        text: '{SharedAccessAuthorizationRule} - The deserialized result object.'
+        value: '{SharedAccessAuthorizationRule} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRule} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRule} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -789,7 +803,7 @@ items:
         - id: parameters
           type:
             - object
-          description: The authorization rule parameters
+          description: The shared access authorization rule.
         - id: parameters.rights
           type:
             - array
@@ -960,11 +974,11 @@ items:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<AuthorizationRule>} - The deserialized result
-          object.
+          {HttpOperationResponse<SharedAccessAuthorizationRule>} - The
+          deserialized result object.
         value: >-
-          {HttpOperationResponse<AuthorizationRule>} - The deserialized result
-          object.
+          {HttpOperationResponse<SharedAccessAuthorizationRule>} - The
+          deserialized result object.
       - originalTitle: reject
         title: reject
         text: '{Error} - The error object.'
@@ -1022,12 +1036,12 @@ items:
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{AuthorizationRule} - The deserialized result object.'
-        value: '{AuthorizationRule} - The deserialized result object.'
+        text: '{SharedAccessAuthorizationRule} - The deserialized result object.'
+        value: '{SharedAccessAuthorizationRule} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRule} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRule} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRule} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1086,11 +1100,11 @@ items:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<AuthorizationRuleKeys>} - The deserialized
-          result object.
+          {HttpOperationResponse<ResourceListKeys>} - The deserialized result
+          object.
         value: >-
-          {HttpOperationResponse<AuthorizationRuleKeys>} - The deserialized
-          result object.
+          {HttpOperationResponse<ResourceListKeys>} - The deserialized result
+          object.
       - originalTitle: reject
         title: reject
         text: '{Error} - The error object.'
@@ -1147,12 +1161,12 @@ items:
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{AuthorizationRuleKeys} - The deserialized result object.'
-        value: '{AuthorizationRuleKeys} - The deserialized result object.'
+        text: '{ResourceListKeys} - The deserialized result object.'
+        value: '{ResourceListKeys} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1212,11 +1226,11 @@ items:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<AuthorizationRuleKeys>} - The deserialized
-          result object.
+          {HttpOperationResponse<ResourceListKeys>} - The deserialized result
+          object.
         value: >-
-          {HttpOperationResponse<AuthorizationRuleKeys>} - The deserialized
-          result object.
+          {HttpOperationResponse<ResourceListKeys>} - The deserialized result
+          object.
       - originalTitle: reject
         title: reject
         text: '{Error} - The error object.'
@@ -1283,12 +1297,12 @@ items:
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{AuthorizationRuleKeys} - The deserialized result object.'
-        value: '{AuthorizationRuleKeys} - The deserialized result object.'
+        text: '{ResourceListKeys} - The deserialized result object.'
+        value: '{ResourceListKeys} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceListKeys} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1453,10 +1467,10 @@ items:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<AuthorizationRuleListResult>} - The
+          {HttpOperationResponse<SharedAccessAuthorizationRuleListResult>} - The
           deserialized result object.
         value: >-
-          {HttpOperationResponse<AuthorizationRuleListResult>} - The
+          {HttpOperationResponse<SharedAccessAuthorizationRuleListResult>} - The
           deserialized result object.
       - originalTitle: reject
         title: reject
@@ -1500,12 +1514,16 @@ items:
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{AuthorizationRuleListResult} - The deserialized result object.'
-        value: '{AuthorizationRuleListResult} - The deserialized result object.'
+        text: >-
+          {SharedAccessAuthorizationRuleListResult} - The deserialized result
+          object.
+        value: >-
+          {SharedAccessAuthorizationRuleListResult} - The deserialized result
+          object.
       - originalTitle: reject
         title: reject
-        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
-        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AuthorizationRuleListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SharedAccessAuthorizationRuleListResult} for\r                     more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:

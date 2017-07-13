@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-scheduler.SchedulerManagementClient
     id: azure-arm-scheduler.SchedulerManagementClient
     name: SchedulerManagementClient
-    summary: Class representing a SchedulerManagementClient.
+    summary: Initializes a new instance of the SchedulerManagementClient class.
     fullName: azure-arm-scheduler.SchedulerManagementClient
     source:
       id: azure-arm-scheduler.SchedulerManagementClient
       path: lib\services\schedulerManagement2\lib\schedulerManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\schedulerManagement2\lib\schedulerManagementClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-scheduler.SchedulerManagementClient.SchedulerManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a SchedulerManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-sb.Operations
     id: azure-arm-sb.Operations
     name: Operations
-    summary: Class representing a Operations.
+    summary: "Operations\r__NOTE__: An instance of this class is automatically created for an\rinstance of the ServiceBusManagementClient.\rInitializes a new instance of the Operations class."
     fullName: azure-arm-sb.Operations
     source:
       id: azure-arm-sb.Operations
       path: lib\services\serviceBusManagement2\lib\operations\operations.js
-      startLine: 274
+      startLine: 283
       remote:
         branch: jsdoc
         path: lib\services\serviceBusManagement2\lib\operations\operations.js
@@ -27,7 +27,7 @@ items:
     parent: azure-arm-sb.Operations
     name: Operations(client)
     fullName: azure-arm-sb.Operations.Operations(client)
-    summary: Create a Operations.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

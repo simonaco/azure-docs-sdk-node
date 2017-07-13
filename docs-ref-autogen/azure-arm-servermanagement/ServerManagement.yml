@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-servermanagement.ServerManagement
     id: azure-arm-servermanagement.ServerManagement
     name: ServerManagement
-    summary: Class representing a ServerManagement.
+    summary: Initializes a new instance of the ServerManagement class.
     fullName: azure-arm-servermanagement.ServerManagement
     source:
       id: azure-arm-servermanagement.ServerManagement
       path: lib\services\servermanagement\lib\serverManagement.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\servermanagement\lib\serverManagement.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-servermanagement.ServerManagement.ServerManagement(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a ServerManagement.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

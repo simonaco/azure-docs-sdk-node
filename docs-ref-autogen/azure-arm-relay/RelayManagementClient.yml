@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-relay.RelayManagementClient
     id: azure-arm-relay.RelayManagementClient
     name: RelayManagementClient
-    summary: Class representing a RelayManagementClient.
+    summary: Initializes a new instance of the RelayManagementClient class.
     fullName: azure-arm-relay.RelayManagementClient
     source:
       id: azure-arm-relay.RelayManagementClient
       path: lib\services\relayManagement\lib\relayManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\relayManagement\lib\relayManagementClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-relay.RelayManagementClient.RelayManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a RelayManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

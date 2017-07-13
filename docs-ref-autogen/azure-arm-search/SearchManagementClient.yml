@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-search.SearchManagementClient
     id: azure-arm-search.SearchManagementClient
     name: SearchManagementClient
-    summary: Class representing a SearchManagementClient.
+    summary: Initializes a new instance of the SearchManagementClient class.
     fullName: azure-arm-search.SearchManagementClient
     source:
       id: azure-arm-search.SearchManagementClient
       path: lib\services\searchManagement\lib\searchManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\searchManagement\lib\searchManagementClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-search.SearchManagementClient.SearchManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a SearchManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

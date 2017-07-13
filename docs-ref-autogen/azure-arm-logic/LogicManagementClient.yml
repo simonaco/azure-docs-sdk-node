@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-logic.LogicManagementClient
     id: azure-arm-logic.LogicManagementClient
     name: LogicManagementClient
-    summary: Class representing a LogicManagementClient.
+    summary: Initializes a new instance of the LogicManagementClient class.
     fullName: azure-arm-logic.LogicManagementClient
     source:
       id: azure-arm-logic.LogicManagementClient
       path: lib\services\logicManagement\lib\logicManagementClient.js
-      startLine: 285
+      startLine: 313
       remote:
         branch: jsdoc
         path: lib\services\logicManagement\lib\logicManagementClient.js
@@ -31,7 +31,7 @@ items:
     fullName: >-
       azure-arm-logic.LogicManagementClient.LogicManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a LogicManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

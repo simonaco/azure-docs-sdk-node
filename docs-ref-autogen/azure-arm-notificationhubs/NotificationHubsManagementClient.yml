@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-notificationhubs.NotificationHubsManagementClient
     id: azure-arm-notificationhubs.NotificationHubsManagementClient
     name: NotificationHubsManagementClient
-    summary: Class representing a NotificationHubsManagementClient.
+    summary: Initializes a new instance of the NotificationHubsManagementClient class.
     fullName: azure-arm-notificationhubs.NotificationHubsManagementClient
     source:
       id: azure-arm-notificationhubs.NotificationHubsManagementClient
       path: >-
         lib\services\notificationHubsManagement\lib\notificationHubsManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -29,7 +29,7 @@ items:
     fullName: >-
       azure-arm-notificationhubs.NotificationHubsManagementClient.NotificationHubsManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a NotificationHubsManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

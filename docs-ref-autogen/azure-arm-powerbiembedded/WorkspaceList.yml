@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-powerbiembedded.WorkspaceList
     id: azure-arm-powerbiembedded.WorkspaceList
     name: WorkspaceList
-    summary: Class representing a WorkspaceList.
+    summary: Initializes a new instance of the WorkspaceList class.
     fullName: azure-arm-powerbiembedded.WorkspaceList
     source:
       id: azure-arm-powerbiembedded.WorkspaceList
       path: lib\services\powerbiembedded\lib\models\workspaceList.js
-      startLine: 16
+      startLine: 18
       remote:
         branch: jsdoc
         path: lib\services\powerbiembedded\lib\models\workspaceList.js
@@ -24,7 +24,7 @@ items:
     parent: azure-arm-powerbiembedded.WorkspaceList
     name: WorkspaceList()
     fullName: azure-arm-powerbiembedded.WorkspaceList.WorkspaceList()
-    summary: Create a WorkspaceList.
+    summary: ''
     type: Constructor
     syntax:
       content: new WorkspaceList()

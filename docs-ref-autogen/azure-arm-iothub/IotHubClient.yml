@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-iothub.IotHubClient
     id: azure-arm-iothub.IotHubClient
     name: IotHubClient
-    summary: Class representing a IotHubClient.
+    summary: Initializes a new instance of the IotHubClient class.
     fullName: azure-arm-iothub.IotHubClient
     source:
       id: azure-arm-iothub.IotHubClient
       path: lib\services\iothub\lib\iotHubClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\iothub\lib\iotHubClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-iothub.IotHubClient.IotHubClient(credentials, subscriptionId,
       baseUri, options)
-    summary: Create a IotHubClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

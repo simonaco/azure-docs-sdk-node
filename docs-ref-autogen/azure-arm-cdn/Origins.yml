@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-cdn.Origins
     id: azure-arm-cdn.Origins
     name: Origins
-    summary: Class representing a Origins.
+    summary: "Origins\r__NOTE__: An instance of this class is automatically created for an\rinstance of the CdnManagementClient.\rInitializes a new instance of the Origins class."
     fullName: azure-arm-cdn.Origins
     source:
       id: azure-arm-cdn.Origins
       path: lib\services\cdnManagement\lib\operations\origins.js
-      startLine: 809
+      startLine: 818
       remote:
         branch: jsdoc
         path: lib\services\cdnManagement\lib\operations\origins.js
@@ -33,7 +33,7 @@ items:
     parent: azure-arm-cdn.Origins
     name: Origins(client)
     fullName: azure-arm-cdn.Origins.Origins(client)
-    summary: Create a Origins.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

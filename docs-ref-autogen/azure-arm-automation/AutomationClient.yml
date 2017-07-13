@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-automation.AutomationClient
     id: azure-arm-automation.AutomationClient
     name: AutomationClient
-    summary: Class representing a AutomationClient.
+    summary: Initializes a new instance of the AutomationClient class.
     fullName: azure-arm-automation.AutomationClient
     source:
       id: azure-arm-automation.AutomationClient
       path: lib\services\automationManagement\lib\automationClient.js
-      startLine: 26
+      startLine: 52
       remote:
         branch: jsdoc
         path: lib\services\automationManagement\lib\automationClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-automation.AutomationClient.AutomationClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a AutomationClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

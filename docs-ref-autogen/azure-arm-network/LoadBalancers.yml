@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-network.LoadBalancers
     id: azure-arm-network.LoadBalancers
     name: LoadBalancers
-    summary: Class representing a LoadBalancers.
+    summary: "LoadBalancers\r__NOTE__: An instance of this class is automatically created for an\rinstance of the NetworkManagementClient.\rInitializes a new instance of the LoadBalancers class."
     fullName: azure-arm-network.LoadBalancers
     source:
       id: azure-arm-network.LoadBalancers
       path: lib\services\networkManagement2\lib\operations\loadBalancers.js
-      startLine: 1239
+      startLine: 1248
       remote:
         branch: jsdoc
         path: lib\services\networkManagement2\lib\operations\loadBalancers.js
@@ -43,7 +43,7 @@ items:
     parent: azure-arm-network.LoadBalancers
     name: LoadBalancers(client)
     fullName: azure-arm-network.LoadBalancers.LoadBalancers(client)
-    summary: Create a LoadBalancers.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

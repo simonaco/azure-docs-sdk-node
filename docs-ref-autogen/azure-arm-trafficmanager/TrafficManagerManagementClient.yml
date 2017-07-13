@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-trafficmanager.TrafficManagerManagementClient
     id: azure-arm-trafficmanager.TrafficManagerManagementClient
     name: TrafficManagerManagementClient
-    summary: Class representing a TrafficManagerManagementClient.
+    summary: Initializes a new instance of the TrafficManagerManagementClient class.
     fullName: azure-arm-trafficmanager.TrafficManagerManagementClient
     source:
       id: azure-arm-trafficmanager.TrafficManagerManagementClient
       path: >-
         lib\services\trafficManagerManagement2\lib\trafficManagerManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -29,7 +29,7 @@ items:
     fullName: >-
       azure-arm-trafficmanager.TrafficManagerManagementClient.TrafficManagerManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a TrafficManagerManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

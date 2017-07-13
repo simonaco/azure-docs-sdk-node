@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-sql.Capabilities
     id: azure-arm-sql.Capabilities
     name: Capabilities
-    summary: Class representing a Capabilities.
+    summary: "Capabilities\r__NOTE__: An instance of this class is automatically created for an\rinstance of the SqlManagementClient.\rInitializes a new instance of the Capabilities class."
     fullName: azure-arm-sql.Capabilities
     source:
       id: azure-arm-sql.Capabilities
       path: lib\services\sqlManagement2\lib\operations\capabilities.js
-      startLine: 155
+      startLine: 164
       remote:
         branch: jsdoc
         path: lib\services\sqlManagement2\lib\operations\capabilities.js
@@ -25,7 +25,7 @@ items:
     parent: azure-arm-sql.Capabilities
     name: Capabilities(client)
     fullName: azure-arm-sql.Capabilities.Capabilities(client)
-    summary: Create a Capabilities.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

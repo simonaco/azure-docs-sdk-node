@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-rediscache.RedisManagementClient
     id: azure-arm-rediscache.RedisManagementClient
     name: RedisManagementClient
-    summary: Class representing a RedisManagementClient.
+    summary: Initializes a new instance of the RedisManagementClient class.
     fullName: azure-arm-rediscache.RedisManagementClient
     source:
       id: azure-arm-rediscache.RedisManagementClient
       path: lib\services\rediscachemanagement\lib\redisManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: lib\services\rediscachemanagement\lib\redisManagementClient.js
@@ -25,7 +25,7 @@ items:
     fullName: >-
       azure-arm-rediscache.RedisManagementClient.RedisManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a RedisManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

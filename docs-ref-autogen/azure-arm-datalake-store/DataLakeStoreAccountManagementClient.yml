@@ -3,13 +3,15 @@ items:
   - uid: azure-arm-datalake-store.DataLakeStoreAccountManagementClient
     id: azure-arm-datalake-store.DataLakeStoreAccountManagementClient
     name: DataLakeStoreAccountManagementClient
-    summary: Class representing a DataLakeStoreAccountManagementClient.
+    summary: >-
+      Initializes a new instance of the DataLakeStoreAccountManagementClient
+      class.
     fullName: azure-arm-datalake-store.DataLakeStoreAccountManagementClient
     source:
       id: azure-arm-datalake-store.DataLakeStoreAccountManagementClient
       path: >-
         lib\services\dataLake.Store\lib\account\dataLakeStoreAccountManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -29,7 +31,7 @@ items:
     fullName: >-
       azure-arm-datalake-store.DataLakeStoreAccountManagementClient.DataLakeStoreAccountManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a DataLakeStoreAccountManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

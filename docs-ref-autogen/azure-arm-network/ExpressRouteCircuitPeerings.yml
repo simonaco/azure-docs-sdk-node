@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-network.ExpressRouteCircuitPeerings
     id: azure-arm-network.ExpressRouteCircuitPeerings
     name: ExpressRouteCircuitPeerings
-    summary: Class representing a ExpressRouteCircuitPeerings.
+    summary: "ExpressRouteCircuitPeerings\r__NOTE__: An instance of this class is automatically created for an\rinstance of the NetworkManagementClient.\rInitializes a new instance of the ExpressRouteCircuitPeerings class."
     fullName: azure-arm-network.ExpressRouteCircuitPeerings
     source:
       id: azure-arm-network.ExpressRouteCircuitPeerings
       path: >-
         lib\services\networkManagement2\lib\operations\expressRouteCircuitPeerings.js
-      startLine: 1101
+      startLine: 1162
       remote:
         branch: jsdoc
         path: >-
@@ -47,7 +47,7 @@ items:
     name: ExpressRouteCircuitPeerings(client)
     fullName: >-
       azure-arm-network.ExpressRouteCircuitPeerings.ExpressRouteCircuitPeerings(client)
-    summary: Create a ExpressRouteCircuitPeerings.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
@@ -387,37 +387,6 @@ items:
             - object
           description: "The Microsoft\rpeering configuration."
           optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixes
-          type:
-            - array
-          description: "The\rreference of AdvertisedPublicPrefixes."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
-          type:
-            - array
-          description: "The\rcommunities of bgp peering. Spepcified for microsoft peering"
-          optional: true
-        - id: >-
-            peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
-          type:
-            - string
-          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.customerASN
-          type:
-            - number
-          description: "The\rCustomerASN of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.legacyMode
-          type:
-            - number
-          description: "The\rlegacy mode of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
-          type:
-            - string
-          description: "The\rRoutingRegistryName of the configuration."
-          optional: true
         - id: peeringParameters.stats
           type:
             - object
@@ -463,25 +432,91 @@ items:
             - object
           description: "The reference of the\rRouteFilter resource."
           optional: true
-        - id: peeringParameters.routeFilter.rules
+        - id: peeringParameters.ipv6PeeringConfig
+          type:
+            - object
+          description: "The IPv6 peering\rconfiguration."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.primaryPeerAddressPrefix
+          type:
+            - string
+          description: "The primary\raddress prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.secondaryPeerAddressPrefix
+          type:
+            - string
+          description: "The\rsecondary address prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig
+          type:
+            - object
+          description: The Microsoft peering configuration.
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixes
           type:
             - array
-          description: "Collection of\rRouteFilterRules contained within a route filter."
+          description: The reference of AdvertisedPublicPrefixes.
           optional: true
-        - id: peeringParameters.routeFilter.id
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: The communities of bgp peering. Spepcified for microsoft peering
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixesState
+          type:
+            - string
+          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: "The\rlegacy mode of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.customerASN
+          type:
+            - number
+          description: "The\rCustomerASN of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.routingRegistryName
+          type:
+            - string
+          description: The RoutingRegistryName of the configuration.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter
+          type:
+            - object
+          description: "The\rreference of the RouteFilter resource."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.rules
+          type:
+            - array
+          description: Collection of RouteFilterRules contained within a route filter.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
             - string
           description: Resource ID.
           optional: true
-        - id: peeringParameters.routeFilter.location
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: peeringParameters.routeFilter.tags
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.tags
           type:
             - object
           description: Resource tags.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.state
+          type:
+            - string
+          description: "The state of\rpeering. Possible values are: 'Disabled' and 'Enabled'. Possible values\rinclude: 'Disabled', 'Enabled'"
           optional: true
         - id: peeringParameters.name
           type:
@@ -605,37 +640,6 @@ items:
             - object
           description: "The Microsoft\rpeering configuration."
           optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixes
-          type:
-            - array
-          description: "The\rreference of AdvertisedPublicPrefixes."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
-          type:
-            - array
-          description: "The\rcommunities of bgp peering. Spepcified for microsoft peering"
-          optional: true
-        - id: >-
-            peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
-          type:
-            - string
-          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.customerASN
-          type:
-            - number
-          description: "The\rCustomerASN of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.legacyMode
-          type:
-            - number
-          description: "The\rlegacy mode of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
-          type:
-            - string
-          description: "The\rRoutingRegistryName of the configuration."
-          optional: true
         - id: peeringParameters.stats
           type:
             - object
@@ -681,25 +685,91 @@ items:
             - object
           description: "The reference of the\rRouteFilter resource."
           optional: true
-        - id: peeringParameters.routeFilter.rules
+        - id: peeringParameters.ipv6PeeringConfig
+          type:
+            - object
+          description: "The IPv6 peering\rconfiguration."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.primaryPeerAddressPrefix
+          type:
+            - string
+          description: "The primary\raddress prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.secondaryPeerAddressPrefix
+          type:
+            - string
+          description: "The\rsecondary address prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig
+          type:
+            - object
+          description: The Microsoft peering configuration.
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixes
           type:
             - array
-          description: "Collection of\rRouteFilterRules contained within a route filter."
+          description: The reference of AdvertisedPublicPrefixes.
           optional: true
-        - id: peeringParameters.routeFilter.id
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: The communities of bgp peering. Spepcified for microsoft peering
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixesState
+          type:
+            - string
+          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: "The\rlegacy mode of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.customerASN
+          type:
+            - number
+          description: "The\rCustomerASN of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.routingRegistryName
+          type:
+            - string
+          description: The RoutingRegistryName of the configuration.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter
+          type:
+            - object
+          description: "The\rreference of the RouteFilter resource."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.rules
+          type:
+            - array
+          description: Collection of RouteFilterRules contained within a route filter.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
             - string
           description: Resource ID.
           optional: true
-        - id: peeringParameters.routeFilter.location
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: peeringParameters.routeFilter.tags
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.tags
           type:
             - object
           description: Resource tags.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.state
+          type:
+            - string
+          description: "The state of\rpeering. Possible values are: 'Disabled' and 'Enabled'. Possible values\rinclude: 'Disabled', 'Enabled'"
           optional: true
         - id: peeringParameters.name
           type:
@@ -1057,37 +1127,6 @@ items:
             - object
           description: "The Microsoft\rpeering configuration."
           optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixes
-          type:
-            - array
-          description: "The\rreference of AdvertisedPublicPrefixes."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
-          type:
-            - array
-          description: "The\rcommunities of bgp peering. Spepcified for microsoft peering"
-          optional: true
-        - id: >-
-            peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
-          type:
-            - string
-          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.customerASN
-          type:
-            - number
-          description: "The\rCustomerASN of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.legacyMode
-          type:
-            - number
-          description: "The\rlegacy mode of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
-          type:
-            - string
-          description: "The\rRoutingRegistryName of the configuration."
-          optional: true
         - id: peeringParameters.stats
           type:
             - object
@@ -1133,25 +1172,91 @@ items:
             - object
           description: "The reference of the\rRouteFilter resource."
           optional: true
-        - id: peeringParameters.routeFilter.rules
+        - id: peeringParameters.ipv6PeeringConfig
+          type:
+            - object
+          description: "The IPv6 peering\rconfiguration."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.primaryPeerAddressPrefix
+          type:
+            - string
+          description: "The primary\raddress prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.secondaryPeerAddressPrefix
+          type:
+            - string
+          description: "The\rsecondary address prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig
+          type:
+            - object
+          description: The Microsoft peering configuration.
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixes
           type:
             - array
-          description: "Collection of\rRouteFilterRules contained within a route filter."
+          description: The reference of AdvertisedPublicPrefixes.
           optional: true
-        - id: peeringParameters.routeFilter.id
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: The communities of bgp peering. Spepcified for microsoft peering
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixesState
+          type:
+            - string
+          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: "The\rlegacy mode of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.customerASN
+          type:
+            - number
+          description: "The\rCustomerASN of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.routingRegistryName
+          type:
+            - string
+          description: The RoutingRegistryName of the configuration.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter
+          type:
+            - object
+          description: "The\rreference of the RouteFilter resource."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.rules
+          type:
+            - array
+          description: Collection of RouteFilterRules contained within a route filter.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
             - string
           description: Resource ID.
           optional: true
-        - id: peeringParameters.routeFilter.location
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: peeringParameters.routeFilter.tags
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.tags
           type:
             - object
           description: Resource tags.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.state
+          type:
+            - string
+          description: "The state of\rpeering. Possible values are: 'Disabled' and 'Enabled'. Possible values\rinclude: 'Disabled', 'Enabled'"
           optional: true
         - id: peeringParameters.name
           type:
@@ -1275,37 +1380,6 @@ items:
             - object
           description: "The Microsoft\rpeering configuration."
           optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixes
-          type:
-            - array
-          description: "The\rreference of AdvertisedPublicPrefixes."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
-          type:
-            - array
-          description: "The\rcommunities of bgp peering. Spepcified for microsoft peering"
-          optional: true
-        - id: >-
-            peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
-          type:
-            - string
-          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.customerASN
-          type:
-            - number
-          description: "The\rCustomerASN of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.legacyMode
-          type:
-            - number
-          description: "The\rlegacy mode of the peering."
-          optional: true
-        - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
-          type:
-            - string
-          description: "The\rRoutingRegistryName of the configuration."
-          optional: true
         - id: peeringParameters.stats
           type:
             - object
@@ -1351,25 +1425,91 @@ items:
             - object
           description: "The reference of the\rRouteFilter resource."
           optional: true
-        - id: peeringParameters.routeFilter.rules
+        - id: peeringParameters.ipv6PeeringConfig
+          type:
+            - object
+          description: "The IPv6 peering\rconfiguration."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.primaryPeerAddressPrefix
+          type:
+            - string
+          description: "The primary\raddress prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.secondaryPeerAddressPrefix
+          type:
+            - string
+          description: "The\rsecondary address prefix."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig
+          type:
+            - object
+          description: The Microsoft peering configuration.
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixes
           type:
             - array
-          description: "Collection of\rRouteFilterRules contained within a route filter."
+          description: The reference of AdvertisedPublicPrefixes.
           optional: true
-        - id: peeringParameters.routeFilter.id
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: The communities of bgp peering. Spepcified for microsoft peering
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.advertisedPublicPrefixesState
+          type:
+            - string
+          description: "AdvertisedPublicPrefixState of the Peering resource. Possible values are\r'NotConfigured', 'Configuring', 'Configured', and 'ValidationNeeded'.\rPossible values include: 'NotConfigured', 'Configuring', 'Configured',\r'ValidationNeeded'"
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: "The\rlegacy mode of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.customerASN
+          type:
+            - number
+          description: "The\rCustomerASN of the peering."
+          optional: true
+        - id: >-
+            peeringParameters.ipv6PeeringConfig.microsoftPeeringConfig.routingRegistryName
+          type:
+            - string
+          description: The RoutingRegistryName of the configuration.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter
+          type:
+            - object
+          description: "The\rreference of the RouteFilter resource."
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.rules
+          type:
+            - array
+          description: Collection of RouteFilterRules contained within a route filter.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
             - string
           description: Resource ID.
           optional: true
-        - id: peeringParameters.routeFilter.location
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: peeringParameters.routeFilter.tags
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.tags
           type:
             - object
           description: Resource tags.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.state
+          type:
+            - string
+          description: "The state of\rpeering. Possible values are: 'Disabled' and 'Enabled'. Possible values\rinclude: 'Disabled', 'Enabled'"
           optional: true
         - id: peeringParameters.name
           type:

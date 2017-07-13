@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-resource.ResourceManagementClient
     id: azure-arm-resource.ResourceManagementClient
     name: ResourceManagementClient
-    summary: Class representing a ResourceManagementClient.
+    summary: Initializes a new instance of the ResourceManagementClient class.
     fullName: azure-arm-resource.ResourceManagementClient
     source:
       id: azure-arm-resource.ResourceManagementClient
       path: lib\services\resourceManagement\lib\resource\resourceManagementClient.js
-      startLine: 26
+      startLine: 54
       remote:
         branch: jsdoc
         path: >-
@@ -26,7 +26,7 @@ items:
     fullName: >-
       azure-arm-resource.ResourceManagementClient.ResourceManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a ResourceManagementClient.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

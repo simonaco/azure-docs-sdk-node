@@ -3,13 +3,13 @@ items:
   - uid: azure-arm-compute.VirtualMachineExtensions
     id: azure-arm-compute.VirtualMachineExtensions
     name: VirtualMachineExtensions
-    summary: Class representing a VirtualMachineExtensions.
+    summary: "VirtualMachineExtensions\r__NOTE__: An instance of this class is automatically created for an\rinstance of the ComputeManagementClient.\rInitializes a new instance of the VirtualMachineExtensions class."
     fullName: azure-arm-compute.VirtualMachineExtensions
     source:
       id: azure-arm-compute.VirtualMachineExtensions
       path: >-
         lib\services\computeManagement2\lib\operations\virtualMachineExtensions.js
-      startLine: 773
+      startLine: 782
       remote:
         branch: jsdoc
         path: >-
@@ -40,7 +40,7 @@ items:
     name: VirtualMachineExtensions(client)
     fullName: >-
       azure-arm-compute.VirtualMachineExtensions.VirtualMachineExtensions(client)
-    summary: Create a VirtualMachineExtensions.
+    summary: ''
     type: Constructor
     syntax:
       parameters:

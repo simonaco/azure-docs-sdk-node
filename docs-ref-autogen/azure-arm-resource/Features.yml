@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-resource.Features
     id: azure-arm-resource.Features
     name: Features
-    summary: Class representing a Features.
+    summary: "Features\r__NOTE__: An instance of this class is automatically created for an\rinstance of the FeatureClient.\rInitializes a new instance of the Features class."
     fullName: azure-arm-resource.Features
     source:
       id: azure-arm-resource.Features
       path: lib\services\resourceManagement\lib\feature\operations\features.js
-      startLine: 845
+      startLine: 854
       remote:
         branch: jsdoc
         path: lib\services\resourceManagement\lib\feature\operations\features.js
@@ -35,7 +35,7 @@ items:
     parent: azure-arm-resource.Features
     name: Features(client)
     fullName: azure-arm-resource.Features.Features(client)
-    summary: Create a Features.
+    summary: ''
     type: Constructor
     syntax:
       parameters:
