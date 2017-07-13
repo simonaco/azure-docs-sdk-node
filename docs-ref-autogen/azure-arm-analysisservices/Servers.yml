@@ -91,19 +91,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be a minimum of 3 characters, and a maximum of 63.
+          description: "The name of the Analysis Services server. It must\rbe a minimum of 3 characters, and a maximum of 63."
         - id: options
           type:
             - object
@@ -112,9 +104,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -140,53 +130,19 @@ items:
         value: '{AnalysisServicesServer} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be a minimum of 3 characters, and a maximum of 63.
+          description: "The name of the Analysis Services server. It must\rbe a minimum of 3 characters, and a maximum of 63."
         - id: options
           type:
             - object
@@ -195,9 +151,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -208,11 +162,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function getDetails(resourceGroupName, serverName, options,
         optionalCallback)
@@ -224,11 +174,7 @@ items:
     name: >-
       createWithHttpOperationResponse(resourceGroupName, serverName,
       serverParameters, options)
-    summary: >-
-      Provisions the specified Analysis Services server based on the
-      configuration
-
-      specified in the request.
+    summary: "Provisions the specified Analysis Services server based on the configuration\rspecified in the request."
     fullName: >-
       azure-arm-analysisservices.Servers.createWithHttpOperationResponse(resourceGroupName,
       serverName, serverParameters, options)
@@ -251,25 +197,15 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be a minimum of 3 characters, and a maximum of 63.
+          description: "The name of the Analysis Services server. It must\rbe a minimum of 3 characters, and a maximum of 63."
         - id: serverParameters
           type:
             - object
-          description: |-
-            Contains the information used to provision
-            the Analysis Services server.
+          description: "Contains the information used to provision\rthe Analysis Services server."
         - id: serverParameters.asAdministrators
           type:
             - object
@@ -278,9 +214,7 @@ items:
         - id: serverParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverParameters.backupConfiguration
           type:
@@ -290,61 +224,37 @@ items:
         - id: serverParameters.backupConfiguration.storageAccount
           type:
             - string
-          description: |-
-            Storage
-            account full resource id for backup configuration
+          description: "Storage\raccount full resource id for backup configuration"
         - id: serverParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The name
-            of blob container for backup configuration
+          description: "The name\rof blob container for backup configuration"
         - id: serverParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The access
-            key of storage account used for backup configuration
+          description: "The access\rkey of storage account used for backup configuration"
           optional: true
         - id: serverParameters.location
           type:
             - string
-          description: |-
-            Location of the Analysis Services
-            resource.
+          description: "Location of the Analysis Services\rresource."
         - id: serverParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis Services
-            resource.
+          description: "The SKU of the Analysis Services\rresource."
         - id: serverParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for the
-
-            server being provisioned. Possible values include: 'B1', 'B2', 'S0',
-            'S1',
-
-            'S2', 'S4', 'D1'
+          description: "Name of the SKU level for the\rserver being provisioned. Possible values include: 'B1', 'B2', 'S0', 'S1',\r'S2', 'S4', 'D1'"
         - id: serverParameters.sku.tier
           type:
             - string
-          description: >-
-            The name of the Azure pricing
-
-            tier to which the SKU applies. Possible values include:
-            'Development',
-
-            'Basic', 'Standard'
+          description: "The name of the Azure pricing\rtier to which the SKU applies. Possible values include: 'Development',\r'Basic', 'Standard'"
           optional: true
         - id: serverParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            resource provisioning properties.
+          description: "Key-value pairs of additional\rresource provisioning properties."
           optional: true
         - id: options
           type:
@@ -354,9 +264,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -373,11 +281,7 @@ items:
     name: >-
       create(resourceGroupName, serverName, serverParameters, options,
       optionalCallback)
-    summary: >-
-      Provisions the specified Analysis Services server based on the
-      configuration
-
-      specified in the request.
+    summary: "Provisions the specified Analysis Services server based on the configuration\rspecified in the request."
     fullName: >-
       azure-arm-analysisservices.Servers.create(resourceGroupName, serverName,
       serverParameters, options, optionalCallback)
@@ -388,59 +292,23 @@ items:
         value: '{AnalysisServicesServer} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be a minimum of 3 characters, and a maximum of 63.
+          description: "The name of the Analysis Services server. It must\rbe a minimum of 3 characters, and a maximum of 63."
         - id: serverParameters
           type:
             - object
-          description: |-
-            Contains the information used to provision
-            the Analysis Services server.
+          description: "Contains the information used to provision\rthe Analysis Services server."
         - id: serverParameters.asAdministrators
           type:
             - object
@@ -449,9 +317,7 @@ items:
         - id: serverParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverParameters.backupConfiguration
           type:
@@ -461,61 +327,37 @@ items:
         - id: serverParameters.backupConfiguration.storageAccount
           type:
             - string
-          description: |-
-            Storage
-            account full resource id for backup configuration
+          description: "Storage\raccount full resource id for backup configuration"
         - id: serverParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The name
-            of blob container for backup configuration
+          description: "The name\rof blob container for backup configuration"
         - id: serverParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The access
-            key of storage account used for backup configuration
+          description: "The access\rkey of storage account used for backup configuration"
           optional: true
         - id: serverParameters.location
           type:
             - string
-          description: |-
-            Location of the Analysis Services
-            resource.
+          description: "Location of the Analysis Services\rresource."
         - id: serverParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis Services
-            resource.
+          description: "The SKU of the Analysis Services\rresource."
         - id: serverParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for the
-
-            server being provisioned. Possible values include: 'B1', 'B2', 'S0',
-            'S1',
-
-            'S2', 'S4', 'D1'
+          description: "Name of the SKU level for the\rserver being provisioned. Possible values include: 'B1', 'B2', 'S0', 'S1',\r'S2', 'S4', 'D1'"
         - id: serverParameters.sku.tier
           type:
             - string
-          description: >-
-            The name of the Azure pricing
-
-            tier to which the SKU applies. Possible values include:
-            'Development',
-
-            'Basic', 'Standard'
+          description: "The name of the Azure pricing\rtier to which the SKU applies. Possible values include: 'Development',\r'Basic', 'Standard'"
           optional: true
         - id: serverParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            resource provisioning properties.
+          description: "Key-value pairs of additional\rresource provisioning properties."
           optional: true
         - id: options
           type:
@@ -525,9 +367,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -538,11 +378,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function create(resourceGroupName, serverName, serverParameters,
         options, optionalCallback)
@@ -573,19 +409,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -594,9 +422,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -622,49 +448,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -673,9 +469,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -686,11 +480,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
@@ -725,56 +515,33 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: serverUpdateParameters
           type:
             - object
-          description: |-
-            Request object that contains the
-            updated information for the server.
+          description: "Request object that contains the\rupdated information for the server."
         - id: serverUpdateParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis
-            Services resource.
+          description: "The SKU of the Analysis\rServices resource."
           optional: true
         - id: serverUpdateParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for
-
-            the server being provisioned. Possible values include: 'B1', 'B2',
-            'S0',
-
-            'S1', 'S2', 'S4', 'D1'
+          description: "Name of the SKU level for\rthe server being provisioned. Possible values include: 'B1', 'B2', 'S0',\r'S1', 'S2', 'S4', 'D1'"
         - id: serverUpdateParameters.sku.tier
           type:
             - string
-          description: |-
-            The name of the Azure
-            pricing tier to which the SKU applies. Possible values include:
-            'Development', 'Basic', 'Standard'
+          description: "The name of the Azure\rpricing tier to which the SKU applies. Possible values include:\r'Development', 'Basic', 'Standard'"
           optional: true
         - id: serverUpdateParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            provisioning properties.
+          description: "Key-value pairs of additional\rprovisioning properties."
           optional: true
         - id: serverUpdateParameters.asAdministrators
           type:
@@ -784,9 +551,7 @@ items:
         - id: serverUpdateParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverUpdateParameters.backupConfiguration
           type:
@@ -800,15 +565,11 @@ items:
         - id: serverUpdateParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The
-            name of blob container for backup configuration
+          description: "The\rname of blob container for backup configuration"
         - id: serverUpdateParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The
-            access key of storage account used for backup configuration
+          description: "The\raccess key of storage account used for backup configuration"
           optional: true
         - id: options
           type:
@@ -818,9 +579,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -848,90 +607,41 @@ items:
         value: '{AnalysisServicesServer} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: serverUpdateParameters
           type:
             - object
-          description: |-
-            Request object that contains the
-            updated information for the server.
+          description: "Request object that contains the\rupdated information for the server."
         - id: serverUpdateParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis
-            Services resource.
+          description: "The SKU of the Analysis\rServices resource."
           optional: true
         - id: serverUpdateParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for
-
-            the server being provisioned. Possible values include: 'B1', 'B2',
-            'S0',
-
-            'S1', 'S2', 'S4', 'D1'
+          description: "Name of the SKU level for\rthe server being provisioned. Possible values include: 'B1', 'B2', 'S0',\r'S1', 'S2', 'S4', 'D1'"
         - id: serverUpdateParameters.sku.tier
           type:
             - string
-          description: |-
-            The name of the Azure
-            pricing tier to which the SKU applies. Possible values include:
-            'Development', 'Basic', 'Standard'
+          description: "The name of the Azure\rpricing tier to which the SKU applies. Possible values include:\r'Development', 'Basic', 'Standard'"
           optional: true
         - id: serverUpdateParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            provisioning properties.
+          description: "Key-value pairs of additional\rprovisioning properties."
           optional: true
         - id: serverUpdateParameters.asAdministrators
           type:
@@ -941,9 +651,7 @@ items:
         - id: serverUpdateParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverUpdateParameters.backupConfiguration
           type:
@@ -957,15 +665,11 @@ items:
         - id: serverUpdateParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The
-            name of blob container for backup configuration
+          description: "The\rname of blob container for backup configuration"
         - id: serverUpdateParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The
-            access key of storage account used for backup configuration
+          description: "The\raccess key of storage account used for backup configuration"
           optional: true
         - id: options
           type:
@@ -975,9 +679,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -988,11 +690,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, serverName, serverUpdateParameters,
         options, optionalCallback)
@@ -1021,19 +719,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -1042,9 +732,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1070,49 +758,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -1121,9 +779,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1134,11 +790,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function suspend(resourceGroupName, serverName, options,
         optionalCallback)
@@ -1167,19 +819,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -1188,9 +832,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1216,49 +858,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -1267,9 +879,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1280,11 +890,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function resume(resourceGroupName, serverName, options,
         optionalCallback)
@@ -1319,13 +925,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: options
           type:
             - object
@@ -1334,9 +934,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1362,47 +960,15 @@ items:
         value: '{AnalysisServicesServers} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServers} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServers} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServers} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServers} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: options
           type:
             - object
@@ -1411,9 +977,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1424,11 +988,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -1464,9 +1024,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1488,34 +1046,8 @@ items:
         value: '{AnalysisServicesServers} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServers} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServers} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServers} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServers} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1527,9 +1059,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1540,11 +1070,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1554,11 +1080,7 @@ items:
     name: >-
       beginCreateWithHttpOperationResponse(resourceGroupName, serverName,
       serverParameters, options)
-    summary: >-
-      Provisions the specified Analysis Services server based on the
-      configuration
-
-      specified in the request.
+    summary: "Provisions the specified Analysis Services server based on the configuration\rspecified in the request."
     fullName: >-
       azure-arm-analysisservices.Servers.beginCreateWithHttpOperationResponse(resourceGroupName,
       serverName, serverParameters, options)
@@ -1581,25 +1103,15 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be a minimum of 3 characters, and a maximum of 63.
+          description: "The name of the Analysis Services server. It must\rbe a minimum of 3 characters, and a maximum of 63."
         - id: serverParameters
           type:
             - object
-          description: |-
-            Contains the information used to provision
-            the Analysis Services server.
+          description: "Contains the information used to provision\rthe Analysis Services server."
         - id: serverParameters.asAdministrators
           type:
             - object
@@ -1608,9 +1120,7 @@ items:
         - id: serverParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverParameters.backupConfiguration
           type:
@@ -1620,61 +1130,37 @@ items:
         - id: serverParameters.backupConfiguration.storageAccount
           type:
             - string
-          description: |-
-            Storage
-            account full resource id for backup configuration
+          description: "Storage\raccount full resource id for backup configuration"
         - id: serverParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The name
-            of blob container for backup configuration
+          description: "The name\rof blob container for backup configuration"
         - id: serverParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The access
-            key of storage account used for backup configuration
+          description: "The access\rkey of storage account used for backup configuration"
           optional: true
         - id: serverParameters.location
           type:
             - string
-          description: |-
-            Location of the Analysis Services
-            resource.
+          description: "Location of the Analysis Services\rresource."
         - id: serverParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis Services
-            resource.
+          description: "The SKU of the Analysis Services\rresource."
         - id: serverParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for the
-
-            server being provisioned. Possible values include: 'B1', 'B2', 'S0',
-            'S1',
-
-            'S2', 'S4', 'D1'
+          description: "Name of the SKU level for the\rserver being provisioned. Possible values include: 'B1', 'B2', 'S0', 'S1',\r'S2', 'S4', 'D1'"
         - id: serverParameters.sku.tier
           type:
             - string
-          description: >-
-            The name of the Azure pricing
-
-            tier to which the SKU applies. Possible values include:
-            'Development',
-
-            'Basic', 'Standard'
+          description: "The name of the Azure pricing\rtier to which the SKU applies. Possible values include: 'Development',\r'Basic', 'Standard'"
           optional: true
         - id: serverParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            resource provisioning properties.
+          description: "Key-value pairs of additional\rresource provisioning properties."
           optional: true
         - id: options
           type:
@@ -1684,9 +1170,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1703,11 +1187,7 @@ items:
     name: >-
       beginCreate(resourceGroupName, serverName, serverParameters, options,
       optionalCallback)
-    summary: >-
-      Provisions the specified Analysis Services server based on the
-      configuration
-
-      specified in the request.
+    summary: "Provisions the specified Analysis Services server based on the configuration\rspecified in the request."
     fullName: >-
       azure-arm-analysisservices.Servers.beginCreate(resourceGroupName,
       serverName, serverParameters, options, optionalCallback)
@@ -1718,59 +1198,23 @@ items:
         value: '{AnalysisServicesServer} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be a minimum of 3 characters, and a maximum of 63.
+          description: "The name of the Analysis Services server. It must\rbe a minimum of 3 characters, and a maximum of 63."
         - id: serverParameters
           type:
             - object
-          description: |-
-            Contains the information used to provision
-            the Analysis Services server.
+          description: "Contains the information used to provision\rthe Analysis Services server."
         - id: serverParameters.asAdministrators
           type:
             - object
@@ -1779,9 +1223,7 @@ items:
         - id: serverParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverParameters.backupConfiguration
           type:
@@ -1791,61 +1233,37 @@ items:
         - id: serverParameters.backupConfiguration.storageAccount
           type:
             - string
-          description: |-
-            Storage
-            account full resource id for backup configuration
+          description: "Storage\raccount full resource id for backup configuration"
         - id: serverParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The name
-            of blob container for backup configuration
+          description: "The name\rof blob container for backup configuration"
         - id: serverParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The access
-            key of storage account used for backup configuration
+          description: "The access\rkey of storage account used for backup configuration"
           optional: true
         - id: serverParameters.location
           type:
             - string
-          description: |-
-            Location of the Analysis Services
-            resource.
+          description: "Location of the Analysis Services\rresource."
         - id: serverParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis Services
-            resource.
+          description: "The SKU of the Analysis Services\rresource."
         - id: serverParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for the
-
-            server being provisioned. Possible values include: 'B1', 'B2', 'S0',
-            'S1',
-
-            'S2', 'S4', 'D1'
+          description: "Name of the SKU level for the\rserver being provisioned. Possible values include: 'B1', 'B2', 'S0', 'S1',\r'S2', 'S4', 'D1'"
         - id: serverParameters.sku.tier
           type:
             - string
-          description: >-
-            The name of the Azure pricing
-
-            tier to which the SKU applies. Possible values include:
-            'Development',
-
-            'Basic', 'Standard'
+          description: "The name of the Azure pricing\rtier to which the SKU applies. Possible values include: 'Development',\r'Basic', 'Standard'"
           optional: true
         - id: serverParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            resource provisioning properties.
+          description: "Key-value pairs of additional\rresource provisioning properties."
           optional: true
         - id: options
           type:
@@ -1855,9 +1273,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1868,11 +1284,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreate(resourceGroupName, serverName, serverParameters,
         options, optionalCallback)
@@ -1905,19 +1317,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -1926,9 +1330,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1956,49 +1358,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -2007,9 +1379,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2020,11 +1390,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
@@ -2059,56 +1425,33 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: serverUpdateParameters
           type:
             - object
-          description: |-
-            Request object that contains the
-            updated information for the server.
+          description: "Request object that contains the\rupdated information for the server."
         - id: serverUpdateParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis
-            Services resource.
+          description: "The SKU of the Analysis\rServices resource."
           optional: true
         - id: serverUpdateParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for
-
-            the server being provisioned. Possible values include: 'B1', 'B2',
-            'S0',
-
-            'S1', 'S2', 'S4', 'D1'
+          description: "Name of the SKU level for\rthe server being provisioned. Possible values include: 'B1', 'B2', 'S0',\r'S1', 'S2', 'S4', 'D1'"
         - id: serverUpdateParameters.sku.tier
           type:
             - string
-          description: |-
-            The name of the Azure
-            pricing tier to which the SKU applies. Possible values include:
-            'Development', 'Basic', 'Standard'
+          description: "The name of the Azure\rpricing tier to which the SKU applies. Possible values include:\r'Development', 'Basic', 'Standard'"
           optional: true
         - id: serverUpdateParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            provisioning properties.
+          description: "Key-value pairs of additional\rprovisioning properties."
           optional: true
         - id: serverUpdateParameters.asAdministrators
           type:
@@ -2118,9 +1461,7 @@ items:
         - id: serverUpdateParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverUpdateParameters.backupConfiguration
           type:
@@ -2134,15 +1475,11 @@ items:
         - id: serverUpdateParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The
-            name of blob container for backup configuration
+          description: "The\rname of blob container for backup configuration"
         - id: serverUpdateParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The
-            access key of storage account used for backup configuration
+          description: "The\raccess key of storage account used for backup configuration"
           optional: true
         - id: options
           type:
@@ -2152,9 +1489,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2182,90 +1517,41 @@ items:
         value: '{AnalysisServicesServer} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AnalysisServicesServer} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link AnalysisServicesServer} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: serverUpdateParameters
           type:
             - object
-          description: |-
-            Request object that contains the
-            updated information for the server.
+          description: "Request object that contains the\rupdated information for the server."
         - id: serverUpdateParameters.sku
           type:
             - object
-          description: |-
-            The SKU of the Analysis
-            Services resource.
+          description: "The SKU of the Analysis\rServices resource."
           optional: true
         - id: serverUpdateParameters.sku.name
           type:
             - string
-          description: >-
-            Name of the SKU level for
-
-            the server being provisioned. Possible values include: 'B1', 'B2',
-            'S0',
-
-            'S1', 'S2', 'S4', 'D1'
+          description: "Name of the SKU level for\rthe server being provisioned. Possible values include: 'B1', 'B2', 'S0',\r'S1', 'S2', 'S4', 'D1'"
         - id: serverUpdateParameters.sku.tier
           type:
             - string
-          description: |-
-            The name of the Azure
-            pricing tier to which the SKU applies. Possible values include:
-            'Development', 'Basic', 'Standard'
+          description: "The name of the Azure\rpricing tier to which the SKU applies. Possible values include:\r'Development', 'Basic', 'Standard'"
           optional: true
         - id: serverUpdateParameters.tags
           type:
             - object
-          description: |-
-            Key-value pairs of additional
-            provisioning properties.
+          description: "Key-value pairs of additional\rprovisioning properties."
           optional: true
         - id: serverUpdateParameters.asAdministrators
           type:
@@ -2275,9 +1561,7 @@ items:
         - id: serverUpdateParameters.asAdministrators.members
           type:
             - array
-          description: |-
-            An array of
-            administrator user identities.
+          description: "An array of\radministrator user identities."
           optional: true
         - id: serverUpdateParameters.backupConfiguration
           type:
@@ -2291,15 +1575,11 @@ items:
         - id: serverUpdateParameters.backupConfiguration.blobContainer
           type:
             - string
-          description: |-
-            The
-            name of blob container for backup configuration
+          description: "The\rname of blob container for backup configuration"
         - id: serverUpdateParameters.backupConfiguration.accessKey
           type:
             - string
-          description: |-
-            The
-            access key of storage account used for backup configuration
+          description: "The\raccess key of storage account used for backup configuration"
           optional: true
         - id: options
           type:
@@ -2309,9 +1589,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2322,11 +1600,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginUpdate(resourceGroupName, serverName,
         serverUpdateParameters, options, optionalCallback)
@@ -2357,19 +1631,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -2378,9 +1644,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2406,49 +1670,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -2457,9 +1691,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2470,11 +1702,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginSuspend(resourceGroupName, serverName, options,
         optionalCallback)
@@ -2505,19 +1733,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -2526,9 +1746,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2554,49 +1772,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: >-
-            The name of the Azure Resource group of
-
-            which a given Analysis Services server is part. This name must be at
-            least 1
-
-            character in length, and no more than 90.
+          description: "The name of the Azure Resource group of\rwhich a given Analysis Services server is part. This name must be at least 1\rcharacter in length, and no more than 90."
         - id: serverName
           type:
             - string
-          description: |-
-            The name of the Analysis Services server. It must
-            be at least 3 characters in length, and no more than 63.
+          description: "The name of the Analysis Services server. It must\rbe at least 3 characters in length, and no more than 63."
         - id: options
           type:
             - object
@@ -2605,9 +1793,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2618,11 +1804,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginResume(resourceGroupName, serverName, options,
         optionalCallback)

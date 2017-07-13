@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-servicefabric.OperationListResult
     id: azure-arm-servicefabric.OperationListResult
     name: OperationListResult
-    summary: |-
-      Result of the request to list ServiceFabric operations. It contains a list
-      of operations and a URL link to get the next set of results.
+    summary: "Result of the request to list ServiceFabric operations. It contains a list\rof operations and a URL link to get the next set of results."
     fullName: azure-arm-servicefabric.OperationListResult
     source:
       id: azure-arm-servicefabric.OperationListResult

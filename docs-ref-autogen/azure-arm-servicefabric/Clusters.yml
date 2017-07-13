@@ -81,9 +81,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -91,99 +89,51 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters which contains the property value
-            and property name which used to update the cluster configuration
+          description: "The parameters which contains the property value\rand property name which used to update the cluster configuration"
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: |-
-            This level is used to set the
-            number of replicas of the system services. Possible values include:
-            'Bronze', 'Silver', 'Gold'
+          description: "This level is used to set the\rnumber of replicas of the system services. Possible values include:\r'Bronze', 'Silver', 'Gold'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: >-
-            The ServiceFabric code
-
-            version, if set it, please make sure you have set upgradeMode to
-            Manual,
-
-            otherwise ,it will fail, if you are using PUT new cluster, you can
-            get the
-
-            version by using ClusterVersions_List, if you are updating existing
-            cluster,
-
-            you can get the availableClusterVersions from Clusters_Get
+          description: "The ServiceFabric code\rversion, if set it, please make sure you have set upgradeMode to Manual,\rotherwise ,it will fail, if you are using PUT new cluster, you can get the\rversion by using ClusterVersions_List, if you are updating existing cluster,\ryou can get the availableClusterVersions from Clusters_Get"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: >-
-            This primay certificate will be
-
-            used as cluster node to node security, SSL certificate for cluster
-
-            management endpoint and default admin client, the certificate should
-            exist
-
-            in the virtual machine scale sets or Azure key vault, before you add
-            it. It
-
-            will override original value
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client, the certificate should exist\rin the virtual machine scale sets or Azure key vault, before you add it. It\rwill override original value"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details, it is used for client access for cluster
-            operation, it
-
-            will override existing collection
+          description: "The client\rthumbprint details, it is used for client access for cluster operation, it\rwill override existing collection"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names.
+          description: "List of client\rcertificates to whitelist based on common names."
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster, Note, it will overwrite existing collection
+          description: "List of custom fabric settings to\rconfigure the cluster, Note, it will overwrite existing collection"
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            Certificate for the
-            reverse proxy
+          description: "Certificate for the\rreverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -192,25 +142,17 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster, it will override
+          description: "The list of nodetypes that make up the\rcluster, it will override"
           optional: true
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -220,9 +162,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -233,82 +173,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -338,9 +238,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -368,41 +266,15 @@ items:
         value: '{Cluster} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -410,99 +282,51 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters which contains the property value
-            and property name which used to update the cluster configuration
+          description: "The parameters which contains the property value\rand property name which used to update the cluster configuration"
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: |-
-            This level is used to set the
-            number of replicas of the system services. Possible values include:
-            'Bronze', 'Silver', 'Gold'
+          description: "This level is used to set the\rnumber of replicas of the system services. Possible values include:\r'Bronze', 'Silver', 'Gold'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: >-
-            The ServiceFabric code
-
-            version, if set it, please make sure you have set upgradeMode to
-            Manual,
-
-            otherwise ,it will fail, if you are using PUT new cluster, you can
-            get the
-
-            version by using ClusterVersions_List, if you are updating existing
-            cluster,
-
-            you can get the availableClusterVersions from Clusters_Get
+          description: "The ServiceFabric code\rversion, if set it, please make sure you have set upgradeMode to Manual,\rotherwise ,it will fail, if you are using PUT new cluster, you can get the\rversion by using ClusterVersions_List, if you are updating existing cluster,\ryou can get the availableClusterVersions from Clusters_Get"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: >-
-            This primay certificate will be
-
-            used as cluster node to node security, SSL certificate for cluster
-
-            management endpoint and default admin client, the certificate should
-            exist
-
-            in the virtual machine scale sets or Azure key vault, before you add
-            it. It
-
-            will override original value
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client, the certificate should exist\rin the virtual machine scale sets or Azure key vault, before you add it. It\rwill override original value"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details, it is used for client access for cluster
-            operation, it
-
-            will override existing collection
+          description: "The client\rthumbprint details, it is used for client access for cluster operation, it\rwill override existing collection"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names.
+          description: "List of client\rcertificates to whitelist based on common names."
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster, Note, it will overwrite existing collection
+          description: "List of custom fabric settings to\rconfigure the cluster, Note, it will overwrite existing collection"
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            Certificate for the
-            reverse proxy
+          description: "Certificate for the\rreverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -511,25 +335,17 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster, it will override
+          description: "The list of nodetypes that make up the\rcluster, it will override"
           optional: true
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -539,9 +355,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -552,82 +366,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -657,9 +431,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -670,11 +442,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, clusterName, parameters, options,
         optionalCallback)
@@ -703,9 +471,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -718,9 +484,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -746,41 +510,15 @@ items:
         value: '{Cluster} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -793,9 +531,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -806,11 +542,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(resourceGroupName, clusterName, options, optionalCallback)'
     langs:
       - js
@@ -839,9 +571,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -853,76 +583,47 @@ items:
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: |-
-            The ServiceFabric code
-            version running in your cluster
+          description: "The ServiceFabric code\rversion running in your cluster"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: |-
-            This primay certificate will be
-            used as cluster node to node security, SSL certificate for cluster
-            management endpoint and default admin client
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client"
           optional: true
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: >-
-            Cluster reliability level
-
-            indicates replica set size of system service. Possible values
-            include:
-
-            'Bronze', 'Silver', 'Gold', 'Platinum'
+          description: "Cluster reliability level\rindicates replica set size of system service. Possible values include:\r'Bronze', 'Silver', 'Gold', 'Platinum'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details ,it is used for client access for cluster
-            operation
+          description: "The client\rthumbprint details ,it is used for client access for cluster operation"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names
+          description: "List of client\rcertificates to whitelist based on common names"
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster.
+          description: "List of custom fabric settings to\rconfigure the cluster."
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            The server certificate
-            used by reverse proxy
+          description: "The server certificate\rused by reverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -931,78 +632,54 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.managementEndpoint
           type:
             - string
-          description: |-
-            The http management endpoint
-            of the cluster
+          description: "The http management endpoint\rof the cluster"
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster
+          description: "The list of nodetypes that make up the\rcluster"
         - id: parameters.azureActiveDirectory
           type:
             - object
-          description: |-
-            The settings to enable AAD
-            authentication on the cluster
+          description: "The settings to enable AAD\rauthentication on the cluster"
           optional: true
         - id: parameters.azureActiveDirectory.tenantId
           type:
             - string
-          description: |-
-            Azure active
-            directory tenant id
+          description: "Azure active\rdirectory tenant id"
           optional: true
         - id: parameters.azureActiveDirectory.clusterApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory cluster application id
+          description: "Azure\ractive directory cluster application id"
           optional: true
         - id: parameters.azureActiveDirectory.clientApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory client application id
+          description: "Azure\ractive directory client application id"
           optional: true
         - id: parameters.vmImage
           type:
             - string
-          description: |-
-            The name of VM image VMSS has been
-            configured with. Generic names such as Windows or Linux can be used.
+          description: "The name of VM image VMSS has been\rconfigured with. Generic names such as Windows or Linux can be used."
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig
           type:
             - object
-          description: |-
-            The storage
-            diagnostics account configuration details
+          description: "The storage\rdiagnostics account configuration details"
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig.storageAccountName
           type:
             - string
-          description: |-
-            Diagnostics
-            storage account name
+          description: "Diagnostics\rstorage account name"
         - id: parameters.diagnosticsStorageAccountConfig.protectedAccountKeyName
           type:
             - string
-          description: |-
-            Protected
-            Diagnostics storage key name
+          description: "Protected\rDiagnostics storage key name"
         - id: parameters.diagnosticsStorageAccountConfig.blobEndpoint
           type:
             - string
@@ -1018,9 +695,7 @@ items:
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -1030,9 +705,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -1043,82 +716,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -1152,9 +785,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1182,41 +813,15 @@ items:
         value: '{Cluster} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -1228,76 +833,47 @@ items:
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: |-
-            The ServiceFabric code
-            version running in your cluster
+          description: "The ServiceFabric code\rversion running in your cluster"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: |-
-            This primay certificate will be
-            used as cluster node to node security, SSL certificate for cluster
-            management endpoint and default admin client
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client"
           optional: true
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: >-
-            Cluster reliability level
-
-            indicates replica set size of system service. Possible values
-            include:
-
-            'Bronze', 'Silver', 'Gold', 'Platinum'
+          description: "Cluster reliability level\rindicates replica set size of system service. Possible values include:\r'Bronze', 'Silver', 'Gold', 'Platinum'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details ,it is used for client access for cluster
-            operation
+          description: "The client\rthumbprint details ,it is used for client access for cluster operation"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names
+          description: "List of client\rcertificates to whitelist based on common names"
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster.
+          description: "List of custom fabric settings to\rconfigure the cluster."
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            The server certificate
-            used by reverse proxy
+          description: "The server certificate\rused by reverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -1306,78 +882,54 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.managementEndpoint
           type:
             - string
-          description: |-
-            The http management endpoint
-            of the cluster
+          description: "The http management endpoint\rof the cluster"
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster
+          description: "The list of nodetypes that make up the\rcluster"
         - id: parameters.azureActiveDirectory
           type:
             - object
-          description: |-
-            The settings to enable AAD
-            authentication on the cluster
+          description: "The settings to enable AAD\rauthentication on the cluster"
           optional: true
         - id: parameters.azureActiveDirectory.tenantId
           type:
             - string
-          description: |-
-            Azure active
-            directory tenant id
+          description: "Azure active\rdirectory tenant id"
           optional: true
         - id: parameters.azureActiveDirectory.clusterApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory cluster application id
+          description: "Azure\ractive directory cluster application id"
           optional: true
         - id: parameters.azureActiveDirectory.clientApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory client application id
+          description: "Azure\ractive directory client application id"
           optional: true
         - id: parameters.vmImage
           type:
             - string
-          description: |-
-            The name of VM image VMSS has been
-            configured with. Generic names such as Windows or Linux can be used.
+          description: "The name of VM image VMSS has been\rconfigured with. Generic names such as Windows or Linux can be used."
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig
           type:
             - object
-          description: |-
-            The storage
-            diagnostics account configuration details
+          description: "The storage\rdiagnostics account configuration details"
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig.storageAccountName
           type:
             - string
-          description: |-
-            Diagnostics
-            storage account name
+          description: "Diagnostics\rstorage account name"
         - id: parameters.diagnosticsStorageAccountConfig.protectedAccountKeyName
           type:
             - string
-          description: |-
-            Protected
-            Diagnostics storage key name
+          description: "Protected\rDiagnostics storage key name"
         - id: parameters.diagnosticsStorageAccountConfig.blobEndpoint
           type:
             - string
@@ -1393,9 +945,7 @@ items:
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -1405,9 +955,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -1418,82 +966,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -1527,9 +1035,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1540,11 +1046,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function create(resourceGroupName, clusterName, parameters, options,
         optionalCallback)
@@ -1575,9 +1077,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -1590,9 +1090,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1618,39 +1116,15 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -1663,9 +1137,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1676,11 +1148,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, clusterName, options,
         optionalCallback)
@@ -1715,9 +1183,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: options
           type:
             - object
@@ -1726,9 +1192,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1754,41 +1218,15 @@ items:
         value: '{ClusterListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: options
           type:
             - object
@@ -1797,9 +1235,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1810,11 +1246,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -1850,9 +1282,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1874,32 +1304,8 @@ items:
         value: '{ClusterListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1911,9 +1317,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1924,11 +1328,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -1957,9 +1357,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -1967,99 +1365,51 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters which contains the property value
-            and property name which used to update the cluster configuration
+          description: "The parameters which contains the property value\rand property name which used to update the cluster configuration"
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: |-
-            This level is used to set the
-            number of replicas of the system services. Possible values include:
-            'Bronze', 'Silver', 'Gold'
+          description: "This level is used to set the\rnumber of replicas of the system services. Possible values include:\r'Bronze', 'Silver', 'Gold'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: >-
-            The ServiceFabric code
-
-            version, if set it, please make sure you have set upgradeMode to
-            Manual,
-
-            otherwise ,it will fail, if you are using PUT new cluster, you can
-            get the
-
-            version by using ClusterVersions_List, if you are updating existing
-            cluster,
-
-            you can get the availableClusterVersions from Clusters_Get
+          description: "The ServiceFabric code\rversion, if set it, please make sure you have set upgradeMode to Manual,\rotherwise ,it will fail, if you are using PUT new cluster, you can get the\rversion by using ClusterVersions_List, if you are updating existing cluster,\ryou can get the availableClusterVersions from Clusters_Get"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: >-
-            This primay certificate will be
-
-            used as cluster node to node security, SSL certificate for cluster
-
-            management endpoint and default admin client, the certificate should
-            exist
-
-            in the virtual machine scale sets or Azure key vault, before you add
-            it. It
-
-            will override original value
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client, the certificate should exist\rin the virtual machine scale sets or Azure key vault, before you add it. It\rwill override original value"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details, it is used for client access for cluster
-            operation, it
-
-            will override existing collection
+          description: "The client\rthumbprint details, it is used for client access for cluster operation, it\rwill override existing collection"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names.
+          description: "List of client\rcertificates to whitelist based on common names."
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster, Note, it will overwrite existing collection
+          description: "List of custom fabric settings to\rconfigure the cluster, Note, it will overwrite existing collection"
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            Certificate for the
-            reverse proxy
+          description: "Certificate for the\rreverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -2068,25 +1418,17 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster, it will override
+          description: "The list of nodetypes that make up the\rcluster, it will override"
           optional: true
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -2096,9 +1438,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -2109,82 +1449,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -2214,9 +1514,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2244,41 +1542,15 @@ items:
         value: '{Cluster} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -2286,99 +1558,51 @@ items:
         - id: parameters
           type:
             - object
-          description: |-
-            The parameters which contains the property value
-            and property name which used to update the cluster configuration
+          description: "The parameters which contains the property value\rand property name which used to update the cluster configuration"
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: |-
-            This level is used to set the
-            number of replicas of the system services. Possible values include:
-            'Bronze', 'Silver', 'Gold'
+          description: "This level is used to set the\rnumber of replicas of the system services. Possible values include:\r'Bronze', 'Silver', 'Gold'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: >-
-            The ServiceFabric code
-
-            version, if set it, please make sure you have set upgradeMode to
-            Manual,
-
-            otherwise ,it will fail, if you are using PUT new cluster, you can
-            get the
-
-            version by using ClusterVersions_List, if you are updating existing
-            cluster,
-
-            you can get the availableClusterVersions from Clusters_Get
+          description: "The ServiceFabric code\rversion, if set it, please make sure you have set upgradeMode to Manual,\rotherwise ,it will fail, if you are using PUT new cluster, you can get the\rversion by using ClusterVersions_List, if you are updating existing cluster,\ryou can get the availableClusterVersions from Clusters_Get"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: >-
-            This primay certificate will be
-
-            used as cluster node to node security, SSL certificate for cluster
-
-            management endpoint and default admin client, the certificate should
-            exist
-
-            in the virtual machine scale sets or Azure key vault, before you add
-            it. It
-
-            will override original value
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client, the certificate should exist\rin the virtual machine scale sets or Azure key vault, before you add it. It\rwill override original value"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details, it is used for client access for cluster
-            operation, it
-
-            will override existing collection
+          description: "The client\rthumbprint details, it is used for client access for cluster operation, it\rwill override existing collection"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names.
+          description: "List of client\rcertificates to whitelist based on common names."
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster, Note, it will overwrite existing collection
+          description: "List of custom fabric settings to\rconfigure the cluster, Note, it will overwrite existing collection"
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            Certificate for the
-            reverse proxy
+          description: "Certificate for the\rreverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -2387,25 +1611,17 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster, it will override
+          description: "The list of nodetypes that make up the\rcluster, it will override"
           optional: true
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -2415,9 +1631,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -2428,82 +1642,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -2533,9 +1707,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2546,11 +1718,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginUpdate(resourceGroupName, clusterName, parameters,
         options, optionalCallback)
@@ -2581,9 +1749,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -2595,76 +1761,47 @@ items:
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: |-
-            The ServiceFabric code
-            version running in your cluster
+          description: "The ServiceFabric code\rversion running in your cluster"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: |-
-            This primay certificate will be
-            used as cluster node to node security, SSL certificate for cluster
-            management endpoint and default admin client
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client"
           optional: true
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: >-
-            Cluster reliability level
-
-            indicates replica set size of system service. Possible values
-            include:
-
-            'Bronze', 'Silver', 'Gold', 'Platinum'
+          description: "Cluster reliability level\rindicates replica set size of system service. Possible values include:\r'Bronze', 'Silver', 'Gold', 'Platinum'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details ,it is used for client access for cluster
-            operation
+          description: "The client\rthumbprint details ,it is used for client access for cluster operation"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names
+          description: "List of client\rcertificates to whitelist based on common names"
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster.
+          description: "List of custom fabric settings to\rconfigure the cluster."
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            The server certificate
-            used by reverse proxy
+          description: "The server certificate\rused by reverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -2673,78 +1810,54 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.managementEndpoint
           type:
             - string
-          description: |-
-            The http management endpoint
-            of the cluster
+          description: "The http management endpoint\rof the cluster"
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster
+          description: "The list of nodetypes that make up the\rcluster"
         - id: parameters.azureActiveDirectory
           type:
             - object
-          description: |-
-            The settings to enable AAD
-            authentication on the cluster
+          description: "The settings to enable AAD\rauthentication on the cluster"
           optional: true
         - id: parameters.azureActiveDirectory.tenantId
           type:
             - string
-          description: |-
-            Azure active
-            directory tenant id
+          description: "Azure active\rdirectory tenant id"
           optional: true
         - id: parameters.azureActiveDirectory.clusterApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory cluster application id
+          description: "Azure\ractive directory cluster application id"
           optional: true
         - id: parameters.azureActiveDirectory.clientApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory client application id
+          description: "Azure\ractive directory client application id"
           optional: true
         - id: parameters.vmImage
           type:
             - string
-          description: |-
-            The name of VM image VMSS has been
-            configured with. Generic names such as Windows or Linux can be used.
+          description: "The name of VM image VMSS has been\rconfigured with. Generic names such as Windows or Linux can be used."
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig
           type:
             - object
-          description: |-
-            The storage
-            diagnostics account configuration details
+          description: "The storage\rdiagnostics account configuration details"
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig.storageAccountName
           type:
             - string
-          description: |-
-            Diagnostics
-            storage account name
+          description: "Diagnostics\rstorage account name"
         - id: parameters.diagnosticsStorageAccountConfig.protectedAccountKeyName
           type:
             - string
-          description: |-
-            Protected
-            Diagnostics storage key name
+          description: "Protected\rDiagnostics storage key name"
         - id: parameters.diagnosticsStorageAccountConfig.blobEndpoint
           type:
             - string
@@ -2760,9 +1873,7 @@ items:
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -2772,9 +1883,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -2785,82 +1894,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -2894,9 +1963,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2924,41 +1991,15 @@ items:
         value: '{Cluster} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Cluster} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Cluster} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to which
-            the resource belongs or get created
+          description: "The name of the resource group to which\rthe resource belongs or get created"
         - id: clusterName
           type:
             - string
@@ -2970,76 +2011,47 @@ items:
         - id: parameters.clusterCodeVersion
           type:
             - string
-          description: |-
-            The ServiceFabric code
-            version running in your cluster
+          description: "The ServiceFabric code\rversion running in your cluster"
           optional: true
         - id: parameters.certificate
           type:
             - object
-          description: |-
-            This primay certificate will be
-            used as cluster node to node security, SSL certificate for cluster
-            management endpoint and default admin client
+          description: "This primay certificate will be\rused as cluster node to node security, SSL certificate for cluster\rmanagement endpoint and default admin client"
           optional: true
         - id: parameters.reliabilityLevel
           type:
             - string
-          description: >-
-            Cluster reliability level
-
-            indicates replica set size of system service. Possible values
-            include:
-
-            'Bronze', 'Silver', 'Gold', 'Platinum'
+          description: "Cluster reliability level\rindicates replica set size of system service. Possible values include:\r'Bronze', 'Silver', 'Gold', 'Platinum'"
           optional: true
         - id: parameters.upgradeMode
           type:
             - string
-          description: >-
-            Cluster upgrade mode indicates if
-
-            fabric upgrade is initiated automatically by the system or not.
-            Possible
-
-            values include: 'Automatic', 'Manual'
+          description: "Cluster upgrade mode indicates if\rfabric upgrade is initiated automatically by the system or not. Possible\rvalues include: 'Automatic', 'Manual'"
           optional: true
         - id: parameters.clientCertificateThumbprints
           type:
             - array
-          description: >-
-            The client
-
-            thumbprint details ,it is used for client access for cluster
-            operation
+          description: "The client\rthumbprint details ,it is used for client access for cluster operation"
           optional: true
         - id: parameters.clientCertificateCommonNames
           type:
             - array
-          description: |-
-            List of client
-            certificates to whitelist based on common names
+          description: "List of client\rcertificates to whitelist based on common names"
           optional: true
         - id: parameters.fabricSettings
           type:
             - array
-          description: |-
-            List of custom fabric settings to
-            configure the cluster.
+          description: "List of custom fabric settings to\rconfigure the cluster."
           optional: true
         - id: parameters.reverseProxyCertificate
           type:
             - object
-          description: |-
-            The server certificate
-            used by reverse proxy
+          description: "The server certificate\rused by reverse proxy"
           optional: true
         - id: parameters.reverseProxyCertificate.thumbprint
           type:
             - string
-          description: |-
-            Thumbprint of
-            the primary certificate
+          description: "Thumbprint of\rthe primary certificate"
         - id: parameters.reverseProxyCertificate.thumbprintSecondary
           type:
             - string
@@ -3048,78 +2060,54 @@ items:
         - id: parameters.reverseProxyCertificate.x509StoreName
           type:
             - string
-          description: |-
-            The local
-            certificate store location. Possible values include: 'AddressBook',
-            'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',
-            'TrustedPeople', 'TrustedPublisher'
+          description: "The local\rcertificate store location. Possible values include: 'AddressBook',\r'AuthRoot', 'CertificateAuthority', 'Disallowed', 'My', 'Root',\r'TrustedPeople', 'TrustedPublisher'"
           optional: true
         - id: parameters.managementEndpoint
           type:
             - string
-          description: |-
-            The http management endpoint
-            of the cluster
+          description: "The http management endpoint\rof the cluster"
         - id: parameters.nodeTypes
           type:
             - array
-          description: |-
-            The list of nodetypes that make up the
-            cluster
+          description: "The list of nodetypes that make up the\rcluster"
         - id: parameters.azureActiveDirectory
           type:
             - object
-          description: |-
-            The settings to enable AAD
-            authentication on the cluster
+          description: "The settings to enable AAD\rauthentication on the cluster"
           optional: true
         - id: parameters.azureActiveDirectory.tenantId
           type:
             - string
-          description: |-
-            Azure active
-            directory tenant id
+          description: "Azure active\rdirectory tenant id"
           optional: true
         - id: parameters.azureActiveDirectory.clusterApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory cluster application id
+          description: "Azure\ractive directory cluster application id"
           optional: true
         - id: parameters.azureActiveDirectory.clientApplication
           type:
             - string
-          description: |-
-            Azure
-            active directory client application id
+          description: "Azure\ractive directory client application id"
           optional: true
         - id: parameters.vmImage
           type:
             - string
-          description: |-
-            The name of VM image VMSS has been
-            configured with. Generic names such as Windows or Linux can be used.
+          description: "The name of VM image VMSS has been\rconfigured with. Generic names such as Windows or Linux can be used."
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig
           type:
             - object
-          description: |-
-            The storage
-            diagnostics account configuration details
+          description: "The storage\rdiagnostics account configuration details"
           optional: true
         - id: parameters.diagnosticsStorageAccountConfig.storageAccountName
           type:
             - string
-          description: |-
-            Diagnostics
-            storage account name
+          description: "Diagnostics\rstorage account name"
         - id: parameters.diagnosticsStorageAccountConfig.protectedAccountKeyName
           type:
             - string
-          description: |-
-            Protected
-            Diagnostics storage key name
+          description: "Protected\rDiagnostics storage key name"
         - id: parameters.diagnosticsStorageAccountConfig.blobEndpoint
           type:
             - string
@@ -3135,9 +2123,7 @@ items:
         - id: parameters.upgradeDescription
           type:
             - object
-          description: |-
-            The policy to use when
-            upgrading the cluster.
+          description: "The policy to use when\rupgrading the cluster."
           optional: true
         - id: parameters.upgradeDescription.overrideUserUpgradePolicy
           type:
@@ -3147,9 +2133,7 @@ items:
         - id: parameters.upgradeDescription.forceRestart
           type:
             - boolean
-          description: |-
-            Force node to
-            restart or not
+          description: "Force node to\rrestart or not"
           optional: true
         - id: parameters.upgradeDescription.upgradeReplicaSetCheckTimeout
           type:
@@ -3160,82 +2144,42 @@ items:
         - id: parameters.upgradeDescription.healthCheckWaitDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time to wait after completing an upgrade domain before
-            performing
-
-            health checks, it represents .Net TimeSpan
+          description: "The\rlength of time to wait after completing an upgrade domain before performing\rhealth checks, it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthCheckStableDuration
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks must pass continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks must pass continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.healthCheckRetryTimeout
           type:
             - string
-          description: >-
-            The
-
-            length of time that health checks can fail continuously,it
-            represents .Net
-
-            TimeSpan
+          description: "The\rlength of time that health checks can fail continuously,it represents .Net\rTimeSpan"
         - id: parameters.upgradeDescription.upgradeTimeout
           type:
             - string
-          description: |-
-            The upgrade
-            timeout,it represents .Net TimeSpan
+          description: "The upgrade\rtimeout,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.upgradeDomainTimeout
           type:
             - string
-          description: |-
-            The
-            timeout for any upgrade domain,it represents .Net TimeSpan
+          description: "The\rtimeout for any upgrade domain,it represents .Net TimeSpan"
         - id: parameters.upgradeDescription.healthPolicy
           type:
             - object
-          description: |-
-            Cluster health
-            Policy
+          description: "Cluster health\rPolicy"
         - id: parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyNodes
           type:
             - number
-          description: >-
-            The
-
-            maximum allowed percentage of unhealthy nodes before reporting an
-            error. For
-
-            example, to allow 10% of nodes to be unhealthy, this value would be
-            10.
+          description: "The\rmaximum allowed percentage of unhealthy nodes before reporting an error. For\rexample, to allow 10% of nodes to be unhealthy, this value would be 10."
           optional: true
         - id: >-
             parameters.upgradeDescription.healthPolicy.maxPercentUnhealthyApplications
           type:
             - number
-          description: >-
-            The maximum allowed percentage of unhealthy applications before
-            reporting an
-
-            error. For example, to allow 10% of applications to be unhealthy,
-            this value
-
-            would be 10.
+          description: "The maximum allowed percentage of unhealthy applications before reporting an\rerror. For example, to allow 10% of applications to be unhealthy, this value\rwould be 10."
           optional: true
         - id: parameters.upgradeDescription.deltaHealthPolicy
           type:
             - object
-          description: |-
-            Delta
-            health policy
+          description: "Delta\rhealth policy"
           optional: true
         - id: >-
             parameters.upgradeDescription.deltaHealthPolicy.maxPercentDeltaUnhealthyNodes
@@ -3269,9 +2213,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3282,11 +2224,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreate(resourceGroupName, clusterName, parameters,
         options, optionalCallback)
@@ -3321,9 +2259,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3332,9 +2268,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -3360,41 +2294,15 @@ items:
         value: '{ClusterListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3403,9 +2311,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3416,11 +2322,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -3453,9 +2355,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3464,9 +2364,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -3490,41 +2388,15 @@ items:
         value: '{ClusterListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ClusterListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ClusterListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -3533,9 +2405,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -3546,11 +2416,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

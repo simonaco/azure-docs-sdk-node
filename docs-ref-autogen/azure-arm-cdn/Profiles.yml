@@ -92,9 +92,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -116,32 +114,8 @@ items:
         value: '{ProfileListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -153,9 +127,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -166,11 +138,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -201,9 +169,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: options
           type:
             - object
@@ -212,9 +178,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -240,41 +204,15 @@ items:
         value: '{ProfileListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: options
           type:
             - object
@@ -283,9 +221,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -296,11 +232,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -310,9 +242,7 @@ items:
     id: 'azure-arm-cdn.Profiles#getWithHttpOperationResponse'
     parent: azure-arm-cdn.Profiles
     name: 'getWithHttpOperationResponse(resourceGroupName, profileName, options)'
-    summary: |-
-      Gets a CDN profile with the specified profile name under the specified
-      subscription and resource group.
+    summary: "Gets a CDN profile with the specified profile name under the specified\rsubscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.getWithHttpOperationResponse(resourceGroupName,
       profileName, options)
@@ -331,15 +261,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -348,9 +274,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -365,9 +289,7 @@ items:
     id: 'azure-arm-cdn.Profiles#get'
     parent: azure-arm-cdn.Profiles
     name: 'get(resourceGroupName, profileName, options, optionalCallback)'
-    summary: |-
-      Gets a CDN profile with the specified profile name under the specified
-      subscription and resource group.
+    summary: "Gets a CDN profile with the specified profile name under the specified\rsubscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.get(resourceGroupName, profileName, options,
       optionalCallback)
@@ -378,47 +300,19 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -427,9 +321,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -440,11 +332,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function get(resourceGroupName, profileName, options, optionalCallback)'
     langs:
       - js
@@ -454,9 +342,7 @@ items:
     name: >-
       createWithHttpOperationResponse(resourceGroupName, profileName, profile,
       options)
-    summary: |-
-      Creates a new CDN profile with a profile name under the specified
-      subscription and resource group.
+    summary: "Creates a new CDN profile with a profile name under the specified\rsubscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.createWithHttpOperationResponse(resourceGroupName,
       profileName, profile, options)
@@ -475,15 +361,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: profile
           type:
             - object
@@ -491,16 +373,11 @@ items:
         - id: profile.sku
           type:
             - object
-          description: |-
-            The pricing tier (defines a CDN provider,
-            feature list and rate) of the CDN profile.
+          description: "The pricing tier (defines a CDN provider,\rfeature list and rate) of the CDN profile."
         - id: profile.sku.name
           type:
             - string
-          description: |-
-            Name of the pricing tier. Possible values
-            include: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',
-            'Standard_Akamai', 'Standard_ChinaCdn'
+          description: "Name of the pricing tier. Possible values\rinclude: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',\r'Standard_Akamai', 'Standard_ChinaCdn'"
           optional: true
         - id: profile.location
           type:
@@ -519,9 +396,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -536,9 +411,7 @@ items:
     id: 'azure-arm-cdn.Profiles#create'
     parent: azure-arm-cdn.Profiles
     name: 'create(resourceGroupName, profileName, profile, options, optionalCallback)'
-    summary: |-
-      Creates a new CDN profile with a profile name under the specified
-      subscription and resource group.
+    summary: "Creates a new CDN profile with a profile name under the specified\rsubscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.create(resourceGroupName, profileName, profile,
       options, optionalCallback)
@@ -549,47 +422,19 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: profile
           type:
             - object
@@ -597,16 +442,11 @@ items:
         - id: profile.sku
           type:
             - object
-          description: |-
-            The pricing tier (defines a CDN provider,
-            feature list and rate) of the CDN profile.
+          description: "The pricing tier (defines a CDN provider,\rfeature list and rate) of the CDN profile."
         - id: profile.sku.name
           type:
             - string
-          description: |-
-            Name of the pricing tier. Possible values
-            include: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',
-            'Standard_Akamai', 'Standard_ChinaCdn'
+          description: "Name of the pricing tier. Possible values\rinclude: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',\r'Standard_Akamai', 'Standard_ChinaCdn'"
           optional: true
         - id: profile.location
           type:
@@ -625,9 +465,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -638,11 +476,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function create(resourceGroupName, profileName, profile, options,
         optionalCallback)
@@ -654,9 +488,7 @@ items:
     name: >-
       updateWithHttpOperationResponse(resourceGroupName, profileName, tags,
       options)
-    summary: |-
-      Updates an existing CDN profile with the specified profile name under the
-      specified subscription and resource group.
+    summary: "Updates an existing CDN profile with the specified profile name under the\rspecified subscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.updateWithHttpOperationResponse(resourceGroupName,
       profileName, tags, options)
@@ -675,15 +507,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: tags
           type:
             - object
@@ -696,9 +524,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -713,9 +539,7 @@ items:
     id: 'azure-arm-cdn.Profiles#update'
     parent: azure-arm-cdn.Profiles
     name: 'update(resourceGroupName, profileName, tags, options, optionalCallback)'
-    summary: |-
-      Updates an existing CDN profile with the specified profile name under the
-      specified subscription and resource group.
+    summary: "Updates an existing CDN profile with the specified profile name under the\rspecified subscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.update(resourceGroupName, profileName, tags,
       options, optionalCallback)
@@ -726,47 +550,19 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: tags
           type:
             - object
@@ -779,9 +575,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -792,11 +586,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function update(resourceGroupName, profileName, tags, options,
         optionalCallback)
@@ -808,10 +598,7 @@ items:
     name: >-
       deleteMethodWithHttpOperationResponse(resourceGroupName, profileName,
       options)
-    summary: |-
-      Deletes an existing CDN profile with the specified parameters. Deleting a
-      profile will result in the deletion of all of the sub-resources including
-      endpoints, origins and custom domains.
+    summary: "Deletes an existing CDN profile with the specified parameters. Deleting a\rprofile will result in the deletion of all of the sub-resources including\rendpoints, origins and custom domains."
     fullName: >-
       azure-arm-cdn.Profiles.deleteMethodWithHttpOperationResponse(resourceGroupName,
       profileName, options)
@@ -830,15 +617,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -847,9 +630,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -864,10 +645,7 @@ items:
     id: 'azure-arm-cdn.Profiles#deleteMethod'
     parent: azure-arm-cdn.Profiles
     name: 'deleteMethod(resourceGroupName, profileName, options, optionalCallback)'
-    summary: |-
-      Deletes an existing CDN profile with the specified parameters. Deleting a
-      profile will result in the deletion of all of the sub-resources including
-      endpoints, origins and custom domains.
+    summary: "Deletes an existing CDN profile with the specified parameters. Deleting a\rprofile will result in the deletion of all of the sub-resources including\rendpoints, origins and custom domains."
     fullName: >-
       azure-arm-cdn.Profiles.deleteMethod(resourceGroupName, profileName,
       options, optionalCallback)
@@ -878,45 +656,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -925,9 +677,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -938,11 +688,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, profileName, options,
         optionalCallback)
@@ -954,21 +700,7 @@ items:
     name: >-
       generateSsoUriWithHttpOperationResponse(resourceGroupName, profileName,
       options)
-    summary: >-
-      Generates a dynamic SSO URI used to sign in to the CDN supplemental
-      portal.
-
-      Supplemnetal portal is used to configure advanced feature capabilities
-      that
-
-      are not yet available in the Azure portal, such as core reports in a
-
-      standard profile; rules engine, advanced HTTP reports, and real-time stats
-
-      and alerts in a premium profile. The SSO URI changes approximately every
-      10
-
-      minutes.
+    summary: "Generates a dynamic SSO URI used to sign in to the CDN supplemental portal.\rSupplemnetal portal is used to configure advanced feature capabilities that\rare not yet available in the Azure portal, such as core reports in a\rstandard profile; rules engine, advanced HTTP reports, and real-time stats\rand alerts in a premium profile. The SSO URI changes approximately every 10\rminutes."
     fullName: >-
       azure-arm-cdn.Profiles.generateSsoUriWithHttpOperationResponse(resourceGroupName,
       profileName, options)
@@ -987,15 +719,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -1004,9 +732,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1021,21 +747,7 @@ items:
     id: 'azure-arm-cdn.Profiles#generateSsoUri'
     parent: azure-arm-cdn.Profiles
     name: 'generateSsoUri(resourceGroupName, profileName, options, optionalCallback)'
-    summary: >-
-      Generates a dynamic SSO URI used to sign in to the CDN supplemental
-      portal.
-
-      Supplemnetal portal is used to configure advanced feature capabilities
-      that
-
-      are not yet available in the Azure portal, such as core reports in a
-
-      standard profile; rules engine, advanced HTTP reports, and real-time stats
-
-      and alerts in a premium profile. The SSO URI changes approximately every
-      10
-
-      minutes.
+    summary: "Generates a dynamic SSO URI used to sign in to the CDN supplemental portal.\rSupplemnetal portal is used to configure advanced feature capabilities that\rare not yet available in the Azure portal, such as core reports in a\rstandard profile; rules engine, advanced HTTP reports, and real-time stats\rand alerts in a premium profile. The SSO URI changes approximately every 10\rminutes."
     fullName: >-
       azure-arm-cdn.Profiles.generateSsoUri(resourceGroupName, profileName,
       options, optionalCallback)
@@ -1046,47 +758,19 @@ items:
         value: '{SsoUri} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SsoUri} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SsoUri} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SsoUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link SsoUri} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -1095,9 +779,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1108,11 +790,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function generateSsoUri(resourceGroupName, profileName, options,
         optionalCallback)
@@ -1149,15 +827,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -1166,9 +840,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1198,49 +870,19 @@ items:
         value: '{ResourceUsageListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceUsageListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceUsageListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceUsageListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceUsageListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -1249,9 +891,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1262,11 +902,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listResourceUsage(resourceGroupName, profileName, options,
         optionalCallback)
@@ -1278,9 +914,7 @@ items:
     name: >-
       beginCreateWithHttpOperationResponse(resourceGroupName, profileName,
       profile, options)
-    summary: |-
-      Creates a new CDN profile with a profile name under the specified
-      subscription and resource group.
+    summary: "Creates a new CDN profile with a profile name under the specified\rsubscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.beginCreateWithHttpOperationResponse(resourceGroupName,
       profileName, profile, options)
@@ -1299,15 +933,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: profile
           type:
             - object
@@ -1315,16 +945,11 @@ items:
         - id: profile.sku
           type:
             - object
-          description: |-
-            The pricing tier (defines a CDN provider,
-            feature list and rate) of the CDN profile.
+          description: "The pricing tier (defines a CDN provider,\rfeature list and rate) of the CDN profile."
         - id: profile.sku.name
           type:
             - string
-          description: |-
-            Name of the pricing tier. Possible values
-            include: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',
-            'Standard_Akamai', 'Standard_ChinaCdn'
+          description: "Name of the pricing tier. Possible values\rinclude: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',\r'Standard_Akamai', 'Standard_ChinaCdn'"
           optional: true
         - id: profile.location
           type:
@@ -1343,9 +968,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1362,9 +985,7 @@ items:
     name: >-
       beginCreate(resourceGroupName, profileName, profile, options,
       optionalCallback)
-    summary: |-
-      Creates a new CDN profile with a profile name under the specified
-      subscription and resource group.
+    summary: "Creates a new CDN profile with a profile name under the specified\rsubscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.beginCreate(resourceGroupName, profileName,
       profile, options, optionalCallback)
@@ -1375,47 +996,19 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: profile
           type:
             - object
@@ -1423,16 +1016,11 @@ items:
         - id: profile.sku
           type:
             - object
-          description: |-
-            The pricing tier (defines a CDN provider,
-            feature list and rate) of the CDN profile.
+          description: "The pricing tier (defines a CDN provider,\rfeature list and rate) of the CDN profile."
         - id: profile.sku.name
           type:
             - string
-          description: |-
-            Name of the pricing tier. Possible values
-            include: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',
-            'Standard_Akamai', 'Standard_ChinaCdn'
+          description: "Name of the pricing tier. Possible values\rinclude: 'Standard_Verizon', 'Premium_Verizon', 'Custom_Verizon',\r'Standard_Akamai', 'Standard_ChinaCdn'"
           optional: true
         - id: profile.location
           type:
@@ -1451,9 +1039,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1464,11 +1050,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreate(resourceGroupName, profileName, profile, options,
         optionalCallback)
@@ -1480,9 +1062,7 @@ items:
     name: >-
       beginUpdateWithHttpOperationResponse(resourceGroupName, profileName, tags,
       options)
-    summary: |-
-      Updates an existing CDN profile with the specified profile name under the
-      specified subscription and resource group.
+    summary: "Updates an existing CDN profile with the specified profile name under the\rspecified subscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.beginUpdateWithHttpOperationResponse(resourceGroupName,
       profileName, tags, options)
@@ -1501,15 +1081,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: tags
           type:
             - object
@@ -1522,9 +1098,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1541,9 +1115,7 @@ items:
     name: >-
       beginUpdate(resourceGroupName, profileName, tags, options,
       optionalCallback)
-    summary: |-
-      Updates an existing CDN profile with the specified profile name under the
-      specified subscription and resource group.
+    summary: "Updates an existing CDN profile with the specified profile name under the\rspecified subscription and resource group."
     fullName: >-
       azure-arm-cdn.Profiles.beginUpdate(resourceGroupName, profileName, tags,
       options, optionalCallback)
@@ -1554,47 +1126,19 @@ items:
         value: '{Profile} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Profile} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link Profile} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: tags
           type:
             - object
@@ -1607,9 +1151,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1620,11 +1162,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginUpdate(resourceGroupName, profileName, tags, options,
         optionalCallback)
@@ -1636,10 +1174,7 @@ items:
     name: >-
       beginDeleteMethodWithHttpOperationResponse(resourceGroupName, profileName,
       options)
-    summary: |-
-      Deletes an existing CDN profile with the specified parameters. Deleting a
-      profile will result in the deletion of all of the sub-resources including
-      endpoints, origins and custom domains.
+    summary: "Deletes an existing CDN profile with the specified parameters. Deleting a\rprofile will result in the deletion of all of the sub-resources including\rendpoints, origins and custom domains."
     fullName: >-
       azure-arm-cdn.Profiles.beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
       profileName, options)
@@ -1658,15 +1193,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -1675,9 +1206,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1694,10 +1223,7 @@ items:
     name: >-
       beginDeleteMethod(resourceGroupName, profileName, options,
       optionalCallback)
-    summary: |-
-      Deletes an existing CDN profile with the specified parameters. Deleting a
-      profile will result in the deletion of all of the sub-resources including
-      endpoints, origins and custom domains.
+    summary: "Deletes an existing CDN profile with the specified parameters. Deleting a\rprofile will result in the deletion of all of the sub-resources including\rendpoints, origins and custom domains."
     fullName: >-
       azure-arm-cdn.Profiles.beginDeleteMethod(resourceGroupName, profileName,
       options, optionalCallback)
@@ -1708,45 +1234,19 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the Resource group within the
-            Azure subscription.
+          description: "Name of the Resource group within the\rAzure subscription."
         - id: profileName
           type:
             - string
-          description: |-
-            Name of the CDN profile which is unique within
-            the resource group.
+          description: "Name of the CDN profile which is unique within\rthe resource group."
         - id: options
           type:
             - object
@@ -1755,9 +1255,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1768,11 +1266,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, profileName, options,
         optionalCallback)
@@ -1805,9 +1299,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1816,9 +1308,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1840,41 +1330,15 @@ items:
         value: '{ProfileListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1883,9 +1347,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1896,11 +1358,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -1931,9 +1389,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1942,9 +1398,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1970,41 +1424,15 @@ items:
         value: '{ProfileListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ProfileListResult} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2013,9 +1441,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2026,11 +1452,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
@@ -2065,9 +1487,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2076,9 +1496,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -2106,43 +1524,15 @@ items:
         value: '{ResourceUsageListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceUsageListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceUsageListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceUsageListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link ResourceUsageListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -2151,9 +1541,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -2164,11 +1552,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listResourceUsageNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

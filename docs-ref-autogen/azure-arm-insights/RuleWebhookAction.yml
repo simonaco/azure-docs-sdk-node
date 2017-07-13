@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-insights.RuleWebhookAction
     id: azure-arm-insights.RuleWebhookAction
     name: RuleWebhookAction
-    summary: |-
-      Specifies the action to post to service when the rule condition is
-      evaluated. The discriminator is always RuleWebhookAction in this case.
+    summary: "Specifies the action to post to service when the rule condition is\revaluated. The discriminator is always RuleWebhookAction in this case."
     fullName: azure-arm-insights.RuleWebhookAction
     source:
       id: azure-arm-insights.RuleWebhookAction

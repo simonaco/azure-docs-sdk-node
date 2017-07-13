@@ -89,44 +89,30 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update local
-            network gateway operation.
+          description: "Parameters supplied to the create or update local\rnetwork gateway operation."
         - id: parameters.localNetworkAddressSpace
           type:
             - object
-          description: |-
-            Local network site
-            address space.
+          description: "Local network site\raddress space."
           optional: true
         - id: parameters.localNetworkAddressSpace.addressPrefixes
           type:
             - array
-          description: >-
-            A list
-
-            of address blocks reserved for this virtual network in CIDR
-            notation.
+          description: "A list\rof address blocks reserved for this virtual network in CIDR notation."
           optional: true
         - id: parameters.gatewayIpAddress
           type:
             - string
-          description: |-
-            IP address of local network
-            gateway.
+          description: "IP address of local network\rgateway."
           optional: true
         - id: parameters.bgpSettings
           type:
             - object
-          description: |-
-            Local network gateway's BGP speaker
-            settings.
+          description: "Local network gateway's BGP speaker\rsettings."
           optional: true
         - id: parameters.bgpSettings.asn
           type:
@@ -136,30 +122,22 @@ items:
         - id: parameters.bgpSettings.bgpPeeringAddress
           type:
             - string
-          description: |-
-            The BGP peering
-            address and BGP identifier of this BGP speaker.
+          description: "The BGP peering\raddress and BGP identifier of this BGP speaker."
           optional: true
         - id: parameters.bgpSettings.peerWeight
           type:
             - number
-          description: |-
-            The weight added to
-            routes learned from this BGP speaker.
+          description: "The weight added to\rroutes learned from this BGP speaker."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            LocalNetworkGateway resource.
+          description: "The resource GUID property of the\rLocalNetworkGateway resource."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -184,9 +162,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -216,32 +192,8 @@ items:
         value: '{LocalNetworkGateway} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGateway} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGateway} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGateway} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGateway} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -252,44 +204,30 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update local
-            network gateway operation.
+          description: "Parameters supplied to the create or update local\rnetwork gateway operation."
         - id: parameters.localNetworkAddressSpace
           type:
             - object
-          description: |-
-            Local network site
-            address space.
+          description: "Local network site\raddress space."
           optional: true
         - id: parameters.localNetworkAddressSpace.addressPrefixes
           type:
             - array
-          description: >-
-            A list
-
-            of address blocks reserved for this virtual network in CIDR
-            notation.
+          description: "A list\rof address blocks reserved for this virtual network in CIDR notation."
           optional: true
         - id: parameters.gatewayIpAddress
           type:
             - string
-          description: |-
-            IP address of local network
-            gateway.
+          description: "IP address of local network\rgateway."
           optional: true
         - id: parameters.bgpSettings
           type:
             - object
-          description: |-
-            Local network gateway's BGP speaker
-            settings.
+          description: "Local network gateway's BGP speaker\rsettings."
           optional: true
         - id: parameters.bgpSettings.asn
           type:
@@ -299,30 +237,22 @@ items:
         - id: parameters.bgpSettings.bgpPeeringAddress
           type:
             - string
-          description: |-
-            The BGP peering
-            address and BGP identifier of this BGP speaker.
+          description: "The BGP peering\raddress and BGP identifier of this BGP speaker."
           optional: true
         - id: parameters.bgpSettings.peerWeight
           type:
             - number
-          description: |-
-            The weight added to
-            routes learned from this BGP speaker.
+          description: "The weight added to\rroutes learned from this BGP speaker."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            LocalNetworkGateway resource.
+          description: "The resource GUID property of the\rLocalNetworkGateway resource."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -347,9 +277,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -360,11 +288,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function createOrUpdate(resourceGroupName, localNetworkGatewayName,
         parameters, options, optionalCallback)
@@ -403,9 +327,7 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: options
           type:
             - object
@@ -414,9 +336,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -442,32 +362,8 @@ items:
         value: '{LocalNetworkGateway} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGateway} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGateway} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGateway} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGateway} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -478,9 +374,7 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: options
           type:
             - object
@@ -489,9 +383,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -502,11 +394,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function get(resourceGroupName, localNetworkGatewayName, options,
         optionalCallback)
@@ -543,9 +431,7 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: options
           type:
             - object
@@ -554,9 +440,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -584,30 +468,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -618,9 +480,7 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: options
           type:
             - object
@@ -629,9 +489,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -642,11 +500,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function deleteMethod(resourceGroupName, localNetworkGatewayName,
         options, optionalCallback)
@@ -688,9 +542,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -714,34 +566,8 @@ items:
         value: '{LocalNetworkGatewayListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGatewayListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGatewayListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGatewayListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGatewayListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -757,9 +583,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -770,11 +594,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(resourceGroupName, options, optionalCallback)'
     langs:
       - js
@@ -815,44 +635,30 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update local
-            network gateway operation.
+          description: "Parameters supplied to the create or update local\rnetwork gateway operation."
         - id: parameters.localNetworkAddressSpace
           type:
             - object
-          description: |-
-            Local network site
-            address space.
+          description: "Local network site\raddress space."
           optional: true
         - id: parameters.localNetworkAddressSpace.addressPrefixes
           type:
             - array
-          description: >-
-            A list
-
-            of address blocks reserved for this virtual network in CIDR
-            notation.
+          description: "A list\rof address blocks reserved for this virtual network in CIDR notation."
           optional: true
         - id: parameters.gatewayIpAddress
           type:
             - string
-          description: |-
-            IP address of local network
-            gateway.
+          description: "IP address of local network\rgateway."
           optional: true
         - id: parameters.bgpSettings
           type:
             - object
-          description: |-
-            Local network gateway's BGP speaker
-            settings.
+          description: "Local network gateway's BGP speaker\rsettings."
           optional: true
         - id: parameters.bgpSettings.asn
           type:
@@ -862,30 +668,22 @@ items:
         - id: parameters.bgpSettings.bgpPeeringAddress
           type:
             - string
-          description: |-
-            The BGP peering
-            address and BGP identifier of this BGP speaker.
+          description: "The BGP peering\raddress and BGP identifier of this BGP speaker."
           optional: true
         - id: parameters.bgpSettings.peerWeight
           type:
             - number
-          description: |-
-            The weight added to
-            routes learned from this BGP speaker.
+          description: "The weight added to\rroutes learned from this BGP speaker."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            LocalNetworkGateway resource.
+          description: "The resource GUID property of the\rLocalNetworkGateway resource."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -910,9 +708,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -942,32 +738,8 @@ items:
         value: '{LocalNetworkGateway} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGateway} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGateway} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGateway} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGateway} for more information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -978,44 +750,30 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: parameters
           type:
             - object
-          description: |-
-            Parameters supplied to the create or update local
-            network gateway operation.
+          description: "Parameters supplied to the create or update local\rnetwork gateway operation."
         - id: parameters.localNetworkAddressSpace
           type:
             - object
-          description: |-
-            Local network site
-            address space.
+          description: "Local network site\raddress space."
           optional: true
         - id: parameters.localNetworkAddressSpace.addressPrefixes
           type:
             - array
-          description: >-
-            A list
-
-            of address blocks reserved for this virtual network in CIDR
-            notation.
+          description: "A list\rof address blocks reserved for this virtual network in CIDR notation."
           optional: true
         - id: parameters.gatewayIpAddress
           type:
             - string
-          description: |-
-            IP address of local network
-            gateway.
+          description: "IP address of local network\rgateway."
           optional: true
         - id: parameters.bgpSettings
           type:
             - object
-          description: |-
-            Local network gateway's BGP speaker
-            settings.
+          description: "Local network gateway's BGP speaker\rsettings."
           optional: true
         - id: parameters.bgpSettings.asn
           type:
@@ -1025,30 +783,22 @@ items:
         - id: parameters.bgpSettings.bgpPeeringAddress
           type:
             - string
-          description: |-
-            The BGP peering
-            address and BGP identifier of this BGP speaker.
+          description: "The BGP peering\raddress and BGP identifier of this BGP speaker."
           optional: true
         - id: parameters.bgpSettings.peerWeight
           type:
             - number
-          description: |-
-            The weight added to
-            routes learned from this BGP speaker.
+          description: "The weight added to\rroutes learned from this BGP speaker."
           optional: true
         - id: parameters.resourceGuid
           type:
             - string
-          description: |-
-            The resource GUID property of the
-            LocalNetworkGateway resource.
+          description: "The resource GUID property of the\rLocalNetworkGateway resource."
           optional: true
         - id: parameters.etag
           type:
             - string
-          description: |-
-            A unique read-only string that changes
-            whenever the resource is updated.
+          description: "A unique read-only string that changes\rwhenever the resource is updated."
           optional: true
         - id: parameters.id
           type:
@@ -1073,9 +823,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1086,11 +834,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginCreateOrUpdate(resourceGroupName, localNetworkGatewayName,
         parameters, options, optionalCallback)
@@ -1127,9 +871,7 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: options
           type:
             - object
@@ -1138,9 +880,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1168,30 +908,8 @@ items:
         value: '{null} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {null} [result]   - The deserialized result object if an error did not occur.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -1202,9 +920,7 @@ items:
         - id: localNetworkGatewayName
           type:
             - string
-          description: |-
-            The name of the local network
-            gateway.
+          description: "The name of the local network\rgateway."
         - id: options
           type:
             - object
@@ -1213,9 +929,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1226,11 +940,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function beginDeleteMethod(resourceGroupName, localNetworkGatewayName,
         options, optionalCallback)
@@ -1263,9 +973,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1274,9 +982,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -1300,43 +1006,15 @@ items:
         value: '{LocalNetworkGatewayListResult} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGatewayListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LocalNetworkGatewayListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGatewayListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link LocalNetworkGatewayListResult} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -1345,9 +1023,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -1358,11 +1034,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js

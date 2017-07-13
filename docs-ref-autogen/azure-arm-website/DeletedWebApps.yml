@@ -48,10 +48,7 @@ items:
     id: 'azure-arm-website.DeletedWebApps#listWithHttpOperationResponse'
     parent: azure-arm-website.DeletedWebApps
     name: listWithHttpOperationResponse(options)
-    summary: |-
-      Get all deleted apps for a subscription.
-
-      Get all deleted apps for a subscription.
+    summary: "Get all deleted apps for a subscription.\r\rGet all deleted apps for a subscription."
     fullName: azure-arm-website.DeletedWebApps.listWithHttpOperationResponse(options)
     tags:
       - originalTitle: resolve
@@ -77,9 +74,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -92,10 +87,7 @@ items:
     id: 'azure-arm-website.DeletedWebApps#list'
     parent: azure-arm-website.DeletedWebApps
     name: 'list(options, optionalCallback)'
-    summary: |-
-      Get all deleted apps for a subscription.
-
-      Get all deleted apps for a subscription.
+    summary: "Get all deleted apps for a subscription.\r\rGet all deleted apps for a subscription."
     fullName: 'azure-arm-website.DeletedWebApps.list(options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -104,34 +96,8 @@ items:
         value: '{DeletedWebAppCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
@@ -143,9 +109,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -156,11 +120,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function list(options, optionalCallback)'
     langs:
       - js
@@ -170,10 +130,7 @@ items:
       azure-arm-website.DeletedWebApps#listByResourceGroupWithHttpOperationResponse
     parent: azure-arm-website.DeletedWebApps
     name: 'listByResourceGroupWithHttpOperationResponse(resourceGroupName, options)'
-    summary: |-
-      Gets deleted web apps in subscription.
-
-      Gets deleted web apps in subscription.
+    summary: "Gets deleted web apps in subscription.\r\rGets deleted web apps in subscription."
     fullName: >-
       azure-arm-website.DeletedWebApps.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
@@ -196,9 +153,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the resource group to which the
-            resource belongs.
+          description: "Name of the resource group to which the\rresource belongs."
         - id: options
           type:
             - object
@@ -207,9 +162,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -224,10 +177,7 @@ items:
     id: 'azure-arm-website.DeletedWebApps#listByResourceGroup'
     parent: azure-arm-website.DeletedWebApps
     name: 'listByResourceGroup(resourceGroupName, options, optionalCallback)'
-    summary: |-
-      Gets deleted web apps in subscription.
-
-      Gets deleted web apps in subscription.
+    summary: "Gets deleted web apps in subscription.\r\rGets deleted web apps in subscription."
     fullName: >-
       azure-arm-website.DeletedWebApps.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
@@ -238,43 +188,15 @@ items:
         value: '{DeletedWebAppCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            Name of the resource group to which the
-            resource belongs.
+          description: "Name of the resource group to which the\rresource belongs."
         - id: options
           type:
             - object
@@ -283,9 +205,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -296,11 +216,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
@@ -310,10 +226,7 @@ items:
     id: 'azure-arm-website.DeletedWebApps#listNextWithHttpOperationResponse'
     parent: azure-arm-website.DeletedWebApps
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: |-
-      Get all deleted apps for a subscription.
-
-      Get all deleted apps for a subscription.
+    summary: "Get all deleted apps for a subscription.\r\rGet all deleted apps for a subscription."
     fullName: >-
       azure-arm-website.DeletedWebApps.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -336,9 +249,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -347,9 +258,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -362,10 +271,7 @@ items:
     id: 'azure-arm-website.DeletedWebApps#listNext'
     parent: azure-arm-website.DeletedWebApps
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: |-
-      Get all deleted apps for a subscription.
-
-      Get all deleted apps for a subscription.
+    summary: "Get all deleted apps for a subscription.\r\rGet all deleted apps for a subscription."
     fullName: >-
       azure-arm-website.DeletedWebApps.listNext(nextPageLink, options,
       optionalCallback)
@@ -376,43 +282,15 @@ items:
         value: '{DeletedWebAppCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -421,9 +299,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -434,11 +310,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
@@ -448,10 +320,7 @@ items:
       azure-arm-website.DeletedWebApps#listByResourceGroupNextWithHttpOperationResponse
     parent: azure-arm-website.DeletedWebApps
     name: 'listByResourceGroupNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: |-
-      Gets deleted web apps in subscription.
-
-      Gets deleted web apps in subscription.
+    summary: "Gets deleted web apps in subscription.\r\rGets deleted web apps in subscription."
     fullName: >-
       azure-arm-website.DeletedWebApps.listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -474,9 +343,7 @@ items:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -485,9 +352,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
       return:
         type:
@@ -502,10 +367,7 @@ items:
     id: 'azure-arm-website.DeletedWebApps#listByResourceGroupNext'
     parent: azure-arm-website.DeletedWebApps
     name: 'listByResourceGroupNext(nextPageLink, options, optionalCallback)'
-    summary: |-
-      Gets deleted web apps in subscription.
-
-      Gets deleted web apps in subscription.
+    summary: "Gets deleted web apps in subscription.\r\rGets deleted web apps in subscription."
     fullName: >-
       azure-arm-website.DeletedWebApps.listByResourceGroupNext(nextPageLink,
       options, optionalCallback)
@@ -516,43 +378,15 @@ items:
         value: '{DeletedWebAppCollection} - The deserialized result object.'
       - originalTitle: reject
         title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DeletedWebAppCollection} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        text: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
+        value: "{Error} - The error object.\r\r{function} optionalCallback(err, result, request, response)\r\r                     {Error}  err        - The Error object if an error occurred, null otherwise.\r\r                     {object} [result]   - The deserialized result object if an error did not occur.\r                     See {@link DeletedWebAppCollection} for more\r                     information.\r\r                     {object} [request]  - The HTTP Request object if an error did not occur.\r\r                     {stream} [response] - The HTTP Response stream if an error did not occur."
     type: Function
     syntax:
       parameters:
         - id: nextPageLink
           type:
             - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
+          description: "The NextLink from the previous successful call\rto List operation."
         - id: options
           type:
             - object
@@ -561,9 +395,7 @@ items:
         - id: options.customHeaders
           type:
             - object
-          description: |-
-            Headers that will be added to the
-            request
+          description: "Headers that will be added to the\rrequest"
           optional: true
         - id: optionalCallback
           type:
@@ -574,11 +406,7 @@ items:
         type:
           - function
           - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
+        description: "If a callback was passed as the last parameter\rthen it returns the callback else returns a Promise.\r\r{Promise} A promise is returned"
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
